@@ -1,0 +1,6 @@
+.git/
+.gitignore
+.assetsignore
+.htaccess
+wrangler.jsonc
+.DS_Store
