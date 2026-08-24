@@ -1,0 +1,8 @@
+/fonts-woff2/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/fonts.json
+  Cache-Control: public, max-age=3600

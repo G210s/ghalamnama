@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0b10" />
+  <title>ghalamnama — Persian Font Playground</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","G-XXXXXXXXXX");</script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+  <div class="grain"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="galamnama">
+      <span class="brand-orb">✦</span>
+      <span><b>galamnama</b><small>Persian type playground</small></span>
+    </a>
+
+    <div class="top-actions">
+      <div class="live-pill"><i></i><span id="count">0</span> فونت آنلاین</div>
+      <button class="icon-btn" id="searchBtn" aria-label="جستجو">⌕</button>
+      <button class="icon-btn" id="randomBtn" aria-label="فونت تصادفی">✦</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div>
+        <p class="kicker">TYPE / EXPLORE / PLAY</p>
+        <h1>فونت رو <em>حس کن.</em></h1>
+      </div>
+      <p class="intro-note">متنت رو بنویس، با ← → بچرخ<br>و فونتی که بهش میاد رو پیدا کن.</p>
+    </section>
+
+    <section class="stage" id="stage">
+      <div class="stage-grid"></div>
+      <div class="orbit orbit-one"></div>
+      <div class="orbit orbit-two"></div>
+      <div class="glow"></div>
+
+      <div class="stage-meta stage-meta-right"><span>01</span><b>galamnama</b></div>
+      <div class="stage-meta stage-meta-left"><span id="fontSource">LOCAL</span><b id="fontIndex">01 / 00</b></div>
+
+      <button class="nav-arrow arrow-next" id="nextFont" aria-label="فونت بعدی"><span>→</span></button>
+      <button class="nav-arrow arrow-prev" id="prevFont" aria-label="فونت قبلی"><span>←</span></button>
+
+      <div class="font-card" id="fontCard">
+        <div class="font-caption">
+          <span class="mini-dot"></span>
+          <span id="fontName">—</span>
+        </div>
+        <textarea id="input" dir="rtl" lang="fa" spellcheck="false" aria-label="متن پیش‌نمایش">سلام دنیا</textarea>
+        <div class="caret-line"></div>
+        <div class="stage-hint"><kbd>←</kbd><kbd>→</kbd> تغییر فونت <span>•</span> <kbd>/</kbd> جستجو</div>
+      </div>
+
+      <div class="dock-wrap">
+        <div class="floating-dock">
+          <div class="dock-group size-group">
+            <span class="dock-label">SIZE</span>
+            <button id="sizeDown">−</button>
+            <strong id="sizeValue">52</strong>
+            <button id="sizeUp">+</button>
+          </div>
+          <div class="dock-sep"></div>
+          <div class="dock-group weights">
+            <span class="dock-label">WEIGHT</span>
+            <button data-weight="400">400</button>
+            <button data-weight="500">500</button>
+            <button data-weight="700" class="active">700</button>
+            <button data-weight="800">800</button>
+          </div>
+          <div class="dock-sep"></div>
+          <button class="dock-action" id="centerBtn"><span>◉</span> تراز</button>
+          <button class="dock-action download" id="downloadBtn"><span>↓</span> دانلود</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="under-stage">
+      <div class="current-font"><span>CURRENT TYPEFACE</span><strong id="bigFontName">—</strong></div>
+      <div class="gesture"><span class="gesture-key">SPACE</span> فونت تصادفی <span class="gesture-key">ENTER</span> انتخاب</div>
+    </section>
+  </main>
+
+  <div class="search-overlay" id="searchOverlay">
+    <div class="search-box">
+      <div class="search-head"><span>Find a typeface</span><button id="closeSearch">ESC</button></div>
+      <input id="filter" type="search" placeholder="نام فونت را بنویس…" dir="ltr" autocomplete="off" />
+      <div id="searchResults"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
