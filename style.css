@@ -5,8 +5,6 @@
 ::selection{background:#a79cff;color:#0b0910}::-webkit-scrollbar{width:7px}::-webkit-scrollbar-thumb{background:#252834;border-radius:20px}
 
 /* --- Font detail page (font.html) --- */
-.info-link{margin-inline-start:6px;color:var(--muted);text-decoration:none;font-size:14px;opacity:.75;transition:opacity .15s,color .15s}
-.info-link:hover{opacity:1;color:var(--accent)}
 .search-result{position:relative}
 .search-result-info{position:absolute;inset-inline-end:12px;top:50%;transform:translateY(-50%);color:var(--muted);text-decoration:none;font-size:14px;opacity:.7}
 .search-result-info:hover{opacity:1;color:var(--accent)}
@@ -37,3 +35,20 @@ main.font-page{width:min(820px,calc(100% - 28px));margin:110px auto 90px;color:v
 .related-font-list a:hover{border-color:rgba(255,255,255,.2);color:var(--accent2)}
 @media(max-width:600px){main.font-page{margin-top:96px}.font-preview-box textarea{font-size:26px}}
 @media(max-width:600px){.related-font-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* --- Homepage font navigation --- */
+.current-font a{display:block;color:inherit;text-decoration:none}
+.current-font a strong{display:inline-block;border-bottom:1px solid var(--line);transition:color .15s,border-color .15s}
+.current-font a:hover strong,.current-font a:focus-visible strong{color:var(--accent2);border-color:currentColor}
+.font-directory{padding:34px 0 80px;border-top:1px solid var(--line)}
+.font-directory-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:22px}
+.font-directory-head .kicker{margin:0 0 7px}
+.font-directory-head h2{margin:0;font-size:28px;line-height:1.2}
+.font-directory-head>span{color:var(--muted);font-size:12px;white-space:nowrap}
+.font-directory-list{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line);border-inline-start:1px solid var(--line)}
+.font-directory-list a{min-width:0;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:11px 12px;border-inline-end:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--text);text-decoration:none;background:rgba(255,255,255,.015)}
+.font-directory-list a:hover,.font-directory-list a:focus-visible{position:relative;background:rgba(103,232,213,.07);color:var(--accent2);outline:1px solid var(--accent2);outline-offset:-1px}
+.font-directory-list span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font:600 12px/1.4 Arial,sans-serif;direction:ltr;text-align:left}
+.font-directory-list small{color:var(--muted);font:700 8px/1 Arial,sans-serif;letter-spacing:.5px}
+@media(max-width:900px){.font-directory-list{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:620px){.font-directory{padding-bottom:54px}.font-directory-list{grid-template-columns:repeat(2,minmax(0,1fr))}.font-directory-list a{padding:10px}.font-directory-list small{display:none}}

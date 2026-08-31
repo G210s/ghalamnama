@@ -94,7 +94,6 @@
         <div class="font-caption">
           <span class="mini-dot"></span>
           <span id="fontName">—</span>
-          <a class="info-link" id="infoLink" href="font" target="_blank" rel="noopener" title="درباره این فونت">ⓘ</a>
         </div>
         <textarea id="input" dir="rtl" lang="fa" spellcheck="false" aria-label="متن پیش‌نمایش">سلام دنیا</textarea>
         <div class="caret-line"></div>
@@ -125,8 +124,19 @@
     </section>
 
     <section class="under-stage">
-      <div class="current-font"><span>CURRENT TYPEFACE</span><strong id="bigFontName">—</strong></div>
+      <div class="current-font"><span>CURRENT TYPEFACE</span><a id="currentFontLink" href="font"><strong id="bigFontName">—</strong></a></div>
       <div class="gesture"><span class="gesture-key">SPACE</span> فونت تصادفی <span class="gesture-key">ENTER</span> انتخاب</div>
+    </section>
+
+    <section class="font-directory" aria-labelledby="fontDirectoryTitle">
+      <div class="font-directory-head">
+        <div>
+          <p class="kicker">TYPEFACE DIRECTORY</p>
+          <h2 id="fontDirectoryTitle">همهٔ فونت‌ها</h2>
+        </div>
+        <span id="directoryCount">۰ فونت</span>
+      </div>
+      <div class="font-directory-list" id="fontDirectoryList"></div>
     </section>
   </main>
 
