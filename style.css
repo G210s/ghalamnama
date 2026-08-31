@@ -46,9 +46,9 @@ main.font-page{width:min(820px,calc(100% - 28px));margin:110px auto 90px;color:v
 .font-directory-head h2{margin:0;font-size:28px;line-height:1.2}
 .font-directory-head>span{color:var(--muted);font-size:12px;white-space:nowrap}
 .font-directory-list{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line);border-inline-start:1px solid var(--line)}
-.font-directory-list a{min-width:0;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:11px 12px;border-inline-end:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--text);text-decoration:none;background:rgba(255,255,255,.015)}
+.font-directory-list a{min-width:0;min-height:72px;display:flex;flex-direction:column;align-items:stretch;justify-content:center;gap:7px;padding:10px 12px;border-inline-end:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--text);text-decoration:none;background:rgba(255,255,255,.015)}
 .font-directory-list a:hover,.font-directory-list a:focus-visible{position:relative;background:rgba(103,232,213,.07);color:var(--accent2);outline:1px solid var(--accent2);outline-offset:-1px}
 .font-directory-list span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font:600 12px/1.4 Arial,sans-serif;direction:ltr;text-align:left}
-.font-directory-list small{color:var(--muted);font:700 8px/1 Arial,sans-serif;letter-spacing:.5px}
+.font-directory-list .font-directory-sample{display:block;min-height:27px;color:#d9dae0;font-size:20px;line-height:1.35;text-align:right;letter-spacing:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 @media(max-width:900px){.font-directory-list{grid-template-columns:repeat(3,minmax(0,1fr))}}
-@media(max-width:620px){.font-directory{padding-bottom:54px}.font-directory-list{grid-template-columns:repeat(2,minmax(0,1fr))}.font-directory-list a{padding:10px}.font-directory-list small{display:none}}
+@media(max-width:620px){.font-directory{padding-bottom:54px}.font-directory-list{grid-template-columns:repeat(2,minmax(0,1fr))}.font-directory-list a{min-height:68px;padding:9px 10px}.font-directory-list .font-directory-sample{font-size:18px}}
