@@ -1,7 +1,7 @@
 const $=id=>document.getElementById(id);
 const params=new URLSearchParams(location.search);
 const requestedFamily=params.get("f")||"";
-const initialLanguage=params.get("lang")==="en"?"en":"fa";
+const initialLanguage=["fa","ar","en"].includes(params.get("lang"))?params.get("lang"):"fa";
 const scriptContext=params.get("context")==="ar"?"ar":"fa";
 let currentLanguage=initialLanguage;
 let currentFont=null,currentContent=null,currentMetadata=null;
@@ -16,8 +16,19 @@ const COPY={
     embeddedNote:"این موارد مستقیماً از جدول نام OpenType استخراج شده‌اند. قلم‌نما صحت ادعاهای سازنده، مالکیت یا مجوز را مستقلاً تأیید نکرده است.",
     descriptionNote:"این توضیح از داده‌های داخلی فایل فونت استخراج شده، به زبان اصلی نمایش داده می‌شود و به‌طور مستقل تأیید نشده است.",
     unknown:"در حال حاضر تاریخچهٔ مستند و تأییدشده‌ای برای این فونت در دسترس نیست. اطلاعات ثبت‌شده داخل فایل فونت در ادامه آمده و می‌توانید برای پژوهش بیشتر از لینک منبع استفاده کنید.",
-    preview:name=>`سلام دنیا، این یک متن نمونه برای فونت ${name} است.`,arabicPreview:name=>`مرحباً بالعالم، هذا نص تجريبي لعرض خط ${name}.`,previewLabel:"پیش‌نمایش فونت",download:"↓ دانلود فونت",viewSource:"↗ دریافت از Google Fonts",viewRepository:"↗ مشاهدهٔ مخزن کد",back:"← بازگشت به کاوشگر فونت",notFound:"فونت پیدا نشد",notFoundText:"این فونت در فهرست قلم‌نما موجود نیست.",
+    preview:name=>`سلام دنیا، این یک متن نمونه برای فونت ${name} است.`,arabicPreview:name=>`مرحباً بالعالم، هذا نص تجريبي لعرض خط ${name}.`,previewLabel:"پیش‌نمایش فونت",download:"↓ دانلود فونت",viewSource:"↗ دریافت از Google Fonts",viewExternal:"↗ مشاهدهٔ منبع فونت",viewRepository:"↗ مشاهدهٔ مخزن کد",back:"← بازگشت به کاوشگر فونت",notFound:"فونت پیدا نشد",notFoundText:"این فونت در فهرست قلم‌نما موجود نیست.",
     local:"فونت محلی (آپلود شده در قلم‌نما)",iranian:"پروژه متن‌باز ایرانی (CDN)",descriptionMeta:name=>`فونت ${name} را آنلاین پیش‌نمایش کنید و اطلاعات طراح، نسخه، منبع، مجوز و تاریخچهٔ آن را در قلم‌نما بخوانید.`
+  },
+  ar:{
+    home:"العودة إلى الصفحة الرئيسية",title:"نبذة ومصمم وتاريخ الخط",loading:"جارٍ تحميل معلومات الخط…",
+    source:"المصدر",format:"صيغة الملف",designer:"المصمم",foundry:"الاستوديو / المشروع",year:"سنة الإصدار",updated:"آخر تحديث",category:"التصنيف",license:"الترخيص",variable:"خط متغير",yes:"نعم",repository:"مستودع المصدر",
+    about:"حول هذا الخط",technical:"التفاصيل التقنية",embedded:"بيانات مضمنة في ملف الخط",related:"خطوط ذات صلة",
+    embeddedFamily:"اسم العائلة في الملف",style:"النمط / الوزن",vendor:"الناشر / المورّد",description:"الوصف المضمن",copyright:"حقوق النشر",trademark:"العلامة التجارية",vendorUrl:"موقع الناشر",designerUrl:"موقع المصمم",licenseUrl:"رابط الترخيص",version:"الإصدار",
+    embeddedNote:"استُخرجت هذه البيانات مباشرة من جدول أسماء OpenType. لم يتحقق قلم‌نما بشكل مستقل من ادعاءات التأليف أو الملكية أو الترخيص.",
+    descriptionNote:"استُخرج هذا الوصف من ملف الخط ويُعرض بلغته الأصلية، ولم يتم التحقق منه بشكل مستقل.",
+    unknown:"لا يتوفر حالياً تاريخ موثق ومتحقق منه بشكل مستقل لهذا الخط. تظهر البيانات المسجلة داخل ملف الخط أدناه، ويمكن الاستعانة برابط المصدر لمزيد من البحث.",
+    preview:name=>`مرحباً بالعالم، هذا نص تجريبي لعرض خط ${name}.`,arabicPreview:name=>`مرحباً بالعالم، هذا نص تجريبي لعرض خط ${name}.`,previewLabel:"معاينة الخط",download:"↓ تنزيل الخط",viewSource:"↗ الحصول عليه من Google Fonts",viewExternal:"↗ عرض مصدر الخط",viewRepository:"↗ عرض مستودع المصدر",back:"← العودة إلى مستكشف الخطوط",notFound:"الخط غير موجود",notFoundText:"هذا الخط غير متوفر في فهرس قلم‌نما.",
+    local:"خط محلي (مستضاف في قلم‌نما)",iranian:"مشروع إيراني مفتوح المصدر (CDN)",descriptionMeta:name=>`عاين خط ${name} عبر الإنترنت وتعرّف إلى مصممه وإصداره ومصدره وترخيصه وتاريخه على قلم‌نما.`
   },
   en:{
     home:"Back to home",title:"Overview, designer and font history",loading:"Loading font information…",
@@ -27,7 +38,7 @@ const COPY={
     embeddedNote:"These fields were extracted directly from the OpenType name table. Ghalamnama has not independently verified claims about authorship, ownership, or licensing.",
     descriptionNote:"This description was extracted from the font file, is shown in its original language, and has not been independently verified.",
     unknown:"No independently verified history is currently available for this font. Metadata recorded inside the font file appears below, and the source link can help with further research.",
-    preview:name=>`Hello world, this is sample text set in ${name}.`,arabicPreview:name=>`مرحباً بالعالم، هذا نص تجريبي لعرض خط ${name}.`,previewLabel:"Font preview",download:"↓ Download font",viewSource:"↗ Get on Google Fonts",viewRepository:"↗ View source repository",back:"← Back to font explorer",notFound:"Font not found",notFoundText:"This font is not available in the Ghalamnama catalog.",
+    preview:name=>`Hello world, this is sample text set in ${name}.`,arabicPreview:name=>`مرحباً بالعالم، هذا نص تجريبي لعرض خط ${name}.`,previewLabel:"Font preview",download:"↓ Download font",viewSource:"↗ Get on Google Fonts",viewExternal:"↗ View font source",viewRepository:"↗ View source repository",back:"← Back to font explorer",notFound:"Font not found",notFoundText:"This font is not available in the Ghalamnama catalog.",
     local:"Local font (hosted by Ghalamnama)",iranian:"Iranian open-source project (CDN)",descriptionMeta:name=>`Preview the ${name} font online and explore its designer, version, source, license, technical details, and history on Ghalamnama.`
   }
 };
@@ -72,7 +83,18 @@ function sourceLabel(source,lang){
 
 function localizedValue(field,value,lang){
   if(lang==="en")return value;
-  if(field==="category")return ({"Sans Serif":"بدون سریف","Serif":"سریف","Display":"نمایشی","Handwriting":"دست‌نویس","Display / Sans Serif":"نمایشی / بدون سریف"})[value]||value;
+  if(field==="category"){
+    const categories=lang==="ar"
+      ? {"Sans Serif":"سانس سريف","Serif":"سريف","Display":"عرض","Handwriting":"يدوي","Display / Sans Serif":"عرض / سانس سريف","Sans Serif / Monospace":"سانس سريف / أحادي المسافة"}
+      : {"Sans Serif":"بدون سریف","Serif":"سریف","Display":"نمایشی","Handwriting":"دست‌نویس","Display / Sans Serif":"نمایشی / بدون سریف","Sans Serif / Monospace":"بدون سریف / تک‌فاصله"};
+    return categories[value]||value;
+  }
+  if(lang==="ar")return value
+    .replace(" (open-source)"," (مفتوح المصدر)")
+    .replace(" (added to Google Fonts)"," (أُضيف إلى Google Fonts)")
+    .replace(" (renamed Vazirmatn in 2021)"," (أُعيدت تسميته إلى Vazirmatn عام 2021)")
+    .replace(/^Independent$/, "مستقل")
+    .replace(/^Multiple type designers$/, "عدة مصممي حروف");
   return value
     .replace(" (open-source)"," (متن‌باز)")
     .replace(" (added to Google Fonts)"," (افزوده‌شدن به Google Fonts)")
@@ -87,7 +109,9 @@ function buildKeywords(font,content,metadata,lang){
   const people=content?.designer||metadata?.designer||metadata?.vendor||"";
   const common=lang==="fa"
     ? [`فونت ${name}`,`دانلود فونت ${name}`,`پیش نمایش فونت ${name}`,`طراح فونت ${name}`,`تاریخچه فونت ${name}`,"فونت فارسی","فونت عربی","تایپوگرافی فارسی"]
-    : [`${name} font`,`${name} typeface`,`${name} font download`,`${name} font preview`,`${name} font designer`,`${name} font history`,"Persian font","Arabic font","Persian typography"];
+    : lang==="ar"
+      ? [`خط ${name}`,`تنزيل خط ${name}`,`معاينة خط ${name}`,`مصمم خط ${name}`,`تاريخ خط ${name}`,"خطوط عربية","خط عربي","تصميم الخطوط العربية"]
+      : [`${name} font`,`${name} typeface`,`${name} font download`,`${name} font preview`,`${name} font designer`,`${name} font history`,"Persian font","Arabic font","Persian typography"];
   const factual=[category,people,font.format,sourceLabel(font.source,lang)];
   return [...new Set([...common,...factual].filter(value=>value!=null&&value!=="").map(value=>String(value).trim()).filter(Boolean))].slice(0,14);
 }
@@ -111,7 +135,9 @@ function renderPage(font,content,metadata){
   const usefulDescription=isUsefulDescription(metadata?.description);
   const title=lang==="fa"
     ? `${font.name}: معرفی، طراح و پیش‌نمایش فونت | قلم‌نما`
-    : `${font.name} Font: Designer, History & Preview | Ghalamnama`;
+    : lang==="ar"
+      ? `${font.name}: المصمم والتاريخ ومعاينة الخط | قلم‌نما`
+      : `${font.name} Font: Designer, History & Preview | Ghalamnama`;
   const desc=history
     ? metaExcerpt(history)
     : usefulDescription
@@ -121,16 +147,16 @@ function renderPage(font,content,metadata){
   const canonicalUrl=`https://ghalamnama.online/font?f=${encodeURIComponent(font.family)}&lang=${lang}${contextSuffix}`;
   const keywords=buildKeywords(font,content,metadata,lang);
   document.documentElement.lang=lang;
-  document.documentElement.dir=lang==="fa"?"rtl":"ltr";
+  document.documentElement.dir=lang==="en"?"ltr":"rtl";
   document.title=title;
   $("pageTitle").textContent=title;
   setMetaContent("pageDescription",desc);
   setMetaContent("pageKeywords",keywords.join(", "));
   setMetaContent("pageRobots","index, follow, max-image-preview:large");
   $("pageCanonical").setAttribute("href",canonicalUrl);
-  setMetaContent("pageOgLocale",lang==="fa"?"fa_IR":"en_US");
-  setMetaContent("pageOgLocaleAlternate",lang==="fa"?"en_US":"fa_IR");
-  setMetaContent("pageOgSiteName",lang==="fa"?"قلم‌نما":"Ghalamnama");
+  setMetaContent("pageOgLocale",lang==="fa"?"fa_IR":lang==="ar"?"ar_SA":"en_US");
+  setMetaContent("pageOgLocaleAlternate",lang==="en"?"fa_IR":"en_US");
+  setMetaContent("pageOgSiteName",lang==="en"?"Ghalamnama":"قلم‌نما");
   setMetaContent("pageOgTitle",title);
   setMetaContent("pageOgDescription",desc);
   setMetaContent("pageOgUrl",canonicalUrl);
@@ -187,7 +213,7 @@ function renderPage(font,content,metadata){
   const sourceLink=font.link||content?.homepage||`https://www.google.com/search?q=%22${encodeURIComponent(font.name)}%22%20font`;
   const downloadHtml=(font.file&&font.open)
     ? `<a class="font-action" href="fonts/${encodeURIComponent(font.file)}" download="${escapeHtml(font.file)}">${copy.download}</a>`
-    : `<a class="font-action" href="${sourceLink}" target="_blank" rel="noopener noreferrer">${copy.viewSource}</a>`;
+    : `<a class="font-action" href="${sourceLink}" target="_blank" rel="noopener noreferrer">${font.source==="GOOGLE"?copy.viewSource:copy.viewExternal}</a>`;
   const repositoryHtml=font.sourceRepository
     ? `<a class="font-action ghost" href="${escapeHtml(font.sourceRepository)}" target="_blank" rel="noopener noreferrer">${copy.viewRepository}</a>`
     : "";
@@ -202,7 +228,7 @@ function renderPage(font,content,metadata){
       <p class="font-page-kicker">${escapeHtml(sourceLabel(font.source,lang))}</p>
     </div>
     <div class="font-preview-box">
-      <textarea id="previewInput" dir="${scriptContext==="ar"?"rtl":lang==="fa"?"rtl":"ltr"}" lang="${scriptContext==="ar"?"ar":lang}" spellcheck="false" style="font-family:'${font.family}',sans-serif" aria-label="${copy.previewLabel}">${scriptContext==="ar"?copy.arabicPreview(escapeHtml(font.name)):copy.preview(escapeHtml(font.name))}</textarea>
+      <textarea id="previewInput" dir="${scriptContext==="ar"||lang!=="en"?"rtl":"ltr"}" lang="${scriptContext==="ar"?"ar":lang}" spellcheck="false" style="font-family:'${font.family}',sans-serif" aria-label="${copy.previewLabel}">${scriptContext==="ar"?copy.arabicPreview(escapeHtml(font.name)):copy.preview(escapeHtml(font.name))}</textarea>
     </div>
     <div class="font-actions">
       ${downloadHtml}
@@ -226,7 +252,7 @@ function renderPage(font,content,metadata){
       <nav class="related-fonts" aria-label="${copy.related}">
         <h2>${copy.related}</h2>
         <div class="related-font-list">
-          ${relatedFonts.map(candidate=>`<a href="font?f=${encodeURIComponent(candidate.family)}&lang=${lang}&context=${scriptContext}">${escapeHtml(candidate.name)}</a>`).join("")}
+          ${relatedFonts.map(candidate=>`<a href="font?f=${encodeURIComponent(candidate.family)}&lang=${lang}${scriptContext==="ar"?"&context=ar":""}">${escapeHtml(candidate.name)}</a>`).join("")}
         </div>
       </nav>
     `:""}
@@ -260,8 +286,8 @@ function renderPage(font,content,metadata){
         "@type":"WebSite",
         "@id":"https://ghalamnama.online/#website",
         "url":"https://ghalamnama.online/",
-        "name":lang==="fa"?"قلم‌نما":"Ghalamnama",
-        "inLanguage":["fa","en"]
+        "name":lang==="en"?"Ghalamnama":"قلم‌نما",
+        "inLanguage":["fa","ar","en"]
       }
     ]
   };
@@ -279,10 +305,10 @@ function renderPage(font,content,metadata){
 
 function renderNotFound(){
   const copy=COPY[currentLanguage];
-  const title=`${copy.notFound} | ${currentLanguage==="fa"?"قلم‌نما":"Ghalamnama"}`;
+  const title=`${copy.notFound} | ${currentLanguage==="en"?"Ghalamnama":"قلم‌نما"}`;
   const description=copy.notFoundText;
   document.documentElement.lang=currentLanguage;
-  document.documentElement.dir=currentLanguage==="fa"?"rtl":"ltr";
+  document.documentElement.dir=currentLanguage==="en"?"ltr":"rtl";
   document.title=title;
   $("pageTitle").textContent=title;
   setMetaContent("pageDescription",description);
@@ -312,7 +338,7 @@ function setLanguage(lang){
 }
 
 function addAlternateLanguageLinks(){
-  for(const lang of ["fa","en","x-default"]){
+  for(const lang of ["fa","ar","en","x-default"]){
     const link=document.createElement("link");
     link.rel="alternate";
     link.hreflang=lang;
@@ -324,7 +350,7 @@ function addAlternateLanguageLinks(){
 function applyLanguageShell(){
   const copy=COPY[currentLanguage];
   document.documentElement.lang=currentLanguage;
-  document.documentElement.dir=currentLanguage==="fa"?"rtl":"ltr";
+  document.documentElement.dir=currentLanguage==="en"?"ltr":"rtl";
   $("loadingMsg").textContent=copy.loading;
   document.querySelector('.icon-btn[href="index.html"]').setAttribute("aria-label",copy.home);
   document.querySelectorAll("[data-lang]").forEach(button=>button.setAttribute("aria-pressed",String(button.dataset.lang===currentLanguage)));
@@ -334,7 +360,7 @@ async function init(){
   let local=[],content={},metadata={},arabic=[];
   applyLanguageShell();
   try{
-    const responses=await Promise.all([fetch("fonts.json"),fetch("font-content.json"),fetch("font-metadata.json"),fetch("arabic-fonts.json")]);
+    const responses=await Promise.all([fetch("fonts.json"),fetch("font-content.json?v=2"),fetch("font-metadata.json"),fetch("arabic-fonts.json")]);
     if(responses[0].ok)local=await responses[0].json();
     if(responses[1].ok)content=await responses[1].json();
     if(responses[2].ok)metadata=await responses[2].json();

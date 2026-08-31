@@ -8,7 +8,8 @@
     "homepage": "https://rastikerdar.github.io/vazirmatn",
     "history": {
       "en": "Vazir (later renamed Vazirmatn) is an open-source Persian/Arabic typeface created by Saber Rastikerdar, first released in 2015 with the goal of a simple, legible webfont for Persian interfaces. Its early versions were built on the free DejaVu Sans outlines and combined with Roboto for Latin glyphs. It grew into one of the most widely used Persian webfonts on GitHub and became the default Persian font on Fedora Linux, and it is still actively maintained today.",
-      "fa": "Vazir (که بعدها به Vazirmatn تغییر نام یافت) یک قلم فارسی/عربی متن‌باز است که Saber Rastikerdar آن را ساخت و نخستین بار در سال ۲۰۱۵ با هدف ارائهٔ وب‌فونتی ساده و خوانا برای رابط‌های فارسی منتشر کرد. نسخه‌های نخست آن بر پایهٔ خطوط پیرامونی آزاد DejaVu Sans ساخته شده بودند و برای نویسه‌های لاتین با Roboto ترکیب می‌شدند. این قلم به یکی از پرکاربردترین وب‌فونت‌های فارسی در GitHub تبدیل شد، قلم پیش‌فرض فارسی در Fedora Linux شد و همچنان به‌طور فعال نگهداری می‌شود."
+      "fa": "Vazir (که بعدها به Vazirmatn تغییر نام یافت) یک قلم فارسی/عربی متن‌باز است که Saber Rastikerdar آن را ساخت و نخستین بار در سال ۲۰۱۵ با هدف ارائهٔ وب‌فونتی ساده و خوانا برای رابط‌های فارسی منتشر کرد. نسخه‌های نخست آن بر پایهٔ خطوط پیرامونی آزاد DejaVu Sans ساخته شده بودند و برای نویسه‌های لاتین با Roboto ترکیب می‌شدند. این قلم به یکی از پرکاربردترین وب‌فونت‌های فارسی در GitHub تبدیل شد، قلم پیش‌فرض فارسی در Fedora Linux شد و همچنان به‌طور فعال نگهداری می‌شود.",
+      "ar": "Vazir (الذي أُعيدت تسميته لاحقًا إلى Vazirmatn) هو محرف فارسي/عربي مفتوح المصدر أنشأه Saber Rastikerdar، وصدر لأول مرة في 2015 بهدف توفير خط ويب بسيط وواضح للواجهات الفارسية. استندت نسخه المبكرة إلى الخطوط الخارجية الحرة لـ DejaVu Sans، ودُمجت مع Roboto للمحارف اللاتينية. وتطور ليصبح أحد أكثر خطوط الويب الفارسية استخدامًا على GitHub، وأصبح الخط الفارسي الافتراضي في Fedora Linux، ولا يزال يُصان بنشاط حتى اليوم."
     }
   },
   "Sahel": {
@@ -20,7 +21,8 @@
     "homepage": "https://rastikerdar.github.io/sahel-font",
     "history": {
       "en": "Sahel is a Persian typeface designed by Saber Rastikerdar with contributions from Amin Abedi, released as part of the same open-source project family as Vazir. It ships with a variable-font build (Sahel VF) in addition to static weights, and — unlike several sibling projects — is still actively maintained.",
-      "fa": "Sahel قلمی فارسی است که Saber Rastikerdar با مشارکت Amin Abedi طراحی کرد و به‌عنوان بخشی از همان خانوادهٔ پروژه‌های متن‌باز Vazir منتشر شد. این قلم افزون بر وزن‌های ثابت، با نسخهٔ فونت متغیر (Sahel VF) نیز عرضه می‌شود و برخلاف چند پروژهٔ هم‌خانواده، همچنان به‌طور فعال نگهداری می‌شود."
+      "fa": "Sahel قلمی فارسی است که Saber Rastikerdar با مشارکت Amin Abedi طراحی کرد و به‌عنوان بخشی از همان خانوادهٔ پروژه‌های متن‌باز Vazir منتشر شد. این قلم افزون بر وزن‌های ثابت، با نسخهٔ فونت متغیر (Sahel VF) نیز عرضه می‌شود و برخلاف چند پروژهٔ هم‌خانواده، همچنان به‌طور فعال نگهداری می‌شود.",
+      "ar": "Sahel محرف فارسي صممه Saber Rastikerdar بمساهمات من Amin Abedi، وصدر ضمن عائلة المشاريع المفتوحة المصدر نفسها التي ينتمي إليها Vazir. ويُطرح بإصدار خط متغير (Sahel VF) إلى جانب الأوزان الثابتة، ولا يزال، بخلاف عدة مشاريع شقيقة، يُصان بنشاط."
     }
   },
   "Samim": {
@@ -32,7 +34,8 @@
     "homepage": "https://rastikerdar.github.io/samim-font",
     "history": {
       "en": "Samim (meaning \"sincere\" in Persian) is a warm, humanist Persian typeface created by Saber Rastikerdar in 2015, with contributions from Allen Bargi and Farzan Balkani. Development was archived by its author in 2022, but the released font files remain freely available under an open license.",
-      "fa": "Samim (به معنی «صمیمی» در فارسی) قلمی فارسی با حال‌وهوای گرم و انسان‌گرایانه است که Saber Rastikerdar در سال ۲۰۱۵ با مشارکت Allen Bargi و Farzan Balkani ساخت. پدیدآورندهٔ آن توسعهٔ پروژه را در سال ۲۰۲۲ بایگانی کرد، اما فایل‌های منتشرشدهٔ قلم همچنان با مجوزی باز به‌رایگان در دسترس‌اند."
+      "fa": "Samim (به معنی «صمیمی» در فارسی) قلمی فارسی با حال‌وهوای گرم و انسان‌گرایانه است که Saber Rastikerdar در سال ۲۰۱۵ با مشارکت Allen Bargi و Farzan Balkani ساخت. پدیدآورندهٔ آن توسعهٔ پروژه را در سال ۲۰۲۲ بایگانی کرد، اما فایل‌های منتشرشدهٔ قلم همچنان با مجوزی باز به‌رایگان در دسترس‌اند.",
+      "ar": "Samim (وتعني «صادق» بالفارسية) محرف فارسي دافئ وإنساني أنشأه Saber Rastikerdar في 2015، بمساهمات من Allen Bargi وFarzan Balkani. أرشف مؤلفه عملية التطوير في 2022، لكن ملفات الخط المنشورة ما زالت متاحة مجانًا بموجب ترخيص مفتوح."
     }
   },
   "Shabnam": {
@@ -44,7 +47,8 @@
     "homepage": "https://rastikerdar.github.io/shabnam-font",
     "history": {
       "en": "Shabnam (\"dewdrop\") is a soft, rounded Persian typeface by Saber Rastikerdar, released in 2015 as part of his open-source font collection and widely adopted for Persian UI design. The project was archived in 2022, and the font is distributed under the SIL Open Font License.",
-      "fa": "Shabnam («قطرهٔ شبنم») قلمی فارسی با فرم‌های نرم و گرد از Saber Rastikerdar است که در سال ۲۰۱۵ به‌عنوان بخشی از مجموعه‌قلم‌های متن‌باز او منتشر شد و در طراحی رابط کاربری فارسی کاربرد گسترده‌ای یافت. پروژه در سال ۲۰۲۲ بایگانی شد و قلم با مجوز SIL Open Font License توزیع می‌شود."
+      "fa": "Shabnam («قطرهٔ شبنم») قلمی فارسی با فرم‌های نرم و گرد از Saber Rastikerdar است که در سال ۲۰۱۵ به‌عنوان بخشی از مجموعه‌قلم‌های متن‌باز او منتشر شد و در طراحی رابط کاربری فارسی کاربرد گسترده‌ای یافت. پروژه در سال ۲۰۲۲ بایگانی شد و قلم با مجوز SIL Open Font License توزیع می‌شود.",
+      "ar": "Shabnam («قطرة الندى») محرف فارسي ناعم ومستدير من تصميم Saber Rastikerdar، صدر في 2015 ضمن مجموعته من الخطوط المفتوحة المصدر، واعتمد على نطاق واسع في تصميم واجهات المستخدم الفارسية. أُرشف المشروع في 2022، ويُوزع الخط بموجب SIL Open Font License."
     }
   },
   "Nahid": {
@@ -56,7 +60,8 @@
     "homepage": "https://rastikerdar.github.io/nahid-font",
     "history": {
       "en": "Nahid is a Persian typeface created by Saber Rastikerdar in response to requests for the look of the original, first-series Vazir font, building on those early DejaVu Sans-based outlines. The project was archived in 2022, and the released files remain available for download.",
-      "fa": "Nahid قلمی فارسی است که Saber Rastikerdar در پاسخ به درخواست‌ها برای ظاهر نسخهٔ اصلی و سری نخست قلم Vazir ساخت و آن را بر خطوط پیرامونی اولیهٔ مبتنی بر DejaVu Sans بنا کرد. پروژه در سال ۲۰۲۲ بایگانی شد و فایل‌های منتشرشده همچنان برای بارگیری در دسترس‌اند."
+      "fa": "Nahid قلمی فارسی است که Saber Rastikerdar در پاسخ به درخواست‌ها برای ظاهر نسخهٔ اصلی و سری نخست قلم Vazir ساخت و آن را بر خطوط پیرامونی اولیهٔ مبتنی بر DejaVu Sans بنا کرد. پروژه در سال ۲۰۲۲ بایگانی شد و فایل‌های منتشرشده همچنان برای بارگیری در دسترس‌اند.",
+      "ar": "Nahid محرف فارسي أنشأه Saber Rastikerdar استجابة لطلبات الحصول على مظهر خط Vazir الأصلي من السلسلة الأولى، وبناه على تلك الخطوط الخارجية المبكرة المستندة إلى DejaVu Sans. أُرشف المشروع في 2022، ولا تزال الملفات المنشورة متاحة للتنزيل."
     }
   },
   "Gandom": {
@@ -68,7 +73,8 @@
     "homepage": "https://rastikerdar.github.io/gandom-font",
     "history": {
       "en": "Gandom (\"wheat\") is a Persian typeface released by Saber Rastikerdar in 2015 as part of his open-source font collection. Development was archived in 2022, and the font remains freely downloadable.",
-      "fa": "Gandom («گندم») قلمی فارسی است که Saber Rastikerdar در سال ۲۰۱۵ به‌عنوان بخشی از مجموعه‌قلم‌های متن‌باز خود منتشر کرد. توسعهٔ آن در سال ۲۰۲۲ بایگانی شد و قلم همچنان به‌رایگان قابل بارگیری است."
+      "fa": "Gandom («گندم») قلمی فارسی است که Saber Rastikerdar در سال ۲۰۱۵ به‌عنوان بخشی از مجموعه‌قلم‌های متن‌باز خود منتشر کرد. توسعهٔ آن در سال ۲۰۲۲ بایگانی شد و قلم همچنان به‌رایگان قابل بارگیری است.",
+      "ar": "Gandom («القمح») محرف فارسي أصدره Saber Rastikerdar في 2015 ضمن مجموعته من الخطوط المفتوحة المصدر. أُرشفت عملية التطوير في 2022، ولا يزال الخط متاحًا للتنزيل مجانًا."
     }
   },
   "Tanha": {
@@ -80,7 +86,8 @@
     "homepage": "https://rastikerdar.github.io/tanha-font",
     "history": {
       "en": "Tanha (\"alone\") is a single-weight Persian typeface by Saber Rastikerdar, built on the letterforms of his Samim and Vazir fonts. Development was archived in 2022, and the font remains freely available.",
-      "fa": "Tanha («تنها») قلمی فارسی و تک‌وزن از Saber Rastikerdar است که بر پایهٔ فرم حروف قلم‌های Samim و Vazir او ساخته شده است. توسعهٔ آن در سال ۲۰۲۲ بایگانی شد و قلم همچنان به‌رایگان در دسترس است."
+      "fa": "Tanha («تنها») قلمی فارسی و تک‌وزن از Saber Rastikerdar است که بر پایهٔ فرم حروف قلم‌های Samim و Vazir او ساخته شده است. توسعهٔ آن در سال ۲۰۲۲ بایگانی شد و قلم همچنان به‌رایگان در دسترس است.",
+      "ar": "Tanha («وحيد») محرف فارسي بوزن واحد من تصميم Saber Rastikerdar، بُني على أشكال الحروف في خطيه Samim وVazir. أُرشفت عملية التطوير في 2022، ولا يزال الخط متاحًا مجانًا."
     }
   },
   "Parastoo": {
@@ -92,7 +99,8 @@
     "homepage": "https://rastikerdar.github.io/parastoo-font",
     "history": {
       "en": "Parastoo (\"swallow\") is a Persian typeface designed by Saber Rastikerdar in 2016 with contributions from Mohamad Jahani and Saleh Souzanchi. Development was archived in 2022, and it remains available under the SIL Open Font License.",
-      "fa": "Parastoo («پرستو») قلمی فارسی است که Saber Rastikerdar در سال ۲۰۱۶ با مشارکت Mohamad Jahani و Saleh Souzanchi طراحی کرد. توسعهٔ آن در سال ۲۰۲۲ بایگانی شد و همچنان با مجوز SIL Open Font License در دسترس است."
+      "fa": "Parastoo («پرستو») قلمی فارسی است که Saber Rastikerdar در سال ۲۰۱۶ با مشارکت Mohamad Jahani و Saleh Souzanchi طراحی کرد. توسعهٔ آن در سال ۲۰۲۲ بایگانی شد و همچنان با مجوز SIL Open Font License در دسترس است.",
+      "ar": "Parastoo («السنونو») محرف فارسي صممه Saber Rastikerdar في 2016 بمساهمات من Mohamad Jahani وSaleh Souzanchi. أُرشفت عملية التطوير في 2022، ولا يزال متاحًا بموجب SIL Open Font License."
     }
   },
   "Vazirmatn": {
@@ -104,7 +112,8 @@
     "homepage": "https://fonts.google.com/specimen/Vazirmatn",
     "history": {
       "en": "Vazirmatn (formerly \"Vazir\") is a Persian/Arabic typeface created by Saber Rastikerdar, first released in 2015 as a simple, legible webfont. It was renamed and modernized as Vazirmatn, added to Google Fonts in 2022, and is now one of the most widely used open-source Persian typefaces, serving as the default Persian font on Fedora Linux.",
-      "fa": "Vazirmatn (که پیش‌تر «Vazir» نام داشت) قلمی فارسی/عربی ساختهٔ Saber Rastikerdar است که نخستین بار در سال ۲۰۱۵ به‌عنوان وب‌فونتی ساده و خوانا منتشر شد. این قلم با نام Vazirmatn تغییر نام یافت و نوسازی شد، در سال ۲۰۲۲ به Google Fonts افزوده شد و اکنون یکی از پرکاربردترین قلم‌های فارسی متن‌باز است و به‌عنوان قلم پیش‌فرض فارسی در Fedora Linux به کار می‌رود."
+      "fa": "Vazirmatn (که پیش‌تر «Vazir» نام داشت) قلمی فارسی/عربی ساختهٔ Saber Rastikerdar است که نخستین بار در سال ۲۰۱۵ به‌عنوان وب‌فونتی ساده و خوانا منتشر شد. این قلم با نام Vazirmatn تغییر نام یافت و نوسازی شد، در سال ۲۰۲۲ به Google Fonts افزوده شد و اکنون یکی از پرکاربردترین قلم‌های فارسی متن‌باز است و به‌عنوان قلم پیش‌فرض فارسی در Fedora Linux به کار می‌رود.",
+      "ar": "Vazirmatn (المعروف سابقًا باسم «Vazir») محرف فارسي/عربي أنشأه Saber Rastikerdar، وصدر لأول مرة في 2015 بوصفه خط ويب بسيطًا وواضحًا. أُعيدت تسميته وتحديثه باسم Vazirmatn، وأُضيف إلى Google Fonts في 2022، وهو الآن أحد أكثر المحارف الفارسية المفتوحة المصدر استخدامًا، ويُستخدم بوصفه الخط الفارسي الافتراضي في Fedora Linux."
     }
   },
   "Estedad": {
@@ -116,7 +125,8 @@
     "homepage": "https://fonts.google.com/specimen/Estedad",
     "history": {
       "en": "Estedad is a Persian/Arabic sans-serif typeface designed by Amin Abedi through his Fontamin studio, distributed as an open-source webfont on Google Fonts for Persian-language interfaces.",
-      "fa": "Estedad قلمی سن‌سریف فارسی/عربی است که Amin Abedi آن را در استودیوی Fontamin خود طراحی کرده و به‌صورت وب‌فونتی متن‌باز در Google Fonts برای رابط‌های فارسی‌زبان توزیع شده است."
+      "fa": "Estedad قلمی سن‌سریف فارسی/عربی است که Amin Abedi آن را در استودیوی Fontamin خود طراحی کرده و به‌صورت وب‌فونتی متن‌باز در Google Fonts برای رابط‌های فارسی‌زبان توزیع شده است.",
+      "ar": "Estedad محرف فارسي/عربي بلا تذييل صممه Amin Abedi من خلال استوديو Fontamin التابع له، ويُوزع بوصفه خط ويب مفتوح المصدر على Google Fonts للواجهات الناطقة بالفارسية."
     }
   },
   "Noto Naskh Arabic": {
@@ -128,7 +138,8 @@
     "homepage": "https://fonts.google.com/noto/specimen/Noto+Naskh+Arabic",
     "history": {
       "en": "Noto Naskh Arabic is part of Google's Noto (\"no tofu\") type system, which aims to cover every character in Unicode so text never renders as missing-glyph boxes. It renders Arabic-script text in the traditional Naskh style used for body copy and long-form reading across Arabic, Persian, Urdu and related languages.",
-      "fa": "Noto Naskh Arabic بخشی از سیستم قلم Noto («بدون tofu») متعلق به Google است که هدفش پوشش همهٔ نویسه‌های Unicode است تا متن هرگز به‌شکل کادرهای نویسهٔ مفقود نمایش داده نشود. این قلم متنِ دارای خط عربی را به سبک سنتی نسخ نمایش می‌دهد؛ سبکی که برای متن اصلی و خواندن مطالب بلند به زبان‌های عربی، فارسی، اردو و زبان‌های مرتبط به کار می‌رود."
+      "fa": "Noto Naskh Arabic بخشی از سیستم قلم Noto («بدون tofu») متعلق به Google است که هدفش پوشش همهٔ نویسه‌های Unicode است تا متن هرگز به‌شکل کادرهای نویسهٔ مفقود نمایش داده نشود. این قلم متنِ دارای خط عربی را به سبک سنتی نسخ نمایش می‌دهد؛ سبکی که برای متن اصلی و خواندن مطالب بلند به زبان‌های عربی، فارسی، اردو و زبان‌های مرتبط به کار می‌رود.",
+      "ar": "Noto Naskh Arabic جزء من نظام محارف Noto («no tofu») من Google، الذي يهدف إلى تغطية كل محرف في Unicode كي لا يظهر النص أبدًا على هيئة مربعات لمحارف مفقودة. وهو يعرض النص المكتوب بالخط العربي بأسلوب النسخ التقليدي المستخدم للنصوص الأساسية والقراءة المطولة بالعربية والفارسية والأردية واللغات ذات الصلة."
     }
   },
   "Noto Sans Arabic": {
@@ -140,7 +151,8 @@
     "homepage": "https://fonts.google.com/noto/specimen/Noto+Sans+Arabic",
     "history": {
       "en": "Noto Sans Arabic is part of Google's Noto type system, built for comprehensive, tofu-free Unicode coverage. It provides a clean, low-contrast sans-serif rendering of Arabic-script text for UI and screen use across Arabic, Persian, Urdu and other Arabic-script languages.",
-      "fa": "Noto Sans Arabic بخشی از سیستم قلم Noto متعلق به Google است که برای پوشش جامع Unicode بدون نمایش کادرهای نویسهٔ مفقود ساخته شده است. این قلم نمایشی تمیز، کم‌کنتراست و سن‌سریف از متنِ دارای خط عربی برای رابط کاربری و نمایشگرها در زبان‌های عربی، فارسی، اردو و دیگر زبان‌های دارای خط عربی ارائه می‌کند."
+      "fa": "Noto Sans Arabic بخشی از سیستم قلم Noto متعلق به Google است که برای پوشش جامع Unicode بدون نمایش کادرهای نویسهٔ مفقود ساخته شده است. این قلم نمایشی تمیز، کم‌کنتراست و سن‌سریف از متنِ دارای خط عربی برای رابط کاربری و نمایشگرها در زبان‌های عربی، فارسی، اردو و دیگر زبان‌های دارای خط عربی ارائه می‌کند.",
+      "ar": "Noto Sans Arabic جزء من نظام محارف Noto من Google، وقد بُني لتوفير تغطية شاملة لـ Unicode من دون مربعات المحارف المفقودة. ويقدم عرضًا نظيفًا قليل التباين وبلا تذييل للنص المكتوب بالخط العربي، لاستخدامه في واجهات المستخدم والشاشات بالعربية والفارسية والأردية وغيرها من اللغات التي تستخدم الخط العربي."
     }
   },
   "Noto Kufi Arabic": {
@@ -152,7 +164,8 @@
     "homepage": "https://fonts.google.com/noto/specimen/Noto+Kufi+Arabic",
     "history": {
       "en": "Noto Kufi Arabic is part of Google's Noto family and renders Arabic-script text in the geometric Kufic style, characterized by angular, squared-off letterforms often used for headlines and decorative typography.",
-      "fa": "Noto Kufi Arabic بخشی از خانوادهٔ Noto متعلق به Google است و متنِ دارای خط عربی را به سبک هندسی کوفی نمایش می‌دهد؛ سبکی با فرم حروف زاویه‌دار و چهارگوش که اغلب برای تیترها و حروف‌چینی تزئینی به کار می‌رود."
+      "fa": "Noto Kufi Arabic بخشی از خانوادهٔ Noto متعلق به Google است و متنِ دارای خط عربی را به سبک هندسی کوفی نمایش می‌دهد؛ سبکی با فرم حروف زاویه‌دار و چهارگوش که اغلب برای تیترها و حروف‌چینی تزئینی به کار می‌رود.",
+      "ar": "Noto Kufi Arabic جزء من عائلة Noto من Google، ويعرض النص المكتوب بالخط العربي بالأسلوب الكوفي الهندسي، الذي يتميز بأشكال حروف زاوية ومربعة، ويُستخدم غالبًا للعناوين والطباعة الزخرفية."
     }
   },
   "Noto Nastaliq Urdu": {
@@ -164,7 +177,8 @@
     "homepage": "https://fonts.google.com/noto/specimen/Noto+Nastaliq+Urdu",
     "history": {
       "en": "Noto Nastaliq Urdu is part of Google's Noto type system and implements the flowing, diagonal Nastaliq calligraphic style traditionally used for Urdu and other South Asian Perso-Arabic scripts, where Naskh-style fonts are not appropriate.",
-      "fa": "Noto Nastaliq Urdu بخشی از سیستم قلم Noto متعلق به Google است و سبک خوشنویسانه، روان و مورب نستعلیق را پیاده‌سازی می‌کند؛ سبکی که به‌طور سنتی برای اردو و دیگر خطوط فارسی‌ـ‌عربی جنوب آسیا، در مواردی که قلم‌های سبک نسخ مناسب نیستند، به کار می‌رود."
+      "fa": "Noto Nastaliq Urdu بخشی از سیستم قلم Noto متعلق به Google است و سبک خوشنویسانه، روان و مورب نستعلیق را پیاده‌سازی می‌کند؛ سبکی که به‌طور سنتی برای اردو و دیگر خطوط فارسی‌ـ‌عربی جنوب آسیا، در مواردی که قلم‌های سبک نسخ مناسب نیستند، به کار می‌رود.",
+      "ar": "Noto Nastaliq Urdu جزء من نظام محارف Noto من Google، ويطبق أسلوب النستعليق الخطي الانسيابي والمائل، المستخدم تقليديًا للأردية وغيرها من الخطوط الفارسية العربية في جنوب آسيا، حيث لا تكون المحارف ذات أسلوب النسخ ملائمة."
     }
   },
   "IBM Plex Sans Arabic": {
@@ -176,7 +190,8 @@
     "homepage": "https://fonts.google.com/specimen/IBM+Plex+Sans+Arabic",
     "history": {
       "en": "IBM Plex Sans Arabic extends IBM's corporate Plex typeface system to the Arabic script. It was designed by Khajag Apelian and Wael Morcos in collaboration with Bold Monday and IBM's Mike Abbink, released as part of IBM's open-source Plex family for consistent multi-script branding.",
-      "fa": "IBM Plex Sans Arabic سیستم قلم سازمانی Plex متعلق به IBM را به خط عربی گسترش می‌دهد. این قلم را Khajag Apelian و Wael Morcos با همکاری Bold Monday و Mike Abbink از IBM طراحی کردند و به‌عنوان بخشی از خانوادهٔ متن‌باز Plex متعلق به IBM برای برندسازی یکدست در چند خط نوشتاری منتشر شد."
+      "fa": "IBM Plex Sans Arabic سیستم قلم سازمانی Plex متعلق به IBM را به خط عربی گسترش می‌دهد. این قلم را Khajag Apelian و Wael Morcos با همکاری Bold Monday و Mike Abbink از IBM طراحی کردند و به‌عنوان بخشی از خانوادهٔ متن‌باز Plex متعلق به IBM برای برندسازی یکدست در چند خط نوشتاری منتشر شد.",
+      "ar": "يوسع IBM Plex Sans Arabic نظام محارف Plex المؤسسي من IBM ليشمل الخط العربي. صممه Khajag Apelian وWael Morcos بالتعاون مع Bold Monday وMike Abbink من IBM، وصدر ضمن عائلة Plex المفتوحة المصدر من IBM لتحقيق هوية بصرية متسقة عبر خطوط كتابية متعددة."
     }
   },
   "Readex Pro": {
@@ -188,7 +203,8 @@
     "homepage": "https://fonts.google.com/specimen/Readex+Pro",
     "history": {
       "en": "Readex Pro is a variable sans-serif designed for readability in both Latin and Arabic scripts, developed by a multi-designer team including Thomas Jockin and Nadine Chahine, with a rounded, friendly construction suited to interfaces and educational material.",
-      "fa": "Readex Pro قلمی سن‌سریف و متغیر است که برای خوانایی در هر دو خط لاتین و عربی طراحی شده و گروهی از طراحان، از جمله Thomas Jockin و Nadine Chahine، آن را توسعه داده‌اند. ساختار گرد و دوستانهٔ آن برای رابط‌ها و مطالب آموزشی مناسب است."
+      "fa": "Readex Pro قلمی سن‌سریف و متغیر است که برای خوانایی در هر دو خط لاتین و عربی طراحی شده و گروهی از طراحان، از جمله Thomas Jockin و Nadine Chahine، آن را توسعه داده‌اند. ساختار گرد و دوستانهٔ آن برای رابط‌ها و مطالب آموزشی مناسب است.",
+      "ar": "Readex Pro محرف متغير بلا تذييل صُمم لسهولة القراءة بالخطين اللاتيني والعربي، وطوره فريق متعدد المصممين يضم Thomas Jockin وNadine Chahine، ببنية مستديرة وودودة تلائم الواجهات والمواد التعليمية."
     }
   },
   "Alexandria": {
@@ -200,7 +216,8 @@
     "homepage": "https://fonts.google.com/specimen/Alexandria",
     "history": {
       "en": "Alexandria is a geometric Arabic/Latin sans-serif designed by Mohamed Gaber with Julieta Ulanovsky, named after the Egyptian city, and built for clean, contemporary bilingual typesetting.",
-      "fa": "Alexandria قلمی سن‌سریف هندسی عربی/لاتین است که Mohamed Gaber همراه با Julieta Ulanovsky طراحی کرده است. نام آن از شهر مصری اسکندریه گرفته شده و برای حروف‌چینی دوزبانهٔ تمیز و معاصر ساخته شده است."
+      "fa": "Alexandria قلمی سن‌سریف هندسی عربی/لاتین است که Mohamed Gaber همراه با Julieta Ulanovsky طراحی کرده است. نام آن از شهر مصری اسکندریه گرفته شده و برای حروف‌چینی دوزبانهٔ تمیز و معاصر ساخته شده است.",
+      "ar": "Alexandria محرف هندسي عربي/لاتيني بلا تذييل صممه Mohamed Gaber مع Julieta Ulanovsky، وسُمي نسبة إلى المدينة المصرية، وبُني لصف حروف ثنائي اللغة نظيف ومعاصر."
     }
   },
   "Alkalami": {
@@ -212,7 +229,8 @@
     "homepage": "https://fonts.google.com/specimen/Alkalami",
     "history": {
       "en": "Alkalami was developed by SIL International to support West African Arabic-script languages such as Hausa, with careful attention to the specific letterforms and diacritics used in the region.",
-      "fa": "Alkalami را SIL International برای پشتیبانی از زبان‌های دارای خط عربی در غرب آفریقا، مانند هوسه، توسعه داده است و در آن به فرم‌های خاص حروف و اعراب‌های مورد استفاده در منطقه توجه دقیقی شده است."
+      "fa": "Alkalami را SIL International برای پشتیبانی از زبان‌های دارای خط عربی در غرب آفریقا، مانند هوسه، توسعه داده است و در آن به فرم‌های خاص حروف و اعراب‌های مورد استفاده در منطقه توجه دقیقی شده است.",
+      "ar": "طورت SIL International محرف Alkalami لدعم لغات غرب أفريقيا المكتوبة بالخط العربي، مثل الهوسا، مع عناية دقيقة بأشكال الحروف وعلامات التشكيل الخاصة المستخدمة في المنطقة."
     }
   },
   "Almarai": {
@@ -224,7 +242,8 @@
     "homepage": "https://fonts.google.com/specimen/Almarai",
     "history": {
       "en": "Almarai is a modern Arabic sans-serif designed by Mourad Boutros of Boutros Fonts, a foundry with a long history in Arabic type design, built for clear, contemporary Arabic branding and interface use.",
-      "fa": "Almarai قلمی سن‌سریف و مدرن عربی است که Mourad Boutros از Boutros Fonts، قلم‌سازی با سابقه‌ای طولانی در طراحی قلم عربی، آن را برای برندسازی و کاربرد در رابط‌های عربیِ واضح و معاصر ساخته است."
+      "fa": "Almarai قلمی سن‌سریف و مدرن عربی است که Mourad Boutros از Boutros Fonts، قلم‌سازی با سابقه‌ای طولانی در طراحی قلم عربی، آن را برای برندسازی و کاربرد در رابط‌های عربیِ واضح و معاصر ساخته است.",
+      "ar": "Almarai محرف عربي حديث بلا تذييل صممه Mourad Boutros من Boutros Fonts، وهي دار ذات تاريخ طويل في تصميم المحارف العربية، وقد بُني للهوية البصرية العربية الواضحة والمعاصرة ولاستخدامه في الواجهات."
     }
   },
   "Alyamama": {
@@ -236,7 +255,8 @@
     "homepage": "https://fonts.google.com/specimen/Alyamama",
     "history": {
       "en": "Alyamama is an Arabic serif typeface designed by Yazeed Omar, released as an open-source webfont on Google Fonts.",
-      "fa": "Alyamama قلمی سریف عربی است که Yazeed Omar طراحی کرده و به‌عنوان وب‌فونتی متن‌باز در Google Fonts منتشر شده است."
+      "fa": "Alyamama قلمی سریف عربی است که Yazeed Omar طراحی کرده و به‌عنوان وب‌فونتی متن‌باز در Google Fonts منتشر شده است.",
+      "ar": "Alyamama محرف عربي ذو تذييل صممه Yazeed Omar، وصدر بوصفه خط ويب مفتوح المصدر على Google Fonts."
     }
   },
   "Amiri": {
@@ -248,7 +268,8 @@
     "homepage": "https://fonts.google.com/specimen/Amiri",
     "history": {
       "en": "Amiri is a classical Arabic typeface designed by Khaled Hosny (with Sebastian Kosch), inspired by the typeface of Bulaq Press (Amiri Press) in early 20th-century Cairo. It revives a traditional Naskh printing style and is one of the most respected open-source Arabic typefaces for book and Quranic typesetting.",
-      "fa": "Amiri قلمی کلاسیک عربی است که Khaled Hosny (همراه با Sebastian Kosch) با الهام از قلم چاپخانهٔ Bulaq Press (Amiri Press) در قاهرهٔ اوایل سدهٔ بیستم طراحی کرده است. این قلم سبک سنتی چاپ نسخ را احیا می‌کند و یکی از معتبرترین قلم‌های عربی متن‌باز برای حروف‌چینی کتاب و متون قرآنی است."
+      "fa": "Amiri قلمی کلاسیک عربی است که Khaled Hosny (همراه با Sebastian Kosch) با الهام از قلم چاپخانهٔ Bulaq Press (Amiri Press) در قاهرهٔ اوایل سدهٔ بیستم طراحی کرده است. این قلم سبک سنتی چاپ نسخ را احیا می‌کند و یکی از معتبرترین قلم‌های عربی متن‌باز برای حروف‌چینی کتاب و متون قرآنی است.",
+      "ar": "Amiri محرف عربي كلاسيكي صممه Khaled Hosny (مع Sebastian Kosch)، مستلهمًا محرف Bulaq Press (Amiri Press) في القاهرة مطلع القرن العشرين. وهو يحيي أسلوب طباعة النسخ التقليدي، ويُعد من أكثر المحارف العربية المفتوحة المصدر تقديرًا لصف الكتب والنصوص القرآنية."
     }
   },
   "Amiri Quran": {
@@ -260,7 +281,8 @@
     "homepage": "https://fonts.google.com/specimen/Amiri+Quran",
     "history": {
       "en": "Amiri Quran is a variant of the Amiri typeface by Khaled Hosny, specifically tuned with adjusted proportions and spacing for setting Quranic text, where accurate diacritics and line composition are essential.",
-      "fa": "Amiri Quran گونه‌ای از قلم Amiri اثر Khaled Hosny است که تناسب‌ها و فاصله‌گذاری آن به‌طور ویژه برای حروف‌چینی متن قرآن تنظیم شده است؛ جایی که اعراب‌گذاری دقیق و ترکیب‌بندی سطرها ضروری است."
+      "fa": "Amiri Quran گونه‌ای از قلم Amiri اثر Khaled Hosny است که تناسب‌ها و فاصله‌گذاری آن به‌طور ویژه برای حروف‌چینی متن قرآن تنظیم شده است؛ جایی که اعراب‌گذاری دقیق و ترکیب‌بندی سطرها ضروری است.",
+      "ar": "Amiri Quran نسخة من محرف Amiri لـ Khaled Hosny، ضُبطت خصيصًا بنسب ومسافات معدلة لصف النص القرآني، حيث تُعد دقة علامات التشكيل وتكوين الأسطر أمرين أساسيين."
     }
   },
   "Aref Ruqaa": {
@@ -272,7 +294,8 @@
     "homepage": "https://fonts.google.com/specimen/Aref+Ruqaa",
     "history": {
       "en": "Aref Ruqaa digitizes the calligraphic Ruq'ah style originally drawn by Syrian calligrapher Abdullah Aref, later developed into a font by Khaled Hosny with type advice from Hermann Zapf, bringing a handwritten Arabic calligraphy feel to digital typesetting.",
-      "fa": "Aref Ruqaa سبک خوشنویسی رقعه را دیجیتالی می‌کند که در اصل خوشنویس سوری، Abdullah Aref، آن را ترسیم کرده بود و بعدها Khaled Hosny با مشاورهٔ طراحی قلم از Hermann Zapf آن را به یک قلم تبدیل کرد؛ قلمی که حس خوشنویسی دست‌نویس عربی را به حروف‌چینی دیجیتال می‌آورد."
+      "fa": "Aref Ruqaa سبک خوشنویسی رقعه را دیجیتالی می‌کند که در اصل خوشنویس سوری، Abdullah Aref، آن را ترسیم کرده بود و بعدها Khaled Hosny با مشاورهٔ طراحی قلم از Hermann Zapf آن را به یک قلم تبدیل کرد؛ قلمی که حس خوشنویسی دست‌نویس عربی را به حروف‌چینی دیجیتال می‌آورد.",
+      "ar": "يرقمن Aref Ruqaa أسلوب خط الرقعة الذي رسمه أصلًا الخطاط السوري Abdullah Aref، ثم طوره Khaled Hosny إلى محرف بمشورة في تصميم الحروف من Hermann Zapf، ليضفي إحساس الخط العربي المكتوب باليد على صف الحروف الرقمي."
     }
   },
   "Aref Ruqaa Ink": {
@@ -284,7 +307,8 @@
     "homepage": "https://fonts.google.com/specimen/Aref+Ruqaa+Ink",
     "history": {
       "en": "Aref Ruqaa Ink is a bolder, high-contrast variant of the Aref Ruqaa calligraphic typeface, emphasizing the ink-brush character of the original Ruq'ah handwriting style for display use.",
-      "fa": "Aref Ruqaa Ink گونه‌ای ضخیم‌تر و پرکنتراست از قلم خوشنویسانهٔ Aref Ruqaa است که برای کاربرد نمایشی، ویژگی قلم‌مو و مرکبِ سبک دست‌نویس اصلی رقعه را برجسته می‌کند."
+      "fa": "Aref Ruqaa Ink گونه‌ای ضخیم‌تر و پرکنتراست از قلم خوشنویسانهٔ Aref Ruqaa است که برای کاربرد نمایشی، ویژگی قلم‌مو و مرکبِ سبک دست‌نویس اصلی رقعه را برجسته می‌کند.",
+      "ar": "Aref Ruqaa Ink نسخة أثقل وعالية التباين من محرف Aref Ruqaa الخطي، تُبرز طابع فرشاة الحبر في أسلوب كتابة الرقعة الأصلي للاستخدام في العروض."
     }
   },
   "Badeen Display": {
@@ -296,7 +320,8 @@
     "homepage": "https://fonts.google.com/specimen/Badeen+Display",
     "history": {
       "en": "Badeen Display is a bold Arabic display typeface designed by Hani Alasadi, intended for headlines, posters and other large-scale typographic settings.",
-      "fa": "Badeen Display قلمی نمایشی و ضخیم عربی است که Hani Alasadi آن را برای تیترها، پوسترها و دیگر کاربردهای حروف‌چینی در اندازه‌های بزرگ طراحی کرده است."
+      "fa": "Badeen Display قلمی نمایشی و ضخیم عربی است که Hani Alasadi آن را برای تیترها، پوسترها و دیگر کاربردهای حروف‌چینی در اندازه‌های بزرگ طراحی کرده است.",
+      "ar": "Badeen Display محرف عرض عربي عريض صممه Hani Alasadi للعناوين والملصقات وغيرها من إعدادات الطباعة كبيرة الحجم."
     }
   },
   "Baloo Bhaijaan 2": {
@@ -308,7 +333,8 @@
     "homepage": "https://fonts.google.com/specimen/Baloo+Bhaijaan+2",
     "history": {
       "en": "Baloo Bhaijaan 2 is part of the Baloo family of rounded display typefaces from Indian foundry Ek Type, adapted here for the Arabic script with the same friendly, rounded, high-impact character as its Latin and Devanagari siblings.",
-      "fa": "Baloo Bhaijaan 2 بخشی از خانوادهٔ قلم‌های نمایشی و گرد Baloo از قلم‌سازی هندی Ek Type است که در اینجا برای خط عربی سازگار شده و همان شخصیت دوستانه، گرد و چشمگیر گونه‌های لاتین و دِوَناگَری خود را دارد."
+      "fa": "Baloo Bhaijaan 2 بخشی از خانوادهٔ قلم‌های نمایشی و گرد Baloo از قلم‌سازی هندی Ek Type است که در اینجا برای خط عربی سازگار شده و همان شخصیت دوستانه، گرد و چشمگیر گونه‌های لاتین و دِوَناگَری خود را دارد.",
+      "ar": "Baloo Bhaijaan 2 جزء من عائلة Baloo للمحارف المستديرة المخصصة للعروض من دار المحارف الهندية Ek Type، وقد كُيف هنا للخط العربي بالطابع الودود والمستدير والقوي التأثير نفسه الذي تتميز به نظائره اللاتينية والديفاناغرية."
     }
   },
   "Beiruti": {
@@ -320,7 +346,8 @@
     "homepage": "https://fonts.google.com/specimen/Beiruti",
     "history": {
       "en": "Beiruti is a contemporary Arabic sans-serif from Boutros Fonts, designed by Arlette Boutros and Volker Schnebel and named after the city of Beirut, built for modern editorial and interface typesetting.",
-      "fa": "Beiruti قلمی سن‌سریف و معاصر عربی از Boutros Fonts است که Arlette Boutros و Volker Schnebel آن را طراحی کرده‌اند. نام آن از شهر بیروت گرفته شده و برای حروف‌چینی مدرن در نشر و رابط‌ها ساخته شده است."
+      "fa": "Beiruti قلمی سن‌سریف و معاصر عربی از Boutros Fonts است که Arlette Boutros و Volker Schnebel آن را طراحی کرده‌اند. نام آن از شهر بیروت گرفته شده و برای حروف‌چینی مدرن در نشر و رابط‌ها ساخته شده است.",
+      "ar": "Beiruti محرف عربي معاصر بلا تذييل من Boutros Fonts، صممته Arlette Boutros وVolker Schnebel، وسُمي نسبة إلى مدينة بيروت، وبُني لصف الحروف الحديث في النشر والواجهات."
     }
   },
   "Blaka": {
@@ -332,7 +359,8 @@
     "homepage": "https://fonts.google.com/specimen/Blaka",
     "history": {
       "en": "Blaka is a bold single-weight Arabic display typeface by Mohamed Gaber, designed with thick, confident strokes for headlines and branding.",
-      "fa": "Blaka قلمی نمایشی، ضخیم و تک‌وزن عربی از Mohamed Gaber است که با ضربه‌های ستبر و قاطع برای تیترها و برندسازی طراحی شده است."
+      "fa": "Blaka قلمی نمایشی، ضخیم و تک‌وزن عربی از Mohamed Gaber است که با ضربه‌های ستبر و قاطع برای تیترها و برندسازی طراحی شده است.",
+      "ar": "Blaka محرف عرض عربي عريض بوزن واحد من تصميم Mohamed Gaber، صُمم بضربات سميكة وواثقة للعناوين والهوية البصرية."
     }
   },
   "Blaka Hollow": {
@@ -344,7 +372,8 @@
     "homepage": "https://fonts.google.com/specimen/Blaka+Hollow",
     "history": {
       "en": "Blaka Hollow is an outlined companion to Mohamed Gaber's Blaka display typeface, offering the same bold Arabic letterforms rendered as hollow, high-impact outlines.",
-      "fa": "Blaka Hollow نسخهٔ دورخطِ همراه قلم نمایشی Blaka اثر Mohamed Gaber است که همان فرم‌های ضخیم حروف عربی را به‌شکل دورخط‌های توخالی و چشمگیر ارائه می‌کند."
+      "fa": "Blaka Hollow نسخهٔ دورخطِ همراه قلم نمایشی Blaka اثر Mohamed Gaber است که همان فرم‌های ضخیم حروف عربی را به‌شکل دورخط‌های توخالی و چشمگیر ارائه می‌کند.",
+      "ar": "Blaka Hollow هو الرفيق المحدد الخطوط لمحرف العرض Blaka لـ Mohamed Gaber، ويقدم أشكال الحروف العربية العريضة نفسها في هيئة خطوط خارجية مجوفة وقوية التأثير."
     }
   },
   "Blaka Ink": {
@@ -356,7 +385,8 @@
     "homepage": "https://fonts.google.com/specimen/Blaka+Ink",
     "history": {
       "en": "Blaka Ink is a textured, brush-like variant of Mohamed Gaber's Blaka family, giving the bold Arabic display letterforms an inked, hand-painted appearance.",
-      "fa": "Blaka Ink گونه‌ای بافت‌دار و قلم‌مومانند از خانوادهٔ Blaka اثر Mohamed Gaber است که به فرم‌های ضخیم و نمایشی حروف عربی ظاهری مرکبی و دست‌نقاشی‌شده می‌دهد."
+      "fa": "Blaka Ink گونه‌ای بافت‌دار و قلم‌مومانند از خانوادهٔ Blaka اثر Mohamed Gaber است که به فرم‌های ضخیم و نمایشی حروف عربی ظاهری مرکبی و دست‌نقاشی‌شده می‌دهد.",
+      "ar": "Blaka Ink نسخة ذات نسيج وشبيهة بالفرشاة من عائلة Blaka لـ Mohamed Gaber، تمنح أشكال الحروف العربية العريضة المخصصة للعروض مظهرًا حبريًا مرسومًا باليد."
     }
   },
   "Cairo": {
@@ -368,7 +398,8 @@
     "homepage": "https://fonts.google.com/specimen/Cairo",
     "history": {
       "en": "Cairo is a versatile Arabic/Latin sans-serif designed by Mohamed Gaber with the Accademia di Belle Arti di Urbino, named after the Egyptian capital, and widely used for Arabic web and interface typography.",
-      "fa": "Cairo قلمی سن‌سریف و چندمنظورهٔ عربی/لاتین است که Mohamed Gaber همراه با Accademia di Belle Arti di Urbino طراحی کرده است. نام آن از پایتخت مصر گرفته شده و در حروف‌چینی وب و رابط‌های عربی کاربرد گسترده‌ای دارد."
+      "fa": "Cairo قلمی سن‌سریف و چندمنظورهٔ عربی/لاتین است که Mohamed Gaber همراه با Accademia di Belle Arti di Urbino طراحی کرده است. نام آن از پایتخت مصر گرفته شده و در حروف‌چینی وب و رابط‌های عربی کاربرد گسترده‌ای دارد.",
+      "ar": "Cairo محرف عربي/لاتيني متعدد الاستخدامات بلا تذييل صممه Mohamed Gaber مع Accademia di Belle Arti di Urbino، وسُمي نسبة إلى العاصمة المصرية، ويُستخدم على نطاق واسع في طباعة الويب والواجهات العربية."
     }
   },
   "Cairo Play": {
@@ -380,7 +411,8 @@
     "homepage": "https://fonts.google.com/specimen/Cairo+Play",
     "history": {
       "en": "Cairo Play is a playful, variable-font extension of the Cairo typeface by Mohamed Gaber, adding a fun, rounded axis to the original design's Arabic and Latin letterforms.",
-      "fa": "Cairo Play گسترشی بازیگوشانه و مبتنی بر فونت متغیر از قلم Cairo اثر Mohamed Gaber است که محوری سرگرم‌کننده و گرد به فرم حروف عربی و لاتین طرح اصلی می‌افزاید."
+      "fa": "Cairo Play گسترشی بازیگوشانه و مبتنی بر فونت متغیر از قلم Cairo اثر Mohamed Gaber است که محوری سرگرم‌کننده و گرد به فرم حروف عربی و لاتین طرح اصلی می‌افزاید.",
+      "ar": "Cairo Play امتداد مرح قائم على خط متغير لمحرف Cairo لـ Mohamed Gaber، يضيف محورًا ممتعًا ومستديرًا إلى أشكال الحروف العربية واللاتينية في التصميم الأصلي."
     }
   },
   "Changa": {
@@ -392,7 +424,8 @@
     "homepage": "https://fonts.google.com/specimen/Changa",
     "history": {
       "en": "Changa is an Arabic/Latin sans-serif designed by Argentine type designer Eduardo Tunni, with a geometric, slightly condensed structure suited to headlines and UI text.",
-      "fa": "Changa قلمی سن‌سریف عربی/لاتین است که طراح قلم آرژانتینی Eduardo Tunni آن را با ساختاری هندسی و اندکی فشرده طراحی کرده و برای تیترها و متن رابط کاربری مناسب است."
+      "fa": "Changa قلمی سن‌سریف عربی/لاتین است که طراح قلم آرژانتینی Eduardo Tunni آن را با ساختاری هندسی و اندکی فشرده طراحی کرده و برای تیترها و متن رابط کاربری مناسب است.",
+      "ar": "Changa محرف عربي/لاتيني بلا تذييل صممه مصمم المحارف الأرجنتيني Eduardo Tunni، ببنية هندسية ومضغوطة قليلًا تلائم العناوين ونصوص واجهات المستخدم."
     }
   },
   "El Messiri": {
@@ -404,7 +437,8 @@
     "homepage": "https://fonts.google.com/specimen/El+Messiri",
     "history": {
       "en": "El Messiri is an Arabic/Latin sans-serif designed by Mohamed Gaber with Jovanny Lemonad, named in tribute to Egyptian poet-lyricist Ahmed Shawqi's title \"El Messiri,\" featuring warm, humanist letterforms.",
-      "fa": "El Messiri قلمی سن‌سریف عربی/لاتین است که Mohamed Gaber همراه با Jovanny Lemonad طراحی کرده است. نام آن ادای احترامی به لقب «El Messiri» شاعر و ترانه‌سرای مصری Ahmed Shawqi است و فرم حروفی گرم و انسان‌گرایانه دارد."
+      "fa": "El Messiri قلمی سن‌سریف عربی/لاتین است که Mohamed Gaber همراه با Jovanny Lemonad طراحی کرده است. نام آن ادای احترامی به لقب «El Messiri» شاعر و ترانه‌سرای مصری Ahmed Shawqi است و فرم حروفی گرم و انسان‌گرایانه دارد.",
+      "ar": "El Messiri محرف عربي/لاتيني بلا تذييل صممه Mohamed Gaber مع Jovanny Lemonad، وسُمي تكريمًا للقب «El Messiri» للشاعر وكاتب الأغاني المصري Ahmed Shawqi، ويتميز بأشكال حروف دافئة وإنسانية."
     }
   },
   "Fustat": {
@@ -416,7 +450,8 @@
     "homepage": "https://fonts.google.com/specimen/Fustat",
     "history": {
       "en": "Fustat is an Arabic/Latin sans-serif by Mohamed Gaber, Laura Garcia Mut and Khaled Hosny, named after Fustat, the first Islamic-era capital founded near modern Cairo, and built for clean bilingual UI typesetting.",
-      "fa": "Fustat قلمی سن‌سریف عربی/لاتین از Mohamed Gaber، Laura Garcia Mut و Khaled Hosny است. نام آن از Fustat، نخستین پایتخت دورهٔ اسلامی که در نزدیکی قاهرهٔ امروزی بنیان گذاشته شد، گرفته شده و برای حروف‌چینی دوزبانه و تمیز در رابط کاربری ساخته شده است."
+      "fa": "Fustat قلمی سن‌سریف عربی/لاتین از Mohamed Gaber، Laura Garcia Mut و Khaled Hosny است. نام آن از Fustat، نخستین پایتخت دورهٔ اسلامی که در نزدیکی قاهرهٔ امروزی بنیان گذاشته شد، گرفته شده و برای حروف‌چینی دوزبانه و تمیز در رابط کاربری ساخته شده است.",
+      "ar": "Fustat محرف عربي/لاتيني بلا تذييل من تصميم Mohamed Gaber وLaura Garcia Mut وKhaled Hosny، وسُمي نسبة إلى Fustat، أول عاصمة في العصر الإسلامي أُسست قرب القاهرة الحديثة، وبُني لصف حروف ثنائي اللغة نظيف في واجهات المستخدم."
     }
   },
   "Gulzar": {
@@ -428,7 +463,8 @@
     "homepage": "https://fonts.google.com/specimen/Gulzar",
     "history": {
       "en": "Gulzar is a Nastaliq-influenced Perso-Arabic typeface for Urdu, designed by Borna Izadpanah with Fiona Ross, Alice Savoie and Simon Cozens, aiming to bring more of Nastaliq's calligraphic character to digital, easily-shaped text.",
-      "fa": "Gulzar قلمی فارسی‌ـ‌عربی متأثر از نستعلیق برای زبان اردو است که Borna Izadpanah همراه با Fiona Ross، Alice Savoie و Simon Cozens طراحی کرده‌اند؛ با این هدف که بخش بیشتری از شخصیت خوشنویسانهٔ نستعلیق را به متنی دیجیتال و با شکل‌دهی آسان بیاورند."
+      "fa": "Gulzar قلمی فارسی‌ـ‌عربی متأثر از نستعلیق برای زبان اردو است که Borna Izadpanah همراه با Fiona Ross، Alice Savoie و Simon Cozens طراحی کرده‌اند؛ با این هدف که بخش بیشتری از شخصیت خوشنویسانهٔ نستعلیق را به متنی دیجیتال و با شکل‌دهی آسان بیاورند.",
+      "ar": "Gulzar محرف فارسي عربي للأردية متأثر بالنستعليق، صممه Borna Izadpanah مع Fiona Ross وAlice Savoie وSimon Cozens، بهدف نقل قدر أكبر من الطابع الخطي للنستعليق إلى نص رقمي سهل التشكيل."
     }
   },
   "Handjet": {
@@ -440,7 +476,8 @@
     "homepage": "https://fonts.google.com/specimen/Handjet",
     "history": {
       "en": "Handjet is a variable pixel/segment-style display typeface from type foundry Rosetta and David Březina, evoking dot-matrix and digital-display aesthetics across a range of weights and widths.",
-      "fa": "Handjet قلمی نمایشی و متغیر با سبک پیکسلی/بخشی از قلم‌سازی Rosetta و David Březina است که در دامنه‌ای از وزن‌ها و پهناها، زیبایی‌شناسی نمایشگرهای ماتریس نقطه‌ای و دیجیتال را تداعی می‌کند."
+      "fa": "Handjet قلمی نمایشی و متغیر با سبک پیکسلی/بخشی از قلم‌سازی Rosetta و David Březina است که در دامنه‌ای از وزن‌ها و پهناها، زیبایی‌شناسی نمایشگرهای ماتریس نقطه‌ای و دیجیتال را تداعی می‌کند.",
+      "ar": "Handjet محرف عرض متغير بأسلوب البكسل/المقاطع من دار المحارف Rosetta وDavid Březina، يستحضر جماليات المصفوفة النقطية والشاشات الرقمية عبر مجموعة من الأوزان والعروض."
     }
   },
   "Harmattan": {
@@ -452,7 +489,8 @@
     "homepage": "https://fonts.google.com/specimen/Harmattan",
     "history": {
       "en": "Harmattan was developed by SIL International to support Arabic-script languages of West Africa, particularly Fulfulde/Fulani, with letterforms adapted to those languages' specific needs.",
-      "fa": "Harmattan را SIL International برای پشتیبانی از زبان‌های دارای خط عربی در غرب آفریقا، به‌ویژه Fulfulde/Fulani، توسعه داده و فرم حروف آن با نیازهای خاص این زبان‌ها سازگار شده است."
+      "fa": "Harmattan را SIL International برای پشتیبانی از زبان‌های دارای خط عربی در غرب آفریقا، به‌ویژه Fulfulde/Fulani، توسعه داده و فرم حروف آن با نیازهای خاص این زبان‌ها سازگار شده است.",
+      "ar": "طورت SIL International محرف Harmattan لدعم لغات غرب أفريقيا المكتوبة بالخط العربي، ولا سيما Fulfulde/Fulani، بأشكال حروف مكيفة وفق احتياجات تلك اللغات الخاصة."
     }
   },
   "Jomhuria": {
@@ -464,7 +502,8 @@
     "homepage": "https://fonts.google.com/specimen/Jomhuria",
     "history": {
       "en": "Jomhuria is a tall, condensed Arabic display typeface from KB Studio, inspired by hand-painted Egyptian cinema and shop signage lettering.",
-      "fa": "Jomhuria قلمی نمایشی، بلند و فشردهٔ عربی از KB Studio است که از حروف دست‌نقاشی‌شدهٔ تابلوهای سینماها و فروشگاه‌های مصر الهام گرفته است."
+      "fa": "Jomhuria قلمی نمایشی، بلند و فشردهٔ عربی از KB Studio است که از حروف دست‌نقاشی‌شدهٔ تابلوهای سینماها و فروشگاه‌های مصر الهام گرفته است.",
+      "ar": "Jomhuria محرف عرض عربي طويل ومضغوط من KB Studio، مستلهم من الحروف المرسومة يدويًا على لافتات دور السينما والمتاجر المصرية."
     }
   },
   "Katibeh": {
@@ -476,7 +515,8 @@
     "homepage": "https://fonts.google.com/specimen/Katibeh",
     "history": {
       "en": "Katibeh is a bold Arabic display typeface from KB Studio, designed with thick, high-contrast strokes for headlines and titling.",
-      "fa": "Katibeh قلمی نمایشی و ضخیم عربی از KB Studio است که با ضربه‌های ستبر و پرکنتراست برای تیترها و عنوان‌نویسی طراحی شده است."
+      "fa": "Katibeh قلمی نمایشی و ضخیم عربی از KB Studio است که با ضربه‌های ستبر و پرکنتراست برای تیترها و عنوان‌نویسی طراحی شده است.",
+      "ar": "Katibeh محرف عرض عربي عريض من KB Studio، صُمم بضربات سميكة وعالية التباين للعناوين والترويسات."
     }
   },
   "Kufam": {
@@ -488,7 +528,8 @@
     "homepage": "https://fonts.google.com/specimen/Kufam",
     "history": {
       "en": "Kufam is a variable Arabic/Latin sans-serif designed by Wael Morcos and Artur Schmal of Original Type, drawing on Kufic geometric letterforms for a modern, structured display and text typeface.",
-      "fa": "Kufam قلمی سن‌سریف و متغیر عربی/لاتین است که Wael Morcos و Artur Schmal از Original Type آن را با بهره‌گیری از فرم‌های هندسی حروف کوفی طراحی کرده‌اند تا قلمی مدرن و ساختارمند برای نمایش و متن باشد."
+      "fa": "Kufam قلمی سن‌سریف و متغیر عربی/لاتین است که Wael Morcos و Artur Schmal از Original Type آن را با بهره‌گیری از فرم‌های هندسی حروف کوفی طراحی کرده‌اند تا قلمی مدرن و ساختارمند برای نمایش و متن باشد.",
+      "ar": "Kufam محرف عربي/لاتيني متغير بلا تذييل صممه Wael Morcos وArtur Schmal من Original Type، مستندين إلى أشكال الحروف الكوفية الهندسية لإنشاء محرف حديث ومنظم للعروض والنصوص."
     }
   },
   "Lalezar": {
@@ -500,7 +541,8 @@
     "homepage": "https://fonts.google.com/specimen/Lalezar",
     "history": {
       "en": "Lalezar is a bold, playful Persian/Arabic display typeface designed by Borna Izadpanah, popular for headlines, logos and casual Persian branding.",
-      "fa": "Lalezar قلمی نمایشی، ضخیم و بازیگوشانهٔ فارسی/عربی است که Borna Izadpanah طراحی کرده و برای تیترها، نشان‌واره‌ها و برندسازی غیررسمی فارسی محبوب است."
+      "fa": "Lalezar قلمی نمایشی، ضخیم و بازیگوشانهٔ فارسی/عربی است که Borna Izadpanah طراحی کرده و برای تیترها، نشان‌واره‌ها و برندسازی غیررسمی فارسی محبوب است.",
+      "ar": "Lalezar محرف عرض فارسي/عربي عريض ومرح صممه Borna Izadpanah، ويحظى بشعبية في العناوين والشعارات والهوية البصرية الفارسية غير الرسمية."
     }
   },
   "Lateef": {
@@ -512,7 +554,8 @@
     "homepage": "https://fonts.google.com/specimen/Lateef",
     "history": {
       "en": "Lateef was developed by SIL International for a broad range of Arabic-script languages of South and Southeast Asia, including Sindhi and Kashmiri, with extensive diacritic support.",
-      "fa": "Lateef را SIL International برای طیف گسترده‌ای از زبان‌های دارای خط عربی در جنوب و جنوب‌شرق آسیا، از جمله سندی و کشمیری، با پشتیبانی گسترده از اعراب‌ها توسعه داده است."
+      "fa": "Lateef را SIL International برای طیف گسترده‌ای از زبان‌های دارای خط عربی در جنوب و جنوب‌شرق آسیا، از جمله سندی و کشمیری، با پشتیبانی گسترده از اعراب‌ها توسعه داده است.",
+      "ar": "طورت SIL International محرف Lateef لمجموعة واسعة من لغات جنوب وجنوب شرق آسيا المكتوبة بالخط العربي، ومنها السندية والكشميرية، مع دعم موسع لعلامات التشكيل."
     }
   },
   "Lemonada": {
@@ -524,7 +567,8 @@
     "homepage": "https://fonts.google.com/specimen/Lemonada",
     "history": {
       "en": "Lemonada is a rounded Arabic/Latin display typeface designed by Mohamed Gaber and Eduardo Tunni, with soft, bubbly letterforms suited to friendly branding and children's content.",
-      "fa": "Lemonada قلمی نمایشی و گرد عربی/لاتین است که Mohamed Gaber و Eduardo Tunni طراحی کرده‌اند و فرم حروف نرم و حباب‌مانند آن برای برندسازی دوستانه و محتوای کودکان مناسب است."
+      "fa": "Lemonada قلمی نمایشی و گرد عربی/لاتین است که Mohamed Gaber و Eduardo Tunni طراحی کرده‌اند و فرم حروف نرم و حباب‌مانند آن برای برندسازی دوستانه و محتوای کودکان مناسب است.",
+      "ar": "Lemonada محرف عرض عربي/لاتيني مستدير صممه Mohamed Gaber وEduardo Tunni، بأشكال حروف ناعمة تشبه الفقاعات وتلائم الهوية البصرية الودودة ومحتوى الأطفال."
     }
   },
   "Mada": {
@@ -536,7 +580,8 @@
     "homepage": "https://fonts.google.com/specimen/Mada",
     "history": {
       "en": "Mada is a low-contrast, geometric Arabic/Latin sans-serif designed by Khaled Hosny and Paul D. Hunt, intended for clear reading at small sizes on screens.",
-      "fa": "Mada قلمی سن‌سریف، هندسی و کم‌کنتراست عربی/لاتین است که Khaled Hosny و Paul D. Hunt آن را برای خواندن واضح در اندازه‌های کوچک روی نمایشگرها طراحی کرده‌اند."
+      "fa": "Mada قلمی سن‌سریف، هندسی و کم‌کنتراست عربی/لاتین است که Khaled Hosny و Paul D. Hunt آن را برای خواندن واضح در اندازه‌های کوچک روی نمایشگرها طراحی کرده‌اند.",
+      "ar": "Mada محرف عربي/لاتيني هندسي قليل التباين وبلا تذييل صممه Khaled Hosny وPaul D. Hunt للقراءة الواضحة بأحجام صغيرة على الشاشات."
     }
   },
   "Marhey": {
@@ -548,7 +593,8 @@
     "homepage": "https://fonts.google.com/specimen/Marhey",
     "history": {
       "en": "Marhey is a friendly, rounded Arabic display typeface designed by Nur Syamsi and Bustanul Arifin, suited to casual, playful uses.",
-      "fa": "Marhey قلمی نمایشی، دوستانه و گرد عربی است که Nur Syamsi و Bustanul Arifin طراحی کرده‌اند و برای کاربردهای غیررسمی و بازیگوشانه مناسب است."
+      "fa": "Marhey قلمی نمایشی، دوستانه و گرد عربی است که Nur Syamsi و Bustanul Arifin طراحی کرده‌اند و برای کاربردهای غیررسمی و بازیگوشانه مناسب است.",
+      "ar": "Marhey محرف عرض عربي ودود ومستدير صممه Nur Syamsi وBustanul Arifin، ويلائم الاستخدامات غير الرسمية والمرحة."
     }
   },
   "Markazi Text": {
@@ -560,7 +606,8 @@
     "homepage": "https://fonts.google.com/specimen/Markazi+Text",
     "history": {
       "en": "Markazi Text is an Arabic/Latin text typeface designed by Borna Izadpanah with Florian Runge and Fiona Ross, optimized for legibility in body copy at small sizes.",
-      "fa": "Markazi Text قلمی متنی عربی/لاتین است که Borna Izadpanah همراه با Florian Runge و Fiona Ross طراحی کرده و برای خوانایی متن اصلی در اندازه‌های کوچک بهینه شده است."
+      "fa": "Markazi Text قلمی متنی عربی/لاتین است که Borna Izadpanah همراه با Florian Runge و Fiona Ross طراحی کرده و برای خوانایی متن اصلی در اندازه‌های کوچک بهینه شده است.",
+      "ar": "Markazi Text محرف نصي عربي/لاتيني صممه Borna Izadpanah مع Florian Runge وFiona Ross، وحُسن لوضوح قراءة النصوص الأساسية بأحجام صغيرة."
     }
   },
   "Mirza": {
@@ -572,7 +619,8 @@
     "homepage": "https://fonts.google.com/specimen/Mirza",
     "history": {
       "en": "Mirza is a Persian/Arabic serif typeface from KB Studio with a traditional, calligraphy-influenced feel suited to headings and editorial use.",
-      "fa": "Mirza قلمی سریف فارسی/عربی از KB Studio است که حال‌وهوایی سنتی و متأثر از خوشنویسی دارد و برای عنوان‌ها و کاربردهای نشر مناسب است."
+      "fa": "Mirza قلمی سریف فارسی/عربی از KB Studio است که حال‌وهوایی سنتی و متأثر از خوشنویسی دارد و برای عنوان‌ها و کاربردهای نشر مناسب است.",
+      "ar": "Mirza محرف فارسي/عربي ذو تذييل من KB Studio، بطابع تقليدي متأثر بالخط ويلائم العناوين والاستخدام التحريري."
     }
   },
   "Oi": {
@@ -584,7 +632,8 @@
     "homepage": "https://fonts.google.com/specimen/Oi",
     "history": {
       "en": "Oi is a bold, ultra-condensed multi-script display typeface designed by Kostas Bartsokas, including Arabic-script support, built for punchy, space-efficient headlines.",
-      "fa": "Oi قلمی نمایشی، ضخیم، بسیار فشرده و چندخطی است که Kostas Bartsokas طراحی کرده و از خط عربی نیز پشتیبانی می‌کند. این قلم برای تیترهای پرقدرت و کم‌جا ساخته شده است."
+      "fa": "Oi قلمی نمایشی، ضخیم، بسیار فشرده و چندخطی است که Kostas Bartsokas طراحی کرده و از خط عربی نیز پشتیبانی می‌کند. این قلم برای تیترهای پرقدرت و کم‌جا ساخته شده است.",
+      "ar": "Oi محرف عرض عريض وفائق التكثيف ومتعدد الخطوط صممه Kostas Bartsokas، ويتضمن دعم الخط العربي، وقد بُني لعناوين قوية وموفرة للمساحة."
     }
   },
   "Playpen Sans Arabic": {
@@ -596,7 +645,8 @@
     "homepage": "https://fonts.google.com/specimen/Playpen+Sans+Arabic",
     "history": {
       "en": "Playpen Sans Arabic extends the Playpen Sans handwriting typeface to Arabic script, developed by TypeTogether with Azza Alameddine alongside Laura Meseguer, Veronika Burian and José Scaglione, mimicking casual handwriting for educational and playful contexts.",
-      "fa": "Playpen Sans Arabic قلم دست‌نویس Playpen Sans را به خط عربی گسترش می‌دهد. TypeTogether آن را با Azza Alameddine و همراهی Laura Meseguer، Veronika Burian و José Scaglione توسعه داده است تا برای زمینه‌های آموزشی و بازیگوشانه از دست‌خط غیررسمی تقلید کند."
+      "fa": "Playpen Sans Arabic قلم دست‌نویس Playpen Sans را به خط عربی گسترش می‌دهد. TypeTogether آن را با Azza Alameddine و همراهی Laura Meseguer، Veronika Burian و José Scaglione توسعه داده است تا برای زمینه‌های آموزشی و بازیگوشانه از دست‌خط غیررسمی تقلید کند.",
+      "ar": "يوسع Playpen Sans Arabic محرف الكتابة اليدوية Playpen Sans ليشمل الخط العربي، وقد طورته TypeTogether مع Azza Alameddine إلى جانب Laura Meseguer وVeronika Burian وJosé Scaglione، محاكيًا الكتابة اليدوية العفوية للسياقات التعليمية والمرحة."
     }
   },
   "Qahiri": {
@@ -608,7 +658,8 @@
     "homepage": "https://fonts.google.com/specimen/Qahiri",
     "history": {
       "en": "Qahiri is a Kufic-style Arabic display typeface designed by Khaled Hosny, named after Cairo (\"Al-Qahira\"), with angular, geometric letterforms.",
-      "fa": "Qahiri قلمی نمایشی عربی به سبک کوفی است که Khaled Hosny طراحی کرده است. نام آن از قاهره («Al-Qahira») گرفته شده و فرم حروفی زاویه‌دار و هندسی دارد."
+      "fa": "Qahiri قلمی نمایشی عربی به سبک کوفی است که Khaled Hosny طراحی کرده است. نام آن از قاهره («Al-Qahira») گرفته شده و فرم حروفی زاویه‌دار و هندسی دارد.",
+      "ar": "Qahiri محرف عرض عربي بالأسلوب الكوفي صممه Khaled Hosny، وسُمي نسبة إلى القاهرة («Al-Qahira»)، ويتميز بأشكال حروف زاوية وهندسية."
     }
   },
   "Rakkas": {
@@ -620,7 +671,8 @@
     "homepage": "https://fonts.google.com/specimen/Rakkas",
     "history": {
       "en": "Rakkas is a bold, calligraphy-inspired Arabic display typeface designed by Zeynep Akay, popular for expressive headlines and titles.",
-      "fa": "Rakkas قلمی نمایشی، ضخیم و الهام‌گرفته از خوشنویسی عربی است که Zeynep Akay طراحی کرده و برای تیترها و عنوان‌های بیانگر محبوب است."
+      "fa": "Rakkas قلمی نمایشی، ضخیم و الهام‌گرفته از خوشنویسی عربی است که Zeynep Akay طراحی کرده و برای تیترها و عنوان‌های بیانگر محبوب است.",
+      "ar": "Rakkas محرف عرض عربي عريض مستلهم من الخط، صممته Zeynep Akay، ويحظى بشعبية للعناوين والترويسات التعبيرية."
     }
   },
   "Reem Kufi": {
@@ -632,7 +684,8 @@
     "homepage": "https://fonts.google.com/specimen/Reem+Kufi",
     "history": {
       "en": "Reem Kufi is a modern take on the geometric Kufic Arabic script, designed by Khaled Hosny with Santiago Orozco, blending historical Kufic proportions with a clean, contemporary sans-serif structure.",
-      "fa": "Reem Kufi برداشتی مدرن از خط هندسی کوفی عربی است که Khaled Hosny همراه با Santiago Orozco طراحی کرده و تناسب‌های تاریخی کوفی را با ساختاری سن‌سریف، تمیز و معاصر درهم آمیخته است."
+      "fa": "Reem Kufi برداشتی مدرن از خط هندسی کوفی عربی است که Khaled Hosny همراه با Santiago Orozco طراحی کرده و تناسب‌های تاریخی کوفی را با ساختاری سن‌سریف، تمیز و معاصر درهم آمیخته است.",
+      "ar": "Reem Kufi معالجة حديثة للخط الكوفي العربي الهندسي، صممها Khaled Hosny مع Santiago Orozco، وتمزج النسب الكوفية التاريخية ببنية نظيفة ومعاصرة بلا تذييل."
     }
   },
   "Reem Kufi Fun": {
@@ -644,7 +697,8 @@
     "homepage": "https://fonts.google.com/specimen/Reem+Kufi+Fun",
     "history": {
       "en": "Reem Kufi Fun is a playful variable variant of Reem Kufi by Khaled Hosny and Santiago Orozco, adding a wavy, animated axis to the original Kufic-inspired letterforms.",
-      "fa": "Reem Kufi Fun گونه‌ای متغیر و بازیگوشانه از Reem Kufi اثر Khaled Hosny و Santiago Orozco است که محوری موج‌دار و پویا به فرم‌های اصلیِ الهام‌گرفته از کوفی می‌افزاید."
+      "fa": "Reem Kufi Fun گونه‌ای متغیر و بازیگوشانه از Reem Kufi اثر Khaled Hosny و Santiago Orozco است که محوری موج‌دار و پویا به فرم‌های اصلیِ الهام‌گرفته از کوفی می‌افزاید.",
+      "ar": "Reem Kufi Fun نسخة متغيرة ومرحة من Reem Kufi لـ Khaled Hosny وSantiago Orozco، تضيف محورًا متموجًا ومتحركًا إلى أشكال الحروف الأصلية المستلهمة من الكوفي."
     }
   },
   "Reem Kufi Ink": {
@@ -656,7 +710,8 @@
     "homepage": "https://fonts.google.com/specimen/Reem+Kufi+Ink",
     "history": {
       "en": "Reem Kufi Ink is a heavier, ink-trap variant of Reem Kufi by Khaled Hosny and Santiago Orozco, designed for bold display use while retaining the family's Kufic character.",
-      "fa": "Reem Kufi Ink گونه‌ای سنگین‌تر و دارای تلهٔ مرکب از Reem Kufi اثر Khaled Hosny و Santiago Orozco است که برای کاربرد نمایشیِ ضخیم طراحی شده و در عین حال شخصیت کوفی خانواده را حفظ می‌کند."
+      "fa": "Reem Kufi Ink گونه‌ای سنگین‌تر و دارای تلهٔ مرکب از Reem Kufi اثر Khaled Hosny و Santiago Orozco است که برای کاربرد نمایشیِ ضخیم طراحی شده و در عین حال شخصیت کوفی خانواده را حفظ می‌کند.",
+      "ar": "Reem Kufi Ink نسخة أثقل ذات مصائد حبر من Reem Kufi لـ Khaled Hosny وSantiago Orozco، صُممت للاستخدام العريض في العروض مع الاحتفاظ بالطابع الكوفي للعائلة."
     }
   },
   "Rubik": {
@@ -668,7 +723,8 @@
     "homepage": "https://fonts.google.com/specimen/Rubik",
     "history": {
       "en": "Rubik is a geometric sans-serif originally designed by Hubert & Fischer with Meir Sadan and Cyreal for Hebrew and Latin, later extended to Arabic script by Daniel Grumer and Omaima Dajani, with slightly rounded corners on straight edges.",
-      "fa": "Rubik قلمی سن‌سریف و هندسی است که در اصل Hubert & Fischer همراه با Meir Sadan و Cyreal برای عبری و لاتین طراحی کردند و بعدها Daniel Grumer و Omaima Dajani آن را به خط عربی گسترش دادند. گوشه‌های لبه‌های مستقیم آن اندکی گرد هستند."
+      "fa": "Rubik قلمی سن‌سریف و هندسی است که در اصل Hubert & Fischer همراه با Meir Sadan و Cyreal برای عبری و لاتین طراحی کردند و بعدها Daniel Grumer و Omaima Dajani آن را به خط عربی گسترش دادند. گوشه‌های لبه‌های مستقیم آن اندکی گرد هستند.",
+      "ar": "Rubik محرف هندسي بلا تذييل صممه أصلًا Hubert & Fischer مع Meir Sadan وCyreal للعبرية واللاتينية، ثم وسعه Daniel Grumer وOmaima Dajani ليشمل الخط العربي، وتتميز حوافه المستقيمة بزوايا مستديرة قليلًا."
     }
   },
   "Ruwudu": {
@@ -680,7 +736,8 @@
     "homepage": "https://fonts.google.com/specimen/Ruwudu",
     "history": {
       "en": "Ruwudu was developed by SIL International to support additional Arabic-script languages, continuing SIL's long-running work on typefaces for under-served scripts and languages.",
-      "fa": "Ruwudu را SIL International برای پشتیبانی از زبان‌های بیشتری با خط عربی توسعه داده است و ادامه‌دهندهٔ فعالیت دیرپای SIL روی قلم‌های خطوط و زبان‌های کم‌برخوردار است."
+      "fa": "Ruwudu را SIL International برای پشتیبانی از زبان‌های بیشتری با خط عربی توسعه داده است و ادامه‌دهندهٔ فعالیت دیرپای SIL روی قلم‌های خطوط و زبان‌های کم‌برخوردار است.",
+      "ar": "طورت SIL International محرف Ruwudu لدعم لغات إضافية مكتوبة بالخط العربي، مواصلة عمل SIL الممتد على محارف الخطوط واللغات التي لا تحظى بخدمة كافية."
     }
   },
   "Scheherazade New": {
@@ -692,7 +749,8 @@
     "homepage": "https://fonts.google.com/specimen/Scheherazade+New",
     "history": {
       "en": "Scheherazade New is SIL International's modernized successor to their long-standing Scheherazade typeface, built for accurate, extensive Naskh-style Arabic-script typesetting including Quranic and academic use.",
-      "fa": "Scheherazade New جانشین نوسازی‌شدهٔ قلم دیرپای Scheherazade از SIL International است که برای حروف‌چینی دقیق و گستردهٔ خط عربی به سبک نسخ، از جمله در کاربردهای قرآنی و دانشگاهی، ساخته شده است."
+      "fa": "Scheherazade New جانشین نوسازی‌شدهٔ قلم دیرپای Scheherazade از SIL International است که برای حروف‌چینی دقیق و گستردهٔ خط عربی به سبک نسخ، از جمله در کاربردهای قرآنی و دانشگاهی، ساخته شده است.",
+      "ar": "Scheherazade New هو الخلف المحدّث لمحرف Scheherazade العريق من SIL International، وقد بُني لصف دقيق وموسع للنصوص المكتوبة بالخط العربي بأسلوب النسخ، بما في ذلك الاستخدامات القرآنية والأكاديمية."
     }
   },
   "Tajawal": {
@@ -704,7 +762,8 @@
     "homepage": "https://fonts.google.com/specimen/Tajawal",
     "history": {
       "en": "Tajawal is a clean, low-contrast Arabic sans-serif from Boutros Fonts, designed by Mourad Boutros with Soulaf Khalifeh, widely used across Arabic websites and apps for its readability at UI sizes.",
-      "fa": "Tajawal قلمی سن‌سریف، تمیز و کم‌کنتراست عربی از Boutros Fonts است که Mourad Boutros همراه با Soulaf Khalifeh طراحی کرده‌اند. این قلم به‌دلیل خوانایی در اندازه‌های رابط کاربری، در وب‌سایت‌ها و برنامه‌های عربی کاربرد گسترده‌ای دارد."
+      "fa": "Tajawal قلمی سن‌سریف، تمیز و کم‌کنتراست عربی از Boutros Fonts است که Mourad Boutros همراه با Soulaf Khalifeh طراحی کرده‌اند. این قلم به‌دلیل خوانایی در اندازه‌های رابط کاربری، در وب‌سایت‌ها و برنامه‌های عربی کاربرد گسترده‌ای دارد.",
+      "ar": "Tajawal محرف عربي نظيف قليل التباين وبلا تذييل من Boutros Fonts، صممه Mourad Boutros مع Soulaf Khalifeh، ويُستخدم على نطاق واسع في المواقع والتطبيقات العربية لوضوحه بأحجام واجهات المستخدم."
     }
   },
   "Vibes": {
@@ -716,7 +775,8 @@
     "homepage": "https://fonts.google.com/specimen/Vibes",
     "history": {
       "en": "Vibes is a playful, brush-style Arabic display typeface designed by AbdElmomen Kadhim of blueMix, evoking a casual hand-lettered feel.",
-      "fa": "Vibes قلمی نمایشی، بازیگوشانه و قلم‌مومانند عربی است که AbdElmomen Kadhim از blueMix طراحی کرده و حس حروف‌نگاری دستی و غیررسمی را تداعی می‌کند."
+      "fa": "Vibes قلمی نمایشی، بازیگوشانه و قلم‌مومانند عربی است که AbdElmomen Kadhim از blueMix طراحی کرده و حس حروف‌نگاری دستی و غیررسمی را تداعی می‌کند.",
+      "ar": "Vibes محرف عرض عربي مرح بأسلوب الفرشاة صممه AbdElmomen Kadhim من blueMix، ويستحضر إحساس الحروف اليدوية العفوية."
     }
   },
   "Zain": {
@@ -728,7 +788,8 @@
     "homepage": "https://fonts.google.com/specimen/Zain",
     "history": {
       "en": "Zain is an Arabic/Latin sans-serif from the veteran Arabic type foundry Boutros Fonts, built for clean, modern bilingual typesetting.",
-      "fa": "Zain قلمی سن‌سریف عربی/لاتین از قلم‌سازی باسابقهٔ عربی Boutros Fonts است که برای حروف‌چینی دوزبانهٔ تمیز و مدرن ساخته شده است."
+      "fa": "Zain قلمی سن‌سریف عربی/لاتین از قلم‌سازی باسابقهٔ عربی Boutros Fonts است که برای حروف‌چینی دوزبانهٔ تمیز و مدرن ساخته شده است.",
+      "ar": "Zain محرف عربي/لاتيني بلا تذييل من دار المحارف العربية العريقة Boutros Fonts، بُني لصف حروف ثنائي اللغة نظيف وحديث."
     }
   },
   "Alan Sans": {
@@ -740,7 +801,8 @@
     "homepage": "https://fonts.google.com/specimen/Alan+Sans",
     "history": {
       "en": "Alan Sans is the open-source corporate typeface of European health-tech company Alan, designed to balance functional interface typography with a softer, more expressive voice for marketing. Raphaël Ronot designed the original seven-weight family, first released in September 2025; Samar Zureik completed its Arabic-script extension in June 2026. Its bolder weights deliberately reveal more personality while preserving a robust grotesque structure.",
-      "fa": "Alan Sans قلم سازمانی متن‌باز شرکت فناوری سلامت اروپایی Alan است که برای ایجاد تعادل میان کارکردگرایی در رابط‌های کاربری و بیانی نرم‌تر و پویاتر در کاربردهای تبلیغاتی طراحی شده است. Raphaël Ronot خانوادهٔ اصلی هفت‌وزنی را طراحی کرد که نخستین بار در سپتامبر ۲۰۲۵ منتشر شد؛ Samar Zureik نیز گسترش خط عربی آن را در ژوئن ۲۰۲۶ تکمیل کرد. وزن‌های ضخیم‌تر این قلم عمداً شخصیت بیشتری نشان می‌دهند و در عین حال ساختار مستحکم گروتسک آن را حفظ می‌کنند."
+      "fa": "Alan Sans قلم سازمانی متن‌باز شرکت فناوری سلامت اروپایی Alan است که برای ایجاد تعادل میان کارکردگرایی در رابط‌های کاربری و بیانی نرم‌تر و پویاتر در کاربردهای تبلیغاتی طراحی شده است. Raphaël Ronot خانوادهٔ اصلی هفت‌وزنی را طراحی کرد که نخستین بار در سپتامبر ۲۰۲۵ منتشر شد؛ Samar Zureik نیز گسترش خط عربی آن را در ژوئن ۲۰۲۶ تکمیل کرد. وزن‌های ضخیم‌تر این قلم عمداً شخصیت بیشتری نشان می‌دهند و در عین حال ساختار مستحکم گروتسک آن را حفظ می‌کنند.",
+      "ar": "Alan Sans هو المحرف المؤسسي المفتوح المصدر لشركة Alan الأوروبية للتقنيات الصحية، وقد صُمم لتحقيق التوازن بين طباعة الواجهات الوظيفية وصوت أكثر نعومة وتعبيرًا للتسويق. صمم Raphaël Ronot العائلة الأصلية ذات الأوزان السبعة، التي صدرت لأول مرة في سبتمبر 2025؛ وأكملت Samar Zureik امتدادها للخط العربي في يونيو 2026. وتُظهر أوزانه الأعرض عمدًا شخصية أكبر مع الحفاظ على بنية غروتسك متينة."
     }
   },
   "Cascadia Code": {
@@ -752,7 +814,8 @@
     "homepage": "https://fonts.google.com/specimen/Cascadia+Code",
     "history": {
       "en": "Cascadia Code is Microsoft's open-source monospaced coding family, bundled with Windows Terminal and used as the default font in Visual Studio. Aaron Bell led the type design; Mohamad Dakak designed the Arabic script, with Viktoriya Grabowska and Liron Lavi Turkenich contributing Cyrillic and Hebrew expertise. Cascadia Code includes programming ligatures, arrows, stylistic sets, variable weights from 200 to 700, and broad multilingual coverage.",
-      "fa": "Cascadia Code خانوادهٔ تک‌فاصله و متن‌باز مایکروسافت برای برنامه‌نویسی است که همراه Windows Terminal عرضه می‌شود و قلم پیش‌فرض Visual Studio نیز هست. Aaron Bell طراحی حروف را رهبری کرد؛ Mohamad Dakak خط عربی را طراحی کرد و Viktoriya Grabowska و Liron Lavi Turkenich در زمینهٔ سیریلیک و عبری مشارکت داشتند. Cascadia Code دارای لیگچرهای برنامه‌نویسی، پیکان‌ها، مجموعه‌های سبکی، وزن متغیر از ۲۰۰ تا ۷۰۰ و پوشش گستردهٔ چندزبانه است."
+      "fa": "Cascadia Code خانوادهٔ تک‌فاصله و متن‌باز مایکروسافت برای برنامه‌نویسی است که همراه Windows Terminal عرضه می‌شود و قلم پیش‌فرض Visual Studio نیز هست. Aaron Bell طراحی حروف را رهبری کرد؛ Mohamad Dakak خط عربی را طراحی کرد و Viktoriya Grabowska و Liron Lavi Turkenich در زمینهٔ سیریلیک و عبری مشارکت داشتند. Cascadia Code دارای لیگچرهای برنامه‌نویسی، پیکان‌ها، مجموعه‌های سبکی، وزن متغیر از ۲۰۰ تا ۷۰۰ و پوشش گستردهٔ چندزبانه است.",
+      "ar": "Cascadia Code عائلة Microsoft المفتوحة المصدر أحادية المسافة للبرمجة، وهي مرفقة مع Windows Terminal وتُستخدم بوصفها الخط الافتراضي في Visual Studio. قاد Aaron Bell تصميم المحارف؛ وصمم Mohamad Dakak الخط العربي، وأسهمت Viktoriya Grabowska وLiron Lavi Turkenich بخبرتهما في السيريلية والعبرية. يتضمن Cascadia Code أربطة برمجية وأسهمًا ومجموعات أسلوبية وأوزانًا متغيرة من 200 إلى 700 وتغطية واسعة متعددة اللغات."
     }
   },
   "Cascadia Mono": {
@@ -764,7 +827,8 @@
     "homepage": "https://fonts.google.com/specimen/Cascadia+Mono",
     "history": {
       "en": "Cascadia Mono is the non-ligature companion to Microsoft's Cascadia Code family. It retains the same open-source monospaced design, Arabic support by Mohamad Dakak, multilingual character coverage, italic styles, and variable weight range, but leaves programming character sequences uncombined for users who prefer literal code rendering.",
-      "fa": "Cascadia Mono همراهِ بدون لیگچر خانوادهٔ Cascadia Code مایکروسافت است. این قلم همان طراحی تک‌فاصله و متن‌باز، پشتیبانی عربی به طراحی Mohamad Dakak، پوشش نویسه‌ای چندزبانه، سبک‌های ایتالیک و دامنهٔ وزن متغیر را حفظ می‌کند، اما برای کاربرانی که نمایش عینی کد را ترجیح می‌دهند، توالی نویسه‌های برنامه‌نویسی را با هم ترکیب نمی‌کند."
+      "fa": "Cascadia Mono همراهِ بدون لیگچر خانوادهٔ Cascadia Code مایکروسافت است. این قلم همان طراحی تک‌فاصله و متن‌باز، پشتیبانی عربی به طراحی Mohamad Dakak، پوشش نویسه‌ای چندزبانه، سبک‌های ایتالیک و دامنهٔ وزن متغیر را حفظ می‌کند، اما برای کاربرانی که نمایش عینی کد را ترجیح می‌دهند، توالی نویسه‌های برنامه‌نویسی را با هم ترکیب نمی‌کند.",
+      "ar": "Cascadia Mono هو الرفيق الخالي من الأربطة لعائلة Cascadia Code من Microsoft. ويحتفظ بالتصميم الأحادي المسافة المفتوح المصدر نفسه، ودعم العربية من تصميم Mohamad Dakak، وتغطية المحارف متعددة اللغات، والأنماط المائلة، ونطاق الأوزان المتغيرة، لكنه يترك تسلسلات محارف البرمجة من دون دمج للمستخدمين الذين يفضلون العرض الحرفي للشيفرة."
     }
   }
 }
