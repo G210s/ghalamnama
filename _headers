@@ -6,3 +6,9 @@
 
 /fonts.json
   Cache-Control: public, max-age=3600
+
+/font-content.json
+  Cache-Control: public, max-age=3600
+
+/font-metadata.json
+  Cache-Control: public, max-age=3600

@@ -1,5 +1,6 @@
-.git/
-.wrangler/
+.git/**
+.wrangler/**
+.venv/**
 .gitignore
 .assetsignore
 .htaccess
