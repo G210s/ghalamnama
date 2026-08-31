@@ -1,0 +1,1602 @@
+[
+  {
+    "name": "Alan Sans",
+    "family": "Alan Sans",
+    "designers": [
+      "Raphaël Ronot",
+      "Samar Zureik"
+    ],
+    "category": "Sans Serif",
+    "dateAdded": "2025-09-17",
+    "lastModified": "2026-08-25",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/alan-eu/Alan-Sans",
+    "sourceUrl": "https://fonts.google.com/specimen/Alan+Sans",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext"
+    ],
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 300.0,
+        "max": 900.0,
+        "defaultValue": 400.0
+      }
+    ],
+    "variable": true,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Alexandria",
+    "family": "Alexandria",
+    "designers": [
+      "Mohamed Gaber",
+      "Julieta Ulanovsky"
+    ],
+    "category": "Sans Serif",
+    "dateAdded": "2022-11-03",
+    "lastModified": "2025-09-04",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/Gue3bara/Alexandria",
+    "sourceUrl": "https://fonts.google.com/specimen/Alexandria",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ],
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 100.0,
+        "max": 900.0,
+        "defaultValue": 400.0
+      }
+    ],
+    "variable": true,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Alkalami",
+    "family": "Alkalami",
+    "designers": [
+      "SIL International"
+    ],
+    "category": "Serif",
+    "dateAdded": "2022-06-09",
+    "lastModified": "2025-09-16",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/silnrsi/font-alkalami",
+    "sourceUrl": "https://fonts.google.com/specimen/Alkalami",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext"
+    ],
+    "axes": [],
+    "variable": false,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Almarai",
+    "family": "Almarai",
+    "designers": [
+      "Boutros Fonts",
+      "Mourad Boutros"
+    ],
+    "category": "Sans Serif",
+    "dateAdded": "2019-06-04",
+    "lastModified": "2025-09-02",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/JuergenWillrodt/Almarai",
+    "sourceUrl": "https://fonts.google.com/specimen/Almarai",
+    "subsets": [
+      "arabic",
+      "latin"
+    ],
+    "axes": [],
+    "variable": false,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Alyamama",
+    "family": "Alyamama",
+    "designers": [
+      "Yazeed Omar"
+    ],
+    "category": "Serif",
+    "dateAdded": "2026-02-18",
+    "lastModified": "2026-02-19",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/Mestaratype/AlYamama",
+    "sourceUrl": "https://fonts.google.com/specimen/Alyamama",
+    "subsets": [
+      "arabic",
+      "greek",
+      "latin",
+      "latin-ext"
+    ],
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 300.0,
+        "max": 900.0,
+        "defaultValue": 400.0
+      }
+    ],
+    "variable": true,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Amiri",
+    "family": "Amiri",
+    "designers": [
+      "Khaled Hosny",
+      "Sebastian Kosch"
+    ],
+    "category": "Serif",
+    "dateAdded": "2012-07-30",
+    "lastModified": "2025-08-26",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/aliftype/amiri.git",
+    "sourceUrl": "https://fonts.google.com/specimen/Amiri",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext"
+    ],
+    "axes": [],
+    "variable": false,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Amiri Quran",
+    "family": "Amiri Quran",
+    "designers": [
+      "Khaled Hosny",
+      "Sebastian Kosch"
+    ],
+    "category": "Serif",
+    "dateAdded": "2022-08-10",
+    "lastModified": "2025-08-26",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/aliftype/amiri",
+    "sourceUrl": "https://fonts.google.com/specimen/Amiri+Quran",
+    "subsets": [
+      "arabic",
+      "latin"
+    ],
+    "axes": [],
+    "variable": false,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Aref Ruqaa",
+    "family": "Aref Ruqaa",
+    "designers": [
+      "Abdullah Aref",
+      "Khaled Hosny",
+      "Hermann Zapf"
+    ],
+    "category": "Serif",
+    "dateAdded": "2016-06-20",
+    "lastModified": "2025-09-11",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/aliftype/aref-ruqaa",
+    "sourceUrl": "https://fonts.google.com/specimen/Aref+Ruqaa",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext"
+    ],
+    "axes": [],
+    "variable": false,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Aref Ruqaa Ink",
+    "family": "Aref Ruqaa Ink",
+    "designers": [
+      "Abdullah Aref",
+      "Khaled Hosny",
+      "Hermann Zapf"
+    ],
+    "category": "Serif",
+    "dateAdded": "2022-02-26",
+    "lastModified": "2025-05-30",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/aliftype/aref-ruqaa",
+    "sourceUrl": "https://fonts.google.com/specimen/Aref+Ruqaa+Ink",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext"
+    ],
+    "axes": [],
+    "variable": false,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Badeen Display",
+    "family": "Badeen Display",
+    "designers": [
+      "Hani Alasadi"
+    ],
+    "category": "Display",
+    "dateAdded": "2024-12-09",
+    "lastModified": "2025-05-30",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/haniadnansd/Badeen-Display",
+    "sourceUrl": "https://fonts.google.com/specimen/Badeen+Display",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext"
+    ],
+    "axes": [],
+    "variable": false,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Baloo Bhaijaan 2",
+    "family": "Baloo Bhaijaan 2",
+    "designers": [
+      "Ek Type"
+    ],
+    "category": "Display",
+    "dateAdded": "2021-10-29",
+    "lastModified": "2025-09-16",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/EkType/Baloo2-Variable",
+    "sourceUrl": "https://fonts.google.com/specimen/Baloo+Bhaijaan+2",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ],
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 400.0,
+        "max": 800.0,
+        "defaultValue": 400.0
+      }
+    ],
+    "variable": true,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Beiruti",
+    "family": "Beiruti",
+    "designers": [
+      "Boutros Fonts",
+      "Arlette Boutros",
+      "Volker Schnebel"
+    ],
+    "category": "Sans Serif",
+    "dateAdded": "2024-06-25",
+    "lastModified": "2025-09-10",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/googlefonts/beiruti",
+    "sourceUrl": "https://fonts.google.com/specimen/Beiruti",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ],
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 200.0,
+        "max": 900.0,
+        "defaultValue": 400.0
+      }
+    ],
+    "variable": true,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Blaka",
+    "family": "Blaka",
+    "designers": [
+      "Mohamed Gaber"
+    ],
+    "category": "Display",
+    "dateAdded": "2022-04-25",
+    "lastModified": "2025-09-16",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/Gue3bara/Blaka",
+    "sourceUrl": "https://fonts.google.com/specimen/Blaka",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext"
+    ],
+    "axes": [],
+    "variable": false,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Blaka Hollow",
+    "family": "Blaka Hollow",
+    "designers": [
+      "Mohamed Gaber"
+    ],
+    "category": "Display",
+    "dateAdded": "2022-04-25",
+    "lastModified": "2025-09-11",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/Gue3bara/Blaka",
+    "sourceUrl": "https://fonts.google.com/specimen/Blaka+Hollow",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext"
+    ],
+    "axes": [],
+    "variable": false,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Blaka Ink",
+    "family": "Blaka Ink",
+    "designers": [
+      "Mohamed Gaber"
+    ],
+    "category": "Display",
+    "dateAdded": "2022-02-26",
+    "lastModified": "2025-05-30",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/Gue3bara/Blaka",
+    "sourceUrl": "https://fonts.google.com/specimen/Blaka+Ink",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext"
+    ],
+    "axes": [],
+    "variable": false,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Cairo",
+    "family": "Cairo",
+    "designers": [
+      "Mohamed Gaber",
+      "Accademia di Belle Arti di Urbino"
+    ],
+    "category": "Sans Serif",
+    "dateAdded": "2016-06-15",
+    "lastModified": "2025-09-16",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/Gue3bara/Cairo",
+    "sourceUrl": "https://fonts.google.com/specimen/Cairo",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext"
+    ],
+    "axes": [
+      {
+        "tag": "slnt",
+        "min": -11.0,
+        "max": 11.0,
+        "defaultValue": 0.0
+      },
+      {
+        "tag": "wght",
+        "min": 200.0,
+        "max": 1000.0,
+        "defaultValue": 400.0
+      }
+    ],
+    "variable": true,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Cairo Play",
+    "family": "Cairo Play",
+    "designers": [
+      "Mohamed Gaber",
+      "Accademia di Belle Arti di Urbino"
+    ],
+    "category": "Sans Serif",
+    "dateAdded": "2022-08-05",
+    "lastModified": "2025-09-16",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/Gue3bara/Cairo",
+    "sourceUrl": "https://fonts.google.com/specimen/Cairo+Play",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext"
+    ],
+    "axes": [
+      {
+        "tag": "slnt",
+        "min": -11.0,
+        "max": 11.0,
+        "defaultValue": 0.0
+      },
+      {
+        "tag": "wght",
+        "min": 200.0,
+        "max": 1000.0,
+        "defaultValue": 400.0
+      }
+    ],
+    "variable": true,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Cascadia Code",
+    "family": "Cascadia Code",
+    "designers": [
+      "Aaron Bell",
+      "Mohamad Dakak",
+      "Viktoriya Grabowska",
+      "Liron Lavi Turkenich"
+    ],
+    "category": "Sans Serif",
+    "dateAdded": "2025-04-17",
+    "lastModified": "2025-09-16",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/microsoft/cascadia-code",
+    "sourceUrl": "https://fonts.google.com/specimen/Cascadia+Code",
+    "subsets": [
+      "arabic",
+      "braille",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "hebrew",
+      "latin",
+      "latin-ext",
+      "symbols2",
+      "vietnamese"
+    ],
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 200.0,
+        "max": 700.0,
+        "defaultValue": 400.0
+      }
+    ],
+    "variable": true,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Cascadia Mono",
+    "family": "Cascadia Mono",
+    "designers": [
+      "Aaron Bell",
+      "Mohamad Dakak",
+      "Viktoriya Grabowska",
+      "Liron Lavi Turkenich"
+    ],
+    "category": "Sans Serif",
+    "dateAdded": "2025-04-17",
+    "lastModified": "2025-09-08",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/microsoft/cascadia-code",
+    "sourceUrl": "https://fonts.google.com/specimen/Cascadia+Mono",
+    "subsets": [
+      "arabic",
+      "braille",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "hebrew",
+      "latin",
+      "latin-ext",
+      "symbols2",
+      "vietnamese"
+    ],
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 200.0,
+        "max": 700.0,
+        "defaultValue": 400.0
+      }
+    ],
+    "variable": true,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Changa",
+    "family": "Changa",
+    "designers": [
+      "Eduardo Tunni"
+    ],
+    "category": "Sans Serif",
+    "dateAdded": "2016-06-15",
+    "lastModified": "2025-09-10",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/googlefonts/changa-vf",
+    "sourceUrl": "https://fonts.google.com/specimen/Changa",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext"
+    ],
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 200.0,
+        "max": 800.0,
+        "defaultValue": 400.0
+      }
+    ],
+    "variable": true,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "El Messiri",
+    "family": "El Messiri",
+    "designers": [
+      "Mohamed Gaber",
+      "Jovanny Lemonad"
+    ],
+    "category": "Sans Serif",
+    "dateAdded": "2016-05-31",
+    "lastModified": "2025-09-11",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/Gue3bara/El-Messiri",
+    "sourceUrl": "https://fonts.google.com/specimen/El+Messiri",
+    "subsets": [
+      "arabic",
+      "cyrillic",
+      "latin",
+      "latin-ext"
+    ],
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 400.0,
+        "max": 700.0,
+        "defaultValue": 400.0
+      }
+    ],
+    "variable": true,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Estedad",
+    "family": "Estedad",
+    "designers": [
+      "Amin Abedi",
+      "Fontamin"
+    ],
+    "category": "Sans Serif",
+    "dateAdded": "2026-05-12",
+    "lastModified": "2026-05-13",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/aminabedi68/Estedad",
+    "sourceUrl": "https://fonts.google.com/specimen/Estedad",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ],
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 100.0,
+        "max": 900.0,
+        "defaultValue": 400.0
+      }
+    ],
+    "variable": true,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Fustat",
+    "family": "Fustat",
+    "designers": [
+      "Mohamed Gaber",
+      "Laura Garcia Mut",
+      "Khaled Hosny"
+    ],
+    "category": "Sans Serif",
+    "dateAdded": "2024-06-04",
+    "lastModified": "2025-09-16",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/Kief-Type-Foundry/Fustat",
+    "sourceUrl": "https://fonts.google.com/specimen/Fustat",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext"
+    ],
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 200.0,
+        "max": 800.0,
+        "defaultValue": 400.0
+      }
+    ],
+    "variable": true,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Gulzar",
+    "family": "Gulzar",
+    "designers": [
+      "Borna Izadpanah",
+      "Fiona Ross",
+      "Alice Savoie",
+      "Simon Cozens"
+    ],
+    "category": "Serif",
+    "dateAdded": "2022-05-13",
+    "lastModified": "2025-09-04",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/simoncozens/Gulzar",
+    "sourceUrl": "https://fonts.google.com/specimen/Gulzar",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext"
+    ],
+    "axes": [],
+    "variable": false,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Handjet",
+    "family": "Handjet",
+    "designers": [
+      "Rosetta",
+      "David Březina"
+    ],
+    "category": "Display",
+    "dateAdded": "2020-09-11",
+    "lastModified": "2025-09-16",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/rosettatype/handjet",
+    "sourceUrl": "https://fonts.google.com/specimen/Handjet",
+    "subsets": [
+      "arabic",
+      "armenian",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "hebrew",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ],
+    "axes": [
+      {
+        "tag": "ELGR",
+        "min": 1.0,
+        "max": 2.0,
+        "defaultValue": 1.0
+      },
+      {
+        "tag": "ELSH",
+        "min": 0.0,
+        "max": 16.0,
+        "defaultValue": 2.0
+      },
+      {
+        "tag": "wght",
+        "min": 100.0,
+        "max": 900.0,
+        "defaultValue": 400.0
+      }
+    ],
+    "variable": true,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Harmattan",
+    "family": "Harmattan",
+    "designers": [
+      "SIL International"
+    ],
+    "category": "Sans Serif",
+    "dateAdded": "2020-07-02",
+    "lastModified": "2025-09-16",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/silnrsi/font-harmattan",
+    "sourceUrl": "https://fonts.google.com/specimen/Harmattan",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext"
+    ],
+    "axes": [],
+    "variable": false,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "IBM Plex Sans Arabic",
+    "family": "IBM Plex Sans Arabic",
+    "designers": [
+      "Mike Abbink",
+      "Bold Monday",
+      "Khajag Apelian",
+      "Wael Morcos"
+    ],
+    "category": "Sans Serif",
+    "dateAdded": "2021-06-17",
+    "lastModified": "2026-03-03",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/googlefonts/plex",
+    "sourceUrl": "https://fonts.google.com/specimen/IBM+Plex+Sans+Arabic",
+    "subsets": [
+      "arabic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext"
+    ],
+    "axes": [],
+    "variable": false,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Jomhuria",
+    "family": "Jomhuria",
+    "designers": [
+      "KB Studio"
+    ],
+    "category": "Display",
+    "dateAdded": "2016-06-15",
+    "lastModified": "2026-06-30",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/Tarobish/Jomhuria",
+    "sourceUrl": "https://fonts.google.com/specimen/Jomhuria",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext"
+    ],
+    "axes": [],
+    "variable": false,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Katibeh",
+    "family": "Katibeh",
+    "designers": [
+      "KB Studio"
+    ],
+    "category": "Display",
+    "dateAdded": "2016-06-15",
+    "lastModified": "2025-09-10",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/Tarobish/Katibeh",
+    "sourceUrl": "https://fonts.google.com/specimen/Katibeh",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext"
+    ],
+    "axes": [],
+    "variable": false,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Kufam",
+    "family": "Kufam",
+    "designers": [
+      "Original Type",
+      "Wael Morcos",
+      "Artur Schmal"
+    ],
+    "category": "Sans Serif",
+    "dateAdded": "2020-07-14",
+    "lastModified": "2025-09-02",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/originaltype/kufam",
+    "sourceUrl": "https://fonts.google.com/specimen/Kufam",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ],
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 400.0,
+        "max": 900.0,
+        "defaultValue": 400.0
+      }
+    ],
+    "variable": true,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Lalezar",
+    "family": "Lalezar",
+    "designers": [
+      "Borna Izadpanah"
+    ],
+    "category": "Sans Serif",
+    "dateAdded": "2016-06-15",
+    "lastModified": "2025-09-16",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/BornaIz/Lalezar",
+    "sourceUrl": "https://fonts.google.com/specimen/Lalezar",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ],
+    "axes": [],
+    "variable": false,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Lateef",
+    "family": "Lateef",
+    "designers": [
+      "SIL International"
+    ],
+    "category": "Serif",
+    "dateAdded": "2015-03-03",
+    "lastModified": "2025-09-16",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/silnrsi/font-lateef",
+    "sourceUrl": "https://fonts.google.com/specimen/Lateef",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext"
+    ],
+    "axes": [],
+    "variable": false,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Lemonada",
+    "family": "Lemonada",
+    "designers": [
+      "Mohamed Gaber",
+      "Eduardo Tunni"
+    ],
+    "category": "Display",
+    "dateAdded": "2016-06-15",
+    "lastModified": "2025-09-02",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/Gue3bara/Lemonada",
+    "sourceUrl": "https://fonts.google.com/specimen/Lemonada",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ],
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 300.0,
+        "max": 700.0,
+        "defaultValue": 400.0
+      }
+    ],
+    "variable": true,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Mada",
+    "family": "Mada",
+    "designers": [
+      "Khaled Hosny",
+      "Paul D. Hunt"
+    ],
+    "category": "Sans Serif",
+    "dateAdded": "2017-07-26",
+    "lastModified": "2025-09-04",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/aliftype/mada",
+    "sourceUrl": "https://fonts.google.com/specimen/Mada",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext"
+    ],
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 200.0,
+        "max": 900.0,
+        "defaultValue": 400.0
+      }
+    ],
+    "variable": true,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Marhey",
+    "family": "Marhey",
+    "designers": [
+      "Nur Syamsi",
+      "Bustanul Arifin"
+    ],
+    "category": "Display",
+    "dateAdded": "2022-10-06",
+    "lastModified": "2025-09-08",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/namelatype/Marhey",
+    "sourceUrl": "https://fonts.google.com/specimen/Marhey",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext"
+    ],
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 300.0,
+        "max": 700.0,
+        "defaultValue": 400.0
+      }
+    ],
+    "variable": true,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Markazi Text",
+    "family": "Markazi Text",
+    "designers": [
+      "Borna Izadpanah",
+      "Florian Runge",
+      "Fiona Ross"
+    ],
+    "category": "Serif",
+    "dateAdded": "2018-06-05",
+    "lastModified": "2025-09-04",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/BornaIz/markazitext",
+    "sourceUrl": "https://fonts.google.com/specimen/Markazi+Text",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ],
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 400.0,
+        "max": 700.0,
+        "defaultValue": 400.0
+      }
+    ],
+    "variable": true,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Mirza",
+    "family": "Mirza",
+    "designers": [
+      "KB Studio"
+    ],
+    "category": "Serif",
+    "dateAdded": "2016-06-15",
+    "lastModified": "2025-09-08",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/Tarobish/Mirza",
+    "sourceUrl": "https://fonts.google.com/specimen/Mirza",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext"
+    ],
+    "axes": [],
+    "variable": false,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Noto Kufi Arabic",
+    "family": "Noto Kufi Arabic",
+    "designers": [
+      "Google"
+    ],
+    "category": "Sans Serif",
+    "dateAdded": "2020-11-19",
+    "lastModified": "2025-09-11",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/notofonts/arabic",
+    "sourceUrl": "https://fonts.google.com/specimen/Noto+Kufi+Arabic",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols"
+    ],
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 100.0,
+        "max": 900.0,
+        "defaultValue": 400.0
+      }
+    ],
+    "variable": true,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Noto Naskh Arabic",
+    "family": "Noto Naskh Arabic",
+    "designers": [
+      "Google"
+    ],
+    "category": "Serif",
+    "dateAdded": "2020-11-19",
+    "lastModified": "2026-01-28",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/notofonts/arabic",
+    "sourceUrl": "https://fonts.google.com/specimen/Noto+Naskh+Arabic",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols"
+    ],
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 400.0,
+        "max": 700.0,
+        "defaultValue": 400.0
+      }
+    ],
+    "variable": true,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Noto Nastaliq Urdu",
+    "family": "Noto Nastaliq Urdu",
+    "designers": [
+      "Google"
+    ],
+    "category": "Serif",
+    "dateAdded": "2020-11-19",
+    "lastModified": "2025-09-02",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/notofonts/nastaliq",
+    "sourceUrl": "https://fonts.google.com/specimen/Noto+Nastaliq+Urdu",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext"
+    ],
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 400.0,
+        "max": 700.0,
+        "defaultValue": 400.0
+      }
+    ],
+    "variable": true,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Noto Sans Arabic",
+    "family": "Noto Sans Arabic",
+    "designers": [
+      "Google"
+    ],
+    "category": "Sans Serif",
+    "dateAdded": "2020-11-19",
+    "lastModified": "2025-09-17",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/notofonts/arabic",
+    "sourceUrl": "https://fonts.google.com/specimen/Noto+Sans+Arabic",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols"
+    ],
+    "axes": [
+      {
+        "tag": "wdth",
+        "min": 62.5,
+        "max": 100.0,
+        "defaultValue": 100.0
+      },
+      {
+        "tag": "wght",
+        "min": 100.0,
+        "max": 900.0,
+        "defaultValue": 400.0
+      }
+    ],
+    "variable": true,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Oi",
+    "family": "Oi",
+    "designers": [
+      "Kostas Bartsokas"
+    ],
+    "category": "Display",
+    "dateAdded": "2021-02-03",
+    "lastModified": "2025-09-04",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/kosbarts/Oi",
+    "sourceUrl": "https://fonts.google.com/specimen/Oi",
+    "subsets": [
+      "arabic",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "latin",
+      "latin-ext",
+      "tamil",
+      "vietnamese"
+    ],
+    "axes": [],
+    "variable": false,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Parastoo",
+    "family": "Parastoo",
+    "designers": [
+      "Saber Rastikerdar"
+    ],
+    "category": "Serif",
+    "dateAdded": "2025-05-21",
+    "lastModified": "2025-10-29",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/googlefonts/parastoo-font",
+    "sourceUrl": "https://fonts.google.com/specimen/Parastoo",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ],
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 400.0,
+        "max": 700.0,
+        "defaultValue": 400.0
+      }
+    ],
+    "variable": true,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Playpen Sans Arabic",
+    "family": "Playpen Sans Arabic",
+    "designers": [
+      "TypeTogether",
+      "Azza Alameddine",
+      "Laura Meseguer",
+      "Veronika Burian",
+      "José Scaglione"
+    ],
+    "category": "Handwriting",
+    "dateAdded": "2025-05-12",
+    "lastModified": "2025-09-10",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/TypeTogether/Playpen-Sans",
+    "sourceUrl": "https://fonts.google.com/specimen/Playpen+Sans+Arabic",
+    "subsets": [
+      "arabic",
+      "emoji",
+      "latin",
+      "latin-ext",
+      "math"
+    ],
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 100.0,
+        "max": 800.0,
+        "defaultValue": 400.0
+      }
+    ],
+    "variable": true,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Qahiri",
+    "family": "Qahiri",
+    "designers": [
+      "Khaled Hosny"
+    ],
+    "category": "Sans Serif",
+    "dateAdded": "2021-04-03",
+    "lastModified": "2026-08-25",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/aliftype/qahiri",
+    "sourceUrl": "https://fonts.google.com/specimen/Qahiri",
+    "subsets": [
+      "arabic",
+      "latin"
+    ],
+    "axes": [],
+    "variable": false,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Rakkas",
+    "family": "Rakkas",
+    "designers": [
+      "Zeynep Akay"
+    ],
+    "category": "Display",
+    "dateAdded": "2016-06-15",
+    "lastModified": "2025-09-10",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/zeynepakay/Rakkas",
+    "sourceUrl": "https://fonts.google.com/specimen/Rakkas",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext"
+    ],
+    "axes": [],
+    "variable": false,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Readex Pro",
+    "family": "Readex Pro",
+    "designers": [
+      "Thomas Jockin",
+      "Nadine Chahine",
+      "Bonnie Shaver-Troup",
+      "Santiago Orozco",
+      "Héctor Gómez"
+    ],
+    "category": "Sans Serif",
+    "dateAdded": "2021-09-16",
+    "lastModified": "2025-09-10",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/ThomasJockin/readexpro",
+    "sourceUrl": "https://fonts.google.com/specimen/Readex+Pro",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ],
+    "axes": [
+      {
+        "tag": "HEXP",
+        "min": 0.0,
+        "max": 100.0,
+        "defaultValue": 0.0
+      },
+      {
+        "tag": "wght",
+        "min": 160.0,
+        "max": 700.0,
+        "defaultValue": 400.0
+      }
+    ],
+    "variable": true,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Reem Kufi",
+    "family": "Reem Kufi",
+    "designers": [
+      "Khaled Hosny",
+      "Santiago Orozco"
+    ],
+    "category": "Sans Serif",
+    "dateAdded": "2016-05-31",
+    "lastModified": "2025-09-04",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/aliftype/reem-kufi",
+    "sourceUrl": "https://fonts.google.com/specimen/Reem+Kufi",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ],
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 400.0,
+        "max": 700.0,
+        "defaultValue": 400.0
+      }
+    ],
+    "variable": true,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Reem Kufi Fun",
+    "family": "Reem Kufi Fun",
+    "designers": [
+      "Khaled Hosny",
+      "Santiago Orozco"
+    ],
+    "category": "Sans Serif",
+    "dateAdded": "2021-11-01",
+    "lastModified": "2025-09-02",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/aliftype/reem-kufi",
+    "sourceUrl": "https://fonts.google.com/specimen/Reem+Kufi+Fun",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ],
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 400.0,
+        "max": 700.0,
+        "defaultValue": 400.0
+      }
+    ],
+    "variable": true,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Reem Kufi Ink",
+    "family": "Reem Kufi Ink",
+    "designers": [
+      "Khaled Hosny",
+      "Santiago Orozco"
+    ],
+    "category": "Sans Serif",
+    "dateAdded": "2021-11-01",
+    "lastModified": "2025-06-25",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/aliftype/reem-kufi",
+    "sourceUrl": "https://fonts.google.com/specimen/Reem+Kufi+Ink",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ],
+    "axes": [],
+    "variable": false,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Rubik",
+    "family": "Rubik",
+    "designers": [
+      "Hubert and Fischer",
+      "Meir Sadan",
+      "Cyreal",
+      "Daniel Grumer",
+      "Omaima Dajani"
+    ],
+    "category": "Sans Serif",
+    "dateAdded": "2015-07-22",
+    "lastModified": "2025-09-10",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/googlefonts/rubik",
+    "sourceUrl": "https://fonts.google.com/specimen/Rubik",
+    "subsets": [
+      "arabic",
+      "cyrillic",
+      "cyrillic-ext",
+      "hebrew",
+      "latin",
+      "latin-ext"
+    ],
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 300.0,
+        "max": 900.0,
+        "defaultValue": 400.0
+      }
+    ],
+    "variable": true,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Ruwudu",
+    "family": "Ruwudu",
+    "designers": [
+      "SIL International"
+    ],
+    "category": "Serif",
+    "dateAdded": "2023-08-07",
+    "lastModified": "2025-05-30",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/silnrsi/font-ruwudu",
+    "sourceUrl": "https://fonts.google.com/specimen/Ruwudu",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext"
+    ],
+    "axes": [],
+    "variable": false,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Scheherazade New",
+    "family": "Scheherazade New",
+    "designers": [
+      "SIL International"
+    ],
+    "category": "Serif",
+    "dateAdded": "2021-05-12",
+    "lastModified": "2026-05-13",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/silnrsi/font-scheherazade",
+    "sourceUrl": "https://fonts.google.com/specimen/Scheherazade+New",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext"
+    ],
+    "axes": [],
+    "variable": false,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Tajawal",
+    "family": "Tajawal",
+    "designers": [
+      "Boutros Fonts",
+      "Mourad Boutros",
+      "Soulaf Khalifeh"
+    ],
+    "category": "Sans Serif",
+    "dateAdded": "2018-04-04",
+    "lastModified": "2025-09-08",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/googlefonts/tajawal",
+    "sourceUrl": "https://fonts.google.com/specimen/Tajawal",
+    "subsets": [
+      "arabic",
+      "latin"
+    ],
+    "axes": [],
+    "variable": false,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Vazirmatn",
+    "family": "Vazirmatn",
+    "designers": [
+      "Saber Rastikerdar"
+    ],
+    "category": "Sans Serif",
+    "dateAdded": "2022-03-16",
+    "lastModified": "2025-09-10",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/rastikerdar/vazirmatn",
+    "sourceUrl": "https://fonts.google.com/specimen/Vazirmatn",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext"
+    ],
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 100.0,
+        "max": 900.0,
+        "defaultValue": 400.0
+      }
+    ],
+    "variable": true,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Vibes",
+    "family": "Vibes",
+    "designers": [
+      "AbdElmomen Kadhim (blueMix)"
+    ],
+    "category": "Display",
+    "dateAdded": "2019-04-23",
+    "lastModified": "2025-09-10",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/bluemix/vibes-typeface",
+    "sourceUrl": "https://fonts.google.com/specimen/Vibes",
+    "subsets": [
+      "arabic",
+      "latin"
+    ],
+    "axes": [],
+    "variable": false,
+    "open": true,
+    "source": "GOOGLE"
+  },
+  {
+    "name": "Zain",
+    "family": "Zain",
+    "designers": [
+      "Boutros Fonts"
+    ],
+    "category": "Sans Serif",
+    "dateAdded": "2024-07-17",
+    "lastModified": "2025-10-29",
+    "license": "SIL Open Font License",
+    "sourceRepository": "https://github.com/googlefonts/zain",
+    "sourceUrl": "https://fonts.google.com/specimen/Zain",
+    "subsets": [
+      "arabic",
+      "latin"
+    ],
+    "axes": [],
+    "variable": false,
+    "open": true,
+    "source": "GOOGLE"
+  }
+]

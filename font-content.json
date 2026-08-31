@@ -730,5 +730,41 @@
       "en": "Zain is an Arabic/Latin sans-serif from the veteran Arabic type foundry Boutros Fonts, built for clean, modern bilingual typesetting.",
       "fa": "Zain قلمی سن‌سریف عربی/لاتین از قلم‌سازی باسابقهٔ عربی Boutros Fonts است که برای حروف‌چینی دوزبانهٔ تمیز و مدرن ساخته شده است."
     }
+  },
+  "Alan Sans": {
+    "designer": "Raphaël Ronot, Samar Zureik",
+    "foundry": "Alan",
+    "year": "2025; Arabic extension 2026",
+    "category": "Sans Serif",
+    "license": "SIL Open Font License 1.1",
+    "homepage": "https://fonts.google.com/specimen/Alan+Sans",
+    "history": {
+      "en": "Alan Sans is the open-source corporate typeface of European health-tech company Alan, designed to balance functional interface typography with a softer, more expressive voice for marketing. Raphaël Ronot designed the original seven-weight family, first released in September 2025; Samar Zureik completed its Arabic-script extension in June 2026. Its bolder weights deliberately reveal more personality while preserving a robust grotesque structure.",
+      "fa": "Alan Sans قلم سازمانی متن‌باز شرکت فناوری سلامت اروپایی Alan است که برای ایجاد تعادل میان کارکردگرایی در رابط‌های کاربری و بیانی نرم‌تر و پویاتر در کاربردهای تبلیغاتی طراحی شده است. Raphaël Ronot خانوادهٔ اصلی هفت‌وزنی را طراحی کرد که نخستین بار در سپتامبر ۲۰۲۵ منتشر شد؛ Samar Zureik نیز گسترش خط عربی آن را در ژوئن ۲۰۲۶ تکمیل کرد. وزن‌های ضخیم‌تر این قلم عمداً شخصیت بیشتری نشان می‌دهند و در عین حال ساختار مستحکم گروتسک آن را حفظ می‌کنند."
+    }
+  },
+  "Cascadia Code": {
+    "designer": "Aaron Bell, Mohamad Dakak, Viktoriya Grabowska, Liron Lavi Turkenich",
+    "foundry": "Microsoft",
+    "year": "2021; added to Google Fonts in 2025",
+    "category": "Sans Serif / Monospace",
+    "license": "SIL Open Font License",
+    "homepage": "https://fonts.google.com/specimen/Cascadia+Code",
+    "history": {
+      "en": "Cascadia Code is Microsoft's open-source monospaced coding family, bundled with Windows Terminal and used as the default font in Visual Studio. Aaron Bell led the type design; Mohamad Dakak designed the Arabic script, with Viktoriya Grabowska and Liron Lavi Turkenich contributing Cyrillic and Hebrew expertise. Cascadia Code includes programming ligatures, arrows, stylistic sets, variable weights from 200 to 700, and broad multilingual coverage.",
+      "fa": "Cascadia Code خانوادهٔ تک‌فاصله و متن‌باز مایکروسافت برای برنامه‌نویسی است که همراه Windows Terminal عرضه می‌شود و قلم پیش‌فرض Visual Studio نیز هست. Aaron Bell طراحی حروف را رهبری کرد؛ Mohamad Dakak خط عربی را طراحی کرد و Viktoriya Grabowska و Liron Lavi Turkenich در زمینهٔ سیریلیک و عبری مشارکت داشتند. Cascadia Code دارای لیگچرهای برنامه‌نویسی، پیکان‌ها، مجموعه‌های سبکی، وزن متغیر از ۲۰۰ تا ۷۰۰ و پوشش گستردهٔ چندزبانه است."
+    }
+  },
+  "Cascadia Mono": {
+    "designer": "Aaron Bell, Mohamad Dakak, Viktoriya Grabowska, Liron Lavi Turkenich",
+    "foundry": "Microsoft",
+    "year": "2021; added to Google Fonts in 2025",
+    "category": "Sans Serif / Monospace",
+    "license": "SIL Open Font License",
+    "homepage": "https://fonts.google.com/specimen/Cascadia+Mono",
+    "history": {
+      "en": "Cascadia Mono is the non-ligature companion to Microsoft's Cascadia Code family. It retains the same open-source monospaced design, Arabic support by Mohamad Dakak, multilingual character coverage, italic styles, and variable weight range, but leaves programming character sequences uncombined for users who prefer literal code rendering.",
+      "fa": "Cascadia Mono همراهِ بدون لیگچر خانوادهٔ Cascadia Code مایکروسافت است. این قلم همان طراحی تک‌فاصله و متن‌باز، پشتیبانی عربی به طراحی Mohamad Dakak، پوشش نویسه‌ای چندزبانه، سبک‌های ایتالیک و دامنهٔ وزن متغیر را حفظ می‌کند، اما برای کاربرانی که نمایش عینی کد را ترجیح می‌دهند، توالی نویسه‌های برنامه‌نویسی را با هم ترکیب نمی‌کند."
+    }
   }
 }

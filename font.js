@@ -2,6 +2,7 @@ const $=id=>document.getElementById(id);
 const params=new URLSearchParams(location.search);
 const requestedFamily=params.get("f")||"";
 const initialLanguage=params.get("lang")==="en"?"en":"fa";
+const scriptContext=params.get("context")==="ar"?"ar":"fa";
 let currentLanguage=initialLanguage;
 let currentFont=null,currentContent=null,currentMetadata=null;
 let fontCatalog=[];
@@ -9,24 +10,24 @@ let fontCatalog=[];
 const COPY={
   fa:{
     home:"بازگشت به صفحه اصلی",title:"معرفی، طراح و تاریخچه فونت",loading:"در حال بارگذاری اطلاعات فونت…",
-    source:"منبع",format:"فرمت فایل",designer:"طراح",foundry:"استودیو / پروژه",year:"سال انتشار",category:"دسته‌بندی",license:"مجوز",
+    source:"منبع",format:"فرمت فایل",designer:"طراح",foundry:"استودیو / پروژه",year:"سال انتشار",updated:"آخرین به‌روزرسانی",category:"دسته‌بندی",license:"مجوز",variable:"فونت متغیر",yes:"بله",repository:"مخزن کد منبع",
     about:"دربارهٔ این فونت",technical:"مشخصات فنی",embedded:"اطلاعات ثبت‌شده داخل فایل",related:"فونت‌های مرتبط",
     embeddedFamily:"نام خانواده در فایل",style:"سبک / وزن",vendor:"سازنده / ناشر",description:"توضیحات داخل فایل",copyright:"حق نشر",trademark:"نشان تجاری",vendorUrl:"وب‌سایت سازنده",designerUrl:"وب‌سایت طراح",licenseUrl:"لینک مجوز",version:"نسخه",
     embeddedNote:"این موارد مستقیماً از جدول نام OpenType استخراج شده‌اند. قلم‌نما صحت ادعاهای سازنده، مالکیت یا مجوز را مستقلاً تأیید نکرده است.",
     descriptionNote:"این توضیح از داده‌های داخلی فایل فونت استخراج شده، به زبان اصلی نمایش داده می‌شود و به‌طور مستقل تأیید نشده است.",
     unknown:"در حال حاضر تاریخچهٔ مستند و تأییدشده‌ای برای این فونت در دسترس نیست. اطلاعات ثبت‌شده داخل فایل فونت در ادامه آمده و می‌توانید برای پژوهش بیشتر از لینک منبع استفاده کنید.",
-    preview:name=>`سلام دنیا، این یک متن نمونه برای فونت ${name} است.`,previewLabel:"پیش‌نمایش فونت",download:"↓ دانلود فونت",viewSource:"↗ مشاهدهٔ منبع فونت",back:"← بازگشت به کاوشگر فونت",notFound:"فونت پیدا نشد",notFoundText:"این فونت در فهرست قلم‌نما موجود نیست.",
+    preview:name=>`سلام دنیا، این یک متن نمونه برای فونت ${name} است.`,arabicPreview:name=>`مرحباً بالعالم، هذا نص تجريبي لعرض خط ${name}.`,previewLabel:"پیش‌نمایش فونت",download:"↓ دانلود فونت",viewSource:"↗ دریافت از Google Fonts",viewRepository:"↗ مشاهدهٔ مخزن کد",back:"← بازگشت به کاوشگر فونت",notFound:"فونت پیدا نشد",notFoundText:"این فونت در فهرست قلم‌نما موجود نیست.",
     local:"فونت محلی (آپلود شده در قلم‌نما)",iranian:"پروژه متن‌باز ایرانی (CDN)",descriptionMeta:name=>`فونت ${name} را آنلاین پیش‌نمایش کنید و اطلاعات طراح، نسخه، منبع، مجوز و تاریخچهٔ آن را در قلم‌نما بخوانید.`
   },
   en:{
     home:"Back to home",title:"Overview, designer and font history",loading:"Loading font information…",
-    source:"Source",format:"File format",designer:"Designer",foundry:"Studio / project",year:"Release year",category:"Category",license:"License",
+    source:"Source",format:"File format",designer:"Designer",foundry:"Studio / project",year:"Release year",updated:"Last updated",category:"Category",license:"License",variable:"Variable font",yes:"Yes",repository:"Source repository",
     about:"About this font",technical:"Technical details",embedded:"Metadata embedded in the file",related:"Related fonts",
     embeddedFamily:"Family name in file",style:"Style / weight",vendor:"Vendor / publisher",description:"Embedded description",copyright:"Copyright",trademark:"Trademark",vendorUrl:"Vendor website",designerUrl:"Designer website",licenseUrl:"License URL",version:"Version",
     embeddedNote:"These fields were extracted directly from the OpenType name table. Ghalamnama has not independently verified claims about authorship, ownership, or licensing.",
     descriptionNote:"This description was extracted from the font file, is shown in its original language, and has not been independently verified.",
     unknown:"No independently verified history is currently available for this font. Metadata recorded inside the font file appears below, and the source link can help with further research.",
-    preview:name=>`Hello world, this is sample text set in ${name}.`,previewLabel:"Font preview",download:"↓ Download font",viewSource:"↗ View font source",back:"← Back to font explorer",notFound:"Font not found",notFoundText:"This font is not available in the Ghalamnama catalog.",
+    preview:name=>`Hello world, this is sample text set in ${name}.`,arabicPreview:name=>`مرحباً بالعالم، هذا نص تجريبي لعرض خط ${name}.`,previewLabel:"Font preview",download:"↓ Download font",viewSource:"↗ Get on Google Fonts",viewRepository:"↗ View source repository",back:"← Back to font explorer",notFound:"Font not found",notFoundText:"This font is not available in the Ghalamnama catalog.",
     local:"Local font (hosted by Ghalamnama)",iranian:"Iranian open-source project (CDN)",descriptionMeta:name=>`Preview the ${name} font online and explore its designer, version, source, license, technical details, and history on Ghalamnama.`
   }
 };
@@ -105,6 +106,7 @@ function metaExcerpt(value,maxLength=160){
 function renderPage(font,content,metadata){
   const lang=currentLanguage;
   const copy=COPY[lang];
+  const homeHref=scriptContext==="ar"?"index.html?context=ar":"index.html";
   const history=content?.history?.[lang]||content?.history?.en||"";
   const usefulDescription=isUsefulDescription(metadata?.description);
   const title=lang==="fa"
@@ -115,7 +117,8 @@ function renderPage(font,content,metadata){
     : usefulDescription
       ? metaExcerpt(metadata.description)
       : copy.descriptionMeta(font.name);
-  const canonicalUrl=`https://ghalamnama.online/font?f=${encodeURIComponent(font.family)}&lang=${lang}`;
+  const contextSuffix=scriptContext==="ar"?"&context=ar":"";
+  const canonicalUrl=`https://ghalamnama.online/font?f=${encodeURIComponent(font.family)}&lang=${lang}${contextSuffix}`;
   const keywords=buildKeywords(font,content,metadata,lang);
   document.documentElement.lang=lang;
   document.documentElement.dir=lang==="fa"?"rtl":"ltr";
@@ -134,7 +137,9 @@ function renderPage(font,content,metadata){
   setMetaContent("pageTwitterTitle",title);
   setMetaContent("pageTwitterDescription",desc);
   $("loadingMsg")?.setAttribute("lang",lang);
-  document.querySelector('.icon-btn[href="index.html"]').setAttribute("aria-label",copy.home);
+  document.querySelector(".icon-btn").setAttribute("aria-label",copy.home);
+  document.querySelector(".brand").href=homeHref;
+  document.querySelector(".icon-btn").href=homeHref;
   document.querySelectorAll("[data-lang]").forEach(button=>button.setAttribute("aria-pressed",String(button.dataset.lang===lang)));
 
   loadPreviewFont(font);
@@ -145,8 +150,14 @@ function renderPage(font,content,metadata){
   if(content?.designer)rows.push([copy.designer,escapeHtml(content.designer)]);
   if(content?.foundry)rows.push([copy.foundry,escapeHtml(localizedValue("foundry",content.foundry,lang))]);
   if(content?.year)rows.push([copy.year,escapeHtml(localizedValue("year",content.year,lang))]);
+  else if(font.dateAdded)rows.push([copy.year,escapeHtml(font.dateAdded)]);
+  if(font.lastModified)rows.push([copy.updated,escapeHtml(font.lastModified)]);
   if(content?.category)rows.push([copy.category,escapeHtml(localizedValue("category",content.category,lang))]);
+  else if(font.category)rows.push([copy.category,escapeHtml(localizedValue("category",font.category,lang))]);
   if(content?.license)rows.push([copy.license,escapeHtml(content.license)]);
+  else if(font.license)rows.push([copy.license,escapeHtml(font.license)]);
+  if(font.variable)rows.push([copy.variable,copy.yes]);
+  if(font.sourceRepository)rows.push([copy.repository,metadataValue(font.sourceRepository,true)]);
 
   const metadataRows=[];
   const embeddedFields=[
@@ -177,6 +188,9 @@ function renderPage(font,content,metadata){
   const downloadHtml=(font.file&&font.open)
     ? `<a class="font-action" href="fonts/${encodeURIComponent(font.file)}" download="${escapeHtml(font.file)}">${copy.download}</a>`
     : `<a class="font-action" href="${sourceLink}" target="_blank" rel="noopener noreferrer">${copy.viewSource}</a>`;
+  const repositoryHtml=font.sourceRepository
+    ? `<a class="font-action ghost" href="${escapeHtml(font.sourceRepository)}" target="_blank" rel="noopener noreferrer">${copy.viewRepository}</a>`
+    : "";
   const relatedFonts=fontCatalog
     .filter(candidate=>candidate.family!==font.family)
     .sort((left,right)=>Number(right.source===font.source)-Number(left.source===font.source)||left.name.localeCompare(right.name))
@@ -188,11 +202,12 @@ function renderPage(font,content,metadata){
       <p class="font-page-kicker">${escapeHtml(sourceLabel(font.source,lang))}</p>
     </div>
     <div class="font-preview-box">
-      <textarea id="previewInput" dir="${lang==="fa"?"rtl":"ltr"}" lang="${lang}" spellcheck="false" style="font-family:'${font.family}',sans-serif" aria-label="${copy.previewLabel}">${copy.preview(escapeHtml(font.name))}</textarea>
+      <textarea id="previewInput" dir="${scriptContext==="ar"?"rtl":lang==="fa"?"rtl":"ltr"}" lang="${scriptContext==="ar"?"ar":lang}" spellcheck="false" style="font-family:'${font.family}',sans-serif" aria-label="${copy.previewLabel}">${scriptContext==="ar"?copy.arabicPreview(escapeHtml(font.name)):copy.preview(escapeHtml(font.name))}</textarea>
     </div>
     <div class="font-actions">
       ${downloadHtml}
-      <a class="font-action ghost" href="index.html">${copy.back}</a>
+      ${repositoryHtml}
+      <a class="font-action ghost" href="${homeHref}">${copy.back}</a>
     </div>
     <h2>${copy.about}</h2>
     ${historyHtml}
@@ -211,7 +226,7 @@ function renderPage(font,content,metadata){
       <nav class="related-fonts" aria-label="${copy.related}">
         <h2>${copy.related}</h2>
         <div class="related-font-list">
-          ${relatedFonts.map(candidate=>`<a href="font?f=${encodeURIComponent(candidate.family)}&lang=${lang}">${escapeHtml(candidate.name)}</a>`).join("")}
+          ${relatedFonts.map(candidate=>`<a href="font?f=${encodeURIComponent(candidate.family)}&lang=${lang}&context=${scriptContext}">${escapeHtml(candidate.name)}</a>`).join("")}
         </div>
       </nav>
     `:""}
@@ -301,7 +316,7 @@ function addAlternateLanguageLinks(){
     const link=document.createElement("link");
     link.rel="alternate";
     link.hreflang=lang;
-    link.href=`https://ghalamnama.online/font?f=${encodeURIComponent(requestedFamily)}&lang=${lang==="x-default"?"fa":lang}`;
+    link.href=`https://ghalamnama.online/font?f=${encodeURIComponent(requestedFamily)}&lang=${lang==="x-default"?"fa":lang}${scriptContext==="ar"?"&context=ar":""}`;
     document.head.appendChild(link);
   }
 }
@@ -316,15 +331,20 @@ function applyLanguageShell(){
 }
 
 async function init(){
-  let local=[],content={},metadata={};
+  let local=[],content={},metadata={},arabic=[];
   applyLanguageShell();
-  try{const r=await fetch("fonts.json");if(r.ok)local=await r.json()}catch{}
-  try{const r=await fetch("font-content.json");if(r.ok)content=await r.json()}catch{}
-  try{const r=await fetch("font-metadata.json");if(r.ok)metadata=await r.json()}catch{}
+  try{
+    const responses=await Promise.all([fetch("fonts.json"),fetch("font-content.json"),fetch("font-metadata.json"),fetch("arabic-fonts.json")]);
+    if(responses[0].ok)local=await responses[0].json();
+    if(responses[1].ok)content=await responses[1].json();
+    if(responses[2].ok)metadata=await responses[2].json();
+    if(responses[3].ok)arabic=await responses[3].json();
+  }catch{}
 
   const localMatch=local.find(f=>f.family===requestedFamily);
   const webMatch=WEB_FONTS.find(f=>f.family===requestedFamily);
-  const font=localMatch?{...localMatch,source:"LOCAL"}:webMatch;
+  const arabicMatch=arabic.find(f=>f.family===requestedFamily);
+  const font=scriptContext==="ar"&&arabicMatch?{...webMatch,...arabicMatch,link:arabicMatch.sourceUrl}:localMatch?{...localMatch,source:"LOCAL"}:webMatch;
   fontCatalog=[...local.map(item=>({...item,source:"LOCAL"})),...WEB_FONTS];
 
   addAlternateLanguageLinks();

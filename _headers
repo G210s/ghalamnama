@@ -12,3 +12,9 @@
 
 /font-metadata.json
   Cache-Control: public, max-age=3600
+
+/arabic-fonts.json
+  Cache-Control: public, max-age=3600
+
+/andalusi-fonts.json
+  Cache-Control: public, max-age=3600

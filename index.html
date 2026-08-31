@@ -63,7 +63,11 @@
     </a>
 
     <div class="top-actions">
-      <div class="live-pill"><i></i><span id="count">0</span> فونت آنلاین</div>
+      <div class="context-switch" role="group" aria-label="انتخاب مجموعه فونت">
+        <button type="button" data-context="fa" aria-pressed="true">فارسی</button>
+        <button type="button" data-context="ar" aria-pressed="false">العربية</button>
+      </div>
+      <div class="live-pill"><i></i><span id="count">0</span> <span id="countLabel">فونت آنلاین</span></div>
       <button class="icon-btn" id="searchBtn" aria-label="جستجو">⌕</button>
       <button class="icon-btn" id="randomBtn" aria-label="فونت تصادفی">✦</button>
     </div>
@@ -73,9 +77,9 @@
     <section class="intro">
       <div>
         <p class="kicker">TYPE / EXPLORE / PLAY</p>
-        <h1>فونت فارسی رو <em>حس کن.</em></h1>
+        <h1 id="contextHeadline">فونت فارسی رو <em>حس کن.</em></h1>
       </div>
-      <p class="intro-note">متنت رو بنویس، با ← → بچرخ<br>و فونتی که بهش میاد رو پیدا کن.</p>
+      <p class="intro-note" id="contextNote">متنت رو بنویس، با ← → بچرخ<br>و فونتی که بهش میاد رو پیدا کن.</p>
     </section>
 
     <section class="stage" id="stage">
@@ -132,17 +136,35 @@
       <div class="font-directory-head">
         <div>
           <p class="kicker">TYPEFACE DIRECTORY</p>
-          <h2 id="fontDirectoryTitle">همهٔ فونت‌ها</h2>
+          <h2 id="fontDirectoryTitle">همهٔ فونت‌های فارسی</h2>
         </div>
         <span id="directoryCount">۰ فونت</span>
       </div>
       <div class="font-directory-list" id="fontDirectoryList"></div>
     </section>
+
+    <section class="andalusi-directory" id="andalusiDirectory" aria-labelledby="andalusiDirectoryTitle" hidden>
+      <div class="andalusi-directory-head">
+        <div>
+          <p class="kicker">ANDALUSI REFERENCE</p>
+          <h2 id="andalusiDirectoryTitle">فهرس خطوط أندلسي</h2>
+          <p>فهرس مرجعي لخطوط عربية وإنجليزية داخل تطبيق أندلسي. تفتح الروابط المصدر الأصلي؛ ملفات الخطوط غير مستضافة في قلم‌نما.</p>
+        </div>
+        <span id="andalusiCount">٤٦١ خطاً</span>
+      </div>
+      <div class="andalusi-filters">
+        <input id="andalusiSearch" type="search" placeholder="ابحث بالاسم…" aria-label="ابحث في خطوط أندلسي" />
+        <select id="andalusiCategory" aria-label="تصفية حسب الفئة">
+          <option value="">كل الفئات</option>
+        </select>
+      </div>
+      <div class="andalusi-list" id="andalusiList"></div>
+    </section>
   </main>
 
   <div class="search-overlay" id="searchOverlay">
     <div class="search-box">
-      <div class="search-head"><span>Find a typeface</span><button id="closeSearch">ESC</button></div>
+      <div class="search-head"><span id="searchHeadTitle">Find a typeface</span><button id="closeSearch">ESC</button></div>
       <input id="filter" type="search" placeholder="نام فونت را بنویس…" dir="ltr" autocomplete="off" />
       <div id="searchResults"></div>
     </div>
