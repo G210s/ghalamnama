@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#0a0b10" />
-  <title>قلم‌نما | پیش‌نمایش و دانلود فونت فارسی</title>
-  <meta name="description" content="با قلم‌نما فونت‌های فارسی را آنلاین روی متن دلخواه امتحان، مقایسه و دانلود کنید؛ مجموعه‌ای از فونت‌های ایرانی و گوگل با اندازه و وزن قابل تنظیم." />
-  <meta name="keywords" content="فونت فارسی, دانلود فونت فارسی, پیش نمایش فونت, تست فونت فارسی, فونت ایرانی, تایپوگرافی فارسی, Persian fonts, Farsi fonts" />
+  <title>صفحه کلید مجازی فارسی و عربی | قلم‌نما</title>
+  <meta name="description" content="با صفحه کلید مجازی فارسی و عربی، متن‌های فارسی و عربی را بدون نصب کیبورد تایپ کنید و فونت‌ها را در لحظه پیش‌نمایش ببینید." />
+  <meta name="keywords" content="صفحه کلید مجازی فارسی, صفحه کلید مجازی عربی, صفحه کلید فارسی, صفحه کلید عربی, virtual Persian keyboard, virtual Farsi keyboard, virtual Arabic keyboard, Persian keyboard, Farsi keyboard, Arabic keyboard, keyboard typing Persian, Arabic keyboard online, Persian typing keyboard, فونت فارسی, دانلود فونت فارسی, پیش نمایش فونت, تایپوگرافی فارسی" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="application-name" content="قلم‌نما" />
   <meta name="author" content="ghalamnama" />
@@ -30,15 +30,37 @@
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebApplication",
+      "@type": ["WebApplication", "FAQPage"],
       "name": "قلم‌نما",
       "alternateName": "ghalamnama",
       "url": "https://ghalamnama.online/",
-      "description": "ابزار آنلاین پیش‌نمایش، مقایسه و دانلود فونت‌های فارسی",
+      "description": "ابزار آنلاین پیش‌نمایش، مقایسه و دانلود فونت‌های فارسی و صفحه کلید مجازی فارسی و عربی",
       "applicationCategory": "DesignApplication",
       "operatingSystem": "Any",
-      "inLanguage": "fa",
-      "isAccessibleForFree": true
+      "inLanguage": ["fa", "ar", "en"],
+      "isAccessibleForFree": true,
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What is a virtual Persian keyboard?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A virtual Persian keyboard is an on-screen keyboard for typing in Persian and Farsi script without installing a system keyboard layout. It is useful for English keyboard users and quick font testing."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What is a virtual Arabic keyboard?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A virtual Arabic keyboard allows users to type Arabic text on-screen, making it easier to write Arabic or Arabic-inspired text for design and typography previews."
+        }
+      }, {
+        "@type": "Question",
+        "name": "آیا صفحه کلید مجازی فارسی وجود دارد؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "بله، صفحه کلید مجازی فارسی و عربی به کاربران امکان می‌دهد بدون نصب یا تغییر تنظیمات سیستم، به سادگی فارسی یا عربی تایپ کنند و فونت‌ها را پیش‌نمایش کنند."
+        }
+      }]
     }
   </script>
 </head>
@@ -70,7 +92,7 @@
         <p class="kicker">TYPE / EXPLORE / PLAY</p>
         <h1 id="contextHeadline">فونت فارسی رو <em>حس کن.</em></h1>
       </div>
-      <p class="intro-note" id="contextNote">متنت رو بنویس، با ← → بچرخ<br>و فونتی که بهش میاد رو پیدا کن.</p>
+      <p class="intro-note" id="contextNote">متنت رو بنویس، با ← → بچرخ<br>و فونتی که بهش میاد رو پیدا کن؛ صفحه‌کلید مجازی فارسی/عربی هم دارد.</p>
     </section>
 
     <section class="stage" id="stage">
@@ -92,7 +114,7 @@
         </div>
         <textarea id="input" dir="rtl" lang="fa" spellcheck="false" aria-label="متن پیش‌نمایش">سلام دنیا</textarea>
         <div class="caret-line"></div>
-        <div class="stage-hint"><kbd>←</kbd><kbd>→</kbd> تغییر فونت <span>•</span> <kbd>/</kbd> جستجو</div>
+        <div class="stage-hint"><kbd>←</kbd><kbd>→</kbd> تغییر فونت <span>•</span> <kbd>/</kbd> جستجو <span>•</span> صفحه‌کلید مجازی فارسی/عربی</div>
       </div>
 
       <div class="dock-wrap">
@@ -121,6 +143,34 @@
     <section class="under-stage">
       <div class="current-font"><span>CURRENT TYPEFACE</span><a id="currentFontLink" href="font"><strong id="bigFontName">—</strong></a></div>
       <div class="gesture"><span class="gesture-key">SPACE</span> فونت تصادفی <span class="gesture-key">ENTER</span> انتخاب</div>
+    </section>
+
+    <section class="seo-content" aria-labelledby="seoKeyboardTitle" style="padding: 0 1.25rem 1.5rem; max-width: 1100px; margin: 0 auto;">
+      <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.12); border-radius: 18px; padding: 1.2rem 1.4rem; margin-bottom: 1rem;">
+        <p class="kicker" style="margin-bottom: 0.4rem;">VIRTUAL KEYBOARD</p>
+        <h2 id="seoKeyboardTitle" style="margin: 0 0 0.6rem; font-size: clamp(1.5rem, 3vw, 2.1rem);">صفحه کلید مجازی فارسی و عربی</h2>
+        <p id="seoKeyboardText" style="margin: 0; line-height: 1.8; color: rgba(255,255,255,0.86);">
+          با صفحه کلید مجازی فارسی و عربی می‌توانید بدون نصب یا فعال‌سازی کیبورد سیستم، فارسی، عربی و فarsi را تایپ کنید، فونت‌های مورد علاقه را تست کنید و نوشته‌های خود را در لحظه پیش‌نمایش ببینید.
+          این ابزار برای کاربران انگلیسی‌زبان، طراحان و کسانی که به دنبال virtual Persian keyboard، Farsi keyboard online، Arabic keyboard typing و Persian keyboard هستند، مناسب است.
+          English: use the virtual Persian keyboard, Arabic keyboard online, and Farsi typing keyboard to write naturally while previewing fonts in real time.
+        </p>
+      </div>
+
+      <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.12); border-radius: 18px; padding: 1.2rem 1.4rem;">
+        <h3 style="margin: 0 0 0.8rem; font-size: 1.2rem;">سوالات متداول</h3>
+        <details open style="margin-bottom: 0.8rem;">
+          <summary style="cursor: pointer; font-weight: 600;">صفحه کلید مجازی فارسی چیست؟</summary>
+          <p style="margin: 0.5rem 0 0; line-height: 1.8; color: rgba(255,255,255,0.82);">صفحه کلید مجازی فارسی ابزاری آنلاین است که به شما اجازه می‌دهد بدون نصب کیبورد فارسی، متون فارسی را تایپ و بررسی کنید.</p>
+        </details>
+        <details open style="margin-bottom: 0.8rem;">
+          <summary style="cursor: pointer; font-weight: 600;">آیا صفحه کلید عربی آنلاین هم دارد؟</summary>
+          <p style="margin: 0.5rem 0 0; line-height: 1.8; color: rgba(255,255,255,0.82);">بله، صفحه کلید مجازی عربی برای تایپ عربی و آزمایش فونت‌ها و متن‌ها در یک تجربه ساده و سریع استفاده می‌شود.</p>
+        </details>
+        <details>
+          <summary style="cursor: pointer; font-weight: 600;">Does Ghalamnama include a virtual Persian keyboard?</summary>
+          <p style="margin: 0.5rem 0 0; line-height: 1.8; color: rgba(255,255,255,0.82);">Yes. It includes a virtual Persian keyboard and Arabic keyboard interface for quick typing, font preview, and multilingual text testing.</p>
+        </details>
+      </div>
     </section>
 
     <section class="font-directory" aria-labelledby="fontDirectoryTitle">
@@ -156,7 +206,7 @@
   <div class="search-overlay" id="searchOverlay">
     <div class="search-box">
       <div class="search-head"><span id="searchHeadTitle">Find a typeface</span><button id="closeSearch">ESC</button></div>
-      <input id="filter" type="search" placeholder="نام فونت را بنویس…" dir="ltr" autocomplete="off" />
+      <input id="filter" type="search" placeholder="نام فونت، فارسی یا عربی، صفحه کلید مجازی…" dir="ltr" autocomplete="off" />
       <div id="searchResults"></div>
     </div>
   </div>

@@ -108,10 +108,10 @@ function buildKeywords(font,content,metadata,lang){
   const category=content?.category||metadata?.style||"";
   const people=content?.designer||metadata?.designer||metadata?.vendor||"";
   const common=lang==="fa"
-    ? [`فونت ${name}`,`دانلود فونت ${name}`,`پیش نمایش فونت ${name}`,`طراح فونت ${name}`,`تاریخچه فونت ${name}`,"فونت فارسی","فونت عربی","تایپوگرافی فارسی"]
+    ? [`فونت ${name}`,`دانلود فونت ${name}`,`پیش نمایش فونت ${name}`,`طراح فونت ${name}`,`تاریخچه فونت ${name}`,"فونت فارسی","فونت عربی","تایپوگرافی فارسی","صفحه کلید مجازی فارسی","صفحه کلید مجازی عربی","صفحه کلید فارسی","صفحه کلید عربی","کیبورد فارسی","کیبورد عربی","virtual Persian keyboard","virtual Farsi keyboard","virtual Arabic keyboard"]
     : lang==="ar"
-      ? [`خط ${name}`,`تنزيل خط ${name}`,`معاينة خط ${name}`,`مصمم خط ${name}`,`تاريخ خط ${name}`,"خطوط عربية","خط عربي","تصميم الخطوط العربية"]
-      : [`${name} font`,`${name} typeface`,`${name} font download`,`${name} font preview`,`${name} font designer`,`${name} font history`,"Persian font","Arabic font","Persian typography"];
+      ? [`خط ${name}`,`تنزيل خط ${name}`,`معاينة خط ${name}`,`مصمم خط ${name}`,`تاريخ خط ${name}`,"خطوط عربية","خط عربي","تصميم الخطوط العربية","لوحة مفاتيح عربية افتراضية","لوحة مفاتيح فارسية افتراضية","لوحة مفاتيح عربية","لوحة مفاتيح فارسية","virtual Arabic keyboard","virtual Persian keyboard"]
+      : [`${name} font`,`${name} typeface`,`${name} font download`,`${name} font preview`,`${name} font designer`,`${name} font history`,"Persian font","Arabic font","Persian typography","virtual Persian keyboard","virtual Farsi keyboard","virtual Arabic keyboard","Persian keyboard","Farsi keyboard","Arabic keyboard"];
   const factual=[category,people,font.format,sourceLabel(font.source,lang)];
   return [...new Set([...common,...factual].filter(value=>value!=null&&value!=="").map(value=>String(value).trim()).filter(Boolean))].slice(0,14);
 }
