@@ -18,7 +18,7 @@ Press **Ctrl+Shift+Space** (Mac: **Ctrl+Shift+Space**) to open/close the keyboar
 
 A dedicated **Settings** page manages enabled languages, the default language, the default typing mode, key highlighting, the reveal shortcut, and a full reset with confirmation. The **⚙** button in the keyboard toolbar links to it, as does **Settings** in the popup; language management now lives there instead of inside the keyboard.
 
-The popup also includes links to report extension feedback, request a language or layout, and support the project. Feedback and language requests open a prefilled GitHub issue; financial support opens the Ghalamnama donation page.
+The popup also includes links to report extension feedback, request a language or layout, and support the project. Feedback opens the user's mail service with a message addressed to `support@ghalamnama.online`; language requests open a prefilled GitHub issue; financial support opens the Ghalamnama donation page.
 
 ## Test locally
 
