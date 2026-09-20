@@ -1,0 +1,25 @@
+* { box-sizing: border-box; }
+body { margin: 0; color: #f8f4ec; background: #171a19; font: 14px/1.45 system-ui, sans-serif; }
+body.popup { width: 280px; }
+main { padding: 16px; }
+h1 { margin: 0 0 4px; font-size: 20px; }
+p { margin: 0 0 12px; color: #c6ccc8; }
+fieldset { display: grid; gap: 8px; margin: 0 0 14px; border: 1px solid #5d625e; border-radius: 6px; padding: 10px; }
+legend { padding: 0 4px; color: #c6ccc8; }
+label { cursor: pointer; }
+button { width: 100%; border: 1px solid #8b9d91; border-radius: 5px; padding: 8px 10px; color: #171a19; background: #c6d8cb; cursor: pointer; font: inherit; }
+button:hover { background: #e1eee4; }
+button + button { margin-top: 8px; color: #f8f4ec; background: #282d2a; }
+#error { color: #ffd0c8; }
+#saved { color: #c6d8cb; }
+[hidden] { display: none; }
+select { min-height: 32px; margin: 4px 0 12px; border: 1px solid #5d625e; border-radius: 5px; padding: 4px 8px; color: inherit; background: #282d2a; font: inherit; }
+label[for] { display: block; margin: 6px 0 2px; }
+h2 { margin: 0 0 8px; font-size: 16px; }
+.support { margin-top: 16px; padding-top: 14px; border-top: 1px solid #454b47; }
+.support h2 { font-size: 14px; }
+.support p { font-size: 12px; }
+.support-link { display: block; margin-top: 7px; color: #c6d8cb; font-size: 13px; text-decoration: none; }
+.support-link:hover, .support-link:focus-visible { color: #fff; text-decoration: underline; }
+.support-link-primary { width: 100%; border: 1px solid #8b9d91; border-radius: 5px; padding: 8px 10px; color: #171a19; background: #c6d8cb; text-align: center; font-weight: 600; }
+.support-link-primary:hover, .support-link-primary:focus-visible { color: #171a19; background: #e1eee4; text-decoration: none; }

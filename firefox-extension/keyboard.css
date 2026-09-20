@@ -2,17 +2,22 @@
   all: initial;
   position: fixed;
   z-index: 2147483647;
-  inset-inline-end: 16px;
+  left: auto;
+  right: 16px;
   bottom: 16px;
-  width: min(620px, calc(100vw - 32px));
+  width: auto;
   color: #f8f4ec;
   direction: rtl;
   font: 14px/1.4 sans-serif;
 }
 
 .ghalamnama-keyboard-panel {
+  position: fixed;
   display: grid;
   gap: 8px;
+  width: min(760px, calc(100vw - 16px));
+  max-height: calc(100vh - 16px);
+  overflow: auto;
   padding: 10px;
   border: 1px solid #5d625e;
   border-radius: 10px;
@@ -21,7 +26,18 @@
 }
 
 .ghalamnama-keyboard-panel[hidden] { display: none; }
-.ghalamnama-keyboard-row { display: flex; gap: 5px; }
+.ghalamnama-keyboard-toggle { touch-action: none; user-select: none; }
+.ghalamnama-keyboard-toolbar { display: flex; gap: 6px; align-items: end; }
+.ghalamnama-keyboard-toolbar label { display: grid; gap: 2px; color: #c6ccc8; font-size: 11px; }
+.ghalamnama-keyboard-toolbar select { min-height: 32px; min-width: 112px; border: 1px solid #5d625e; border-radius: 5px; padding: 4px 8px; color: inherit; background: #282d2a; font: inherit; }
+.ghalamnama-keyboard-toolbar button[data-action="deactivate"] { color: #ffd0c8; }
+.ghalamnama-keyboard-toolbar button[aria-pressed="true"],
+.ghalamnama-keyboard-actions button[aria-pressed="true"] { background: #54665b; }
+.ghalamnama-keyboard-language-settings { padding: 8px; border: 1px solid #454b47; border-radius: 6px; background: #202421; }
+.ghalamnama-keyboard-language-settings[hidden] { display: none; }
+.ghalamnama-keyboard-os-message { margin: 0; padding: 12px; border: 1px solid #454b47; border-radius: 6px; color: #c6ccc8; text-align: center; }
+.ghalamnama-keyboard-keys { display: grid; gap: 5px; direction: ltr; }
+.ghalamnama-keyboard-row { display: flex; gap: 5px; direction: ltr; }
 .ghalamnama-keyboard-key,
 .ghalamnama-keyboard-mode,
 .ghalamnama-keyboard-actions button {
@@ -36,14 +52,24 @@
   font: inherit;
 }
 
-.ghalamnama-keyboard-key { flex: 1; font-size: 16px; }
+.ghalamnama-keyboard-key { flex: 1 1 0; font-size: 16px; direction: auto; }
+.ghalamnama-keyboard-key.special { flex-grow: 1.35; color: #c6ccc8; font-size: 11px; }
+.ghalamnama-keyboard-row.row-0 .special { flex-grow: 1; }
+.ghalamnama-keyboard-row.row-1 .special { flex-grow: 1.5; }
+.ghalamnama-keyboard-row.row-2 .special { flex-grow: 1.75; }
+.ghalamnama-keyboard-row.row-3 .special { flex-grow: 2.15; }
+.ghalamnama-keyboard-row.row-2 .trailing { flex-grow: 2.1; }
 .ghalamnama-keyboard-key:hover,
 .ghalamnama-keyboard-mode:hover,
 .ghalamnama-keyboard-actions button:hover { background: #3b443e; }
+.ghalamnama-keyboard-key.pressed,
+.ghalamnama-keyboard-key:focus-visible,
+.ghalamnama-keyboard-host button:focus-visible,
+.ghalamnama-keyboard-host select:focus-visible { outline: 2px solid #c6d8cb; outline-offset: 2px; background: #54665b; }
 .ghalamnama-keyboard-key.wide { flex: 1.7; }
 .ghalamnama-keyboard-key.enter { flex: 1.8; }
 .ghalamnama-keyboard-actions { display: flex; gap: 5px; }
-.ghalamnama-keyboard-actions button { flex: 0 0 52px; font-size: 12px; }
+.ghalamnama-keyboard-actions button { flex: 0 0 auto; min-width: 64px; font-size: 12px; }
 .ghalamnama-keyboard-actions .space { flex: 1; }
 .ghalamnama-keyboard-toggle {
   display: block;
@@ -58,8 +84,13 @@
 }
 
 @media (max-width: 560px) {
-  .ghalamnama-keyboard-host { inset-inline: 8px; bottom: 8px; width: auto; }
+  .ghalamnama-keyboard-host { right: 8px; bottom: 8px; }
   .ghalamnama-keyboard-row { gap: 3px; }
   .ghalamnama-keyboard-key { min-height: 30px; padding: 3px; font-size: 13px; }
+  .ghalamnama-keyboard-key.special { font-size: 9px; }
+  .ghalamnama-keyboard-toolbar { flex-wrap: wrap; }
+  .ghalamnama-keyboard-toolbar label { flex: 1 1 45%; }
+  .ghalamnama-keyboard-toolbar select { width: 100%; min-width: 0; }
   .ghalamnama-keyboard-actions button { flex-basis: 42px; padding-inline: 3px; }
 }
+.ghalamnama-keyboard-host [hidden] { display: none !important; }

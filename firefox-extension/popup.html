@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ghalamnama</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body class="popup">
+  <main>
+    <h1>Ghalamnama</h1>
+    <p id="intro">Choose the languages you want in the keyboard.</p>
+    <p id="status" role="status" hidden></p>
+    <label id="current-language-label" for="current-language" hidden>Default language</label>
+    <select id="current-language" hidden></select>
+    <fieldset id="language-settings">
+      <legend>Supported languages</legend>
+      <label><input type="checkbox" value="fa"> فارسی</label>
+      <label><input type="checkbox" value="ar"> العربية</label>
+      <label><input type="checkbox" value="he"> עברית</label>
+      <label><input type="checkbox" value="ru"> Русский</label>
+      <label><input type="checkbox" value="el"> Ελληνικά</label>
+    </fieldset>
+    <p id="error" role="alert" hidden></p>
+    <button id="save-languages" type="button" hidden>Save languages</button>
+    <button id="settings" type="button" hidden>Language settings</button>
+    <button id="open-settings" type="button" hidden>Languages & settings</button>
+    <button id="show-icon" type="button" hidden>Show keyboard icon</button>
+    <button id="activate" type="button">Activate on this tab</button>
+    <button id="deactivate" type="button" hidden>Deactivate on this tab</button>
+    <section class="support" aria-labelledby="support-heading">
+      <h2 id="support-heading">Help shape Ghalamnama</h2>
+      <p>Tell us what is not working, request a language, or support continued development.</p>
+      <a class="support-link" href="https://github.com/G210s/ghalamnama/issues/new?title=Extension%20feedback" target="_blank" rel="noreferrer">Report an issue or share feedback</a>
+      <a class="support-link" href="https://github.com/G210s/ghalamnama/issues/new?title=Language%20request%20for%20Ghalamnama" target="_blank" rel="noreferrer">Request a language or layout</a>
+      <a class="support-link support-link-primary" href="https://ghalamnama.online/donate.html" target="_blank" rel="noreferrer">Support Ghalamnama</a>
+    </section>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
