@@ -49,7 +49,11 @@
     return field instanceof Element
       && !field.disabled
       && !field.readOnly
-      && field.matches("textarea, input[type='text'], input[type='search'], input:not([type])");
+      && field.matches("textarea, input[type='text'], input[type='search'], input[type='email'], input:not([type])");
+  }
+
+  function isEmailField(field) {
+    return field instanceof Element && field.matches("input[type='email']");
   }
 
   function isContenteditable(field) {
@@ -62,6 +66,22 @@
     return fieldSelector(field) || isContenteditable(field);
   }
 
+  function writableFromEvent(event) {
+    const path = typeof event.composedPath === "function" ? event.composedPath() : [event.target];
+    return path.find(isWritable) || null;
+  }
+
+  function deepActiveElement(root = document) {
+    let active = root.activeElement;
+    while (active?.shadowRoot?.activeElement) active = active.shadowRoot.activeElement;
+    return active;
+  }
+
+  function isFocused(field, event) {
+    return deepActiveElement() === field
+      || (typeof event.composedPath === "function" && event.composedPath().includes(field));
+  }
+
   function readSelection(field) {
     const selection = window.getSelection();
     if (!selection || selection.rangeCount === 0) return null;
@@ -72,6 +92,10 @@
 
   function insertContenteditable(field, value) {
     const found = readSelection(field);
+    // Rich editors such as Reddit's maintain their own document model. Let the
+    // browser perform the edit first so the editor sees a native editing
+    // transaction and can keep its model and undo history in sync.
+    if (found && document.execCommand?.("insertText", false, value)) return;
     if (!found) {
       // No usable selection: append at the end as a conservative fallback.
       field.append(value);
@@ -97,6 +121,7 @@
   function backspaceContenteditable(field) {
     const found = readSelection(field);
     if (!found) return;
+    if (document.execCommand?.("delete", false)) return;
     const textNode = found.range.startContainer;
     if (found.range.collapsed && textNode.nodeType === Node.TEXT_NODE) {
       const offset = found.range.startOffset;
@@ -117,6 +142,13 @@
   function setText(field, value) {
     if (!isWritable(field)) return;
     if (isContenteditable(field)) return insertContenteditable(field, value);
+    if (isEmailField(field)) {
+      field.focus();
+      if (document.execCommand?.("insertText", false, value)) return;
+      field.value += value;
+      field.dispatchEvent(new Event("input", { bubbles: true }));
+      return;
+    }
     const start = field.selectionStart ?? field.value.length;
     const end = field.selectionEnd ?? start;
     field.setRangeText(value, start, end, "end");
@@ -127,6 +159,13 @@
   function backspace(field) {
     if (!isWritable(field)) return;
     if (isContenteditable(field)) return backspaceContenteditable(field);
+    if (isEmailField(field)) {
+      field.focus();
+      if (document.execCommand?.("delete", false)) return;
+      field.value = [...field.value].slice(0, -1).join("");
+      field.dispatchEvent(new Event("input", { bubbles: true }));
+      return;
+    }
     const start = field.selectionStart ?? 0;
     const end = field.selectionEnd ?? start;
     if (start !== end) return setText(field, "");
@@ -134,6 +173,13 @@
     const previous = [...field.value].slice(0, start - 1).join("");
     field.setSelectionRange(previous.length, start);
     setText(field, "");
+  }
+
+  function setKeyboardMode(mode) {
+    keyboardMode = mode === "os" ? "os" : "ghalamnama";
+    storageSet({ keyboardMode });
+    render();
+    return keyboardMode;
   }
 
   function render() {
@@ -144,9 +190,7 @@
     const shiftedRows = [layout.numberShift, ...layout.shifts];
     panel.innerHTML = `<div class="ghalamnama-keyboard-toolbar"><label>Language <select data-action="language" aria-label="${copy.language}">${enabledLanguages.map((key) => `<option value="${key}"${key === selectedLanguage ? " selected" : ""}>${layouts[key].name}</option>`).join("")}</select></label><label>Physical typing <select data-action="keyboard-mode" aria-label="Physical typing mode"><option value="ghalamnama"${keyboardMode === "ghalamnama" ? " selected" : ""}>Ghalamnama layout</option><option value="os"${keyboardMode === "os" ? " selected" : ""}>System keyboard</option></select></label><button class="ghalamnama-keyboard-mode" data-action="manage" aria-label="Manage languages" title="Manage languages">⚙</button><button class="ghalamnama-keyboard-mode" data-action="deactivate">Turn off for this tab</button><button class="ghalamnama-keyboard-mode" data-action="hide">${copy.hideIcon}</button></div>${keyboardMode === "os" ? `<p class="ghalamnama-keyboard-os-message">Physical keys use your system keyboard. Click keys below to insert this layout.</p>` : ""}<div class="ghalamnama-keyboard-keys"></div><div class="ghalamnama-keyboard-actions"><button data-action="shift" aria-pressed="${shiftEnabled}" aria-label="Shift">${copy.shift}</button><button data-action="space" class="space">${copy.space}</button><button data-action="enter">↵ Enter</button></div>`;
     panel.querySelector("[data-action='keyboard-mode']").onchange = (event) => {
-      keyboardMode = event.target.value === "os" ? "os" : "ghalamnama";
-      storageSet({ keyboardMode });
-      render();
+      setKeyboardMode(event.target.value);
     };
     panel.querySelector("[data-action='deactivate']").onclick = deactivate;
     const keyContainer = panel.querySelector(".ghalamnama-keyboard-keys");
@@ -240,7 +284,9 @@
       if (!panel.hidden) render();
       return;
     }
-    if (!mappingEnabled || !activeField || activeField !== document.activeElement || event.isComposing || event.ctrlKey || event.metaKey || event.altKey) return;
+    const eventField = writableFromEvent(event);
+    if (eventField) activeField = eventField;
+    if (!mappingEnabled || !activeField || !isFocused(activeField, event) || event.isComposing || event.ctrlKey || event.metaKey || event.altKey) return;
     const layout = layouts[selectedLanguage];
     const allKeys = [layout.numbers, ...layout.rows];
     const allShiftedKeys = [layout.numberShift, ...layout.shifts];
@@ -360,7 +406,8 @@
     window.setTimeout(() => { moved = false; }, 0);
   });
   function handleFocus(event) {
-    if (!deactivated && isWritable(event.target)) showFor(event.target);
+    const field = writableFromEvent(event);
+    if (!deactivated && field) showFor(field);
   }
   document.addEventListener("focusin", handleFocus);
   document.addEventListener("keydown", mapPhysicalKey, true);
@@ -377,6 +424,9 @@
     }
     if (message?.type === "show-icon") showIcon();
     if (message?.type === "deactivate") deactivate();
+    if (message?.type === "toggle-typing-mode") {
+      return { keyboardMode: setKeyboardMode(keyboardMode === "ghalamnama" ? "os" : "ghalamnama") };
+    }
     if (message?.type === "toggle-keyboard") {
       if (hiddenByUser) {
         showIcon();
@@ -420,7 +470,8 @@
     if (hiddenByUser) panel.hidden = true;
     toggle.hidden = hiddenByUser;
     toggle.textContent = panel.hidden ? labels[selectedLanguage].show : labels[selectedLanguage].hide;
-    if (isWritable(document.activeElement)) activeField = document.activeElement;
+    const focused = deepActiveElement();
+    if (isWritable(focused)) activeField = focused;
     render();
   }
 

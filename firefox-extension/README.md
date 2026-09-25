@@ -1,8 +1,10 @@
 # Ghalamnama Firefox Extension
 
-This WebExtension adds a multilingual on-screen keyboard to text inputs and textareas on demand. It is inactive by default and is activated only for the current tab from the Firefox extension popup.
+This WebExtension adds a multilingual on-screen keyboard to text, search, and email inputs and textareas on demand. It is inactive by default and is activated only for the current tab from the Firefox extension popup or activation shortcut.
 
 The first time the popup opens, it asks the user which languages to support. After that, the popup only activates or deactivates the current tab. Use **Language settings** in the popup to add or remove languages later. Those choices are saved globally.
+
+On a fresh installation, Firefox opens a three-step welcome guide covering language selection, per-tab activation, the typing-mode shortcut, and the extension's no-telemetry privacy behavior. Updates do not reopen the guide.
 
 The keyboard currently supports Persian (ISIRI 9147), Arabic, Hebrew, Russian (JCUKEN), and Greek layouts. Use the language selector to choose the active layout. The enabled languages and active layout are remembered across pages; use **Settings (⚙)** in the toolbar or the popup's **Settings** link to manage them.
 
@@ -14,7 +16,7 @@ The keyboard icon can be dragged anywhere on the page. Use **Deactivate** beside
 
 When the keyboard panel is open, physical key presses briefly highlight the matching virtual key. Disable this in **Settings** if you prefer a quiet panel.
 
-Press **Ctrl+Shift+Space** (Mac: **Ctrl+Shift+Space**) to open/close the keyboard without visiting the popup; this works only on tabs where Ghalamnama is active and can be reconfigured in Firefox's extension shortcut manager (`about:addons` → gear icon → Manage Extension Shortcuts). If the floating icon was hidden, **Alt + Shift + K** reveals it again; that behavior can be disabled in Settings.
+Press **Alt+Shift+G** (Mac: **Control+Shift+G**) to activate or deactivate Ghalamnama on the current tab. Press **Ctrl+Shift+Space** (Mac: **Ctrl+Shift+Space**) to switch physical typing between the Ghalamnama layout and the system keyboard. Shortcuts can be changed in Firefox's extension shortcut manager (`about:addons` → gear icon → Manage Extension Shortcuts). The separate open/close command has no default shortcut but can be assigned there. If the floating icon was hidden, **Alt + Shift + K** reveals it again; that behavior can be disabled in Settings.
 
 A dedicated **Settings** page manages enabled languages, the default language, the default typing mode, key highlighting, the reveal shortcut, and a full reset with confirmation. The **⚙** button in the keyboard toolbar links to it, as does **Settings** in the popup; language management now lives there instead of inside the keyboard.
 

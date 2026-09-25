@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to Ghalamnama</title>
+  <link rel="stylesheet" href="onboarding.css">
+</head>
+<body>
+  <main class="guide" aria-labelledby="title">
+    <header>
+      <span class="eyebrow">Ghalamnama setup</span>
+      <h1 id="title">Write in your language, anywhere.</h1>
+      <p id="progress" class="progress" role="status">Step 1 of 3</p>
+    </header>
+
+    <section data-step="0" aria-labelledby="languages-title">
+      <h2 id="languages-title">Choose your keyboards</h2>
+      <p>Select the languages you want available. You can change this later in Settings.</p>
+      <fieldset>
+        <legend>Enabled languages</legend>
+        <label><input type="checkbox" value="fa" checked> <span lang="fa" dir="rtl">فارسی</span><small>Persian</small></label>
+        <label><input type="checkbox" value="ar" checked> <span lang="ar" dir="rtl">العربية</span><small>Arabic</small></label>
+        <label><input type="checkbox" value="he" checked> <span lang="he" dir="rtl">עברית</span><small>Hebrew</small></label>
+        <label><input type="checkbox" value="ru" checked> <span lang="ru">Русский</span><small>Russian</small></label>
+        <label><input type="checkbox" value="el" checked> <span lang="el">Ελληνικά</span><small>Greek</small></label>
+      </fieldset>
+      <p id="error" class="error" role="alert" hidden>Select at least one language.</p>
+    </section>
+
+    <section data-step="1" aria-labelledby="use-title" hidden>
+      <h2 id="use-title">Activate it where you need it</h2>
+      <ol class="instructions">
+        <li><strong>Open a regular webpage</strong><span>Ghalamnama cannot run on protected Firefox pages.</span></li>
+        <li><strong>Select the Ghalamnama toolbar icon</strong><span>Pin it from the extensions menu if you want faster access.</span></li>
+        <li><strong>Activate the current tab</strong><span>Choose “Activate on this tab,” or press Alt + Shift + G (Control + Shift + G on Mac), then focus a text box.</span></li>
+      </ol>
+      <aside><strong>Quick switch</strong><span>Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Space</kbd> to switch physical typing between Ghalamnama and your system keyboard.</span></aside>
+    </section>
+
+    <section data-step="2" aria-labelledby="privacy-title" hidden>
+      <h2 id="privacy-title">Ready—with privacy by default</h2>
+      <p>Choose how physical typing should start. Virtual keyboard buttons remain available in either mode.</p>
+      <div class="mode-options">
+        <label><input type="radio" name="mode" value="ghalamnama" checked><span><strong>Ghalamnama layout</strong><small>Physical keys type the selected Ghalamnama language.</small></span></label>
+        <label><input type="radio" name="mode" value="os"><span><strong>System keyboard</strong><small>Physical keys keep using your operating-system layout.</small></span></label>
+      </div>
+      <p class="privacy"><strong>Your typing stays private.</strong> Ghalamnama does not collect or transmit what you type, page addresses, or usage telemetry.</p>
+    </section>
+
+    <footer>
+      <button id="back" class="secondary" type="button" hidden>Back</button>
+      <button id="next" type="button">Next</button>
+      <button id="finish" type="button" hidden>Finish setup</button>
+    </footer>
+  </main>
+  <script src="onboarding.js"></script>
+</body>
+</html>

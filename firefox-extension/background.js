@@ -75,8 +75,37 @@
     } catch (_) {}
   }
 
+  async function toggleActivationOnActiveTab() {
+    const tabs = await browser.tabs.query({ active: true, currentWindow: true });
+    const tab = tabs[0];
+    if (!tab?.id || isProtectedUrl(tab.url)) return;
+    if (enabledTabs.has(tab.id)) {
+      try { await browser.tabs.sendMessage(tab.id, { type: "deactivate" }); } catch (_) {}
+      deactivate(tab.id);
+      return;
+    }
+    const values = await browser.storage.local.get("enabledLanguages");
+    await activate(tab, values.enabledLanguages);
+  }
+
+  async function toggleTypingModeOnActiveTab() {
+    const tabs = await browser.tabs.query({ active: true, currentWindow: true });
+    const tab = tabs[0];
+    if (!tab?.id || !enabledTabs.has(tab.id)) return;
+    try {
+      await browser.tabs.sendMessage(tab.id, { type: "toggle-typing-mode" });
+    } catch (_) {}
+  }
+
   browser.commands.onCommand.addListener(async (command) => {
+    if (command === "toggle-activation") await toggleActivationOnActiveTab();
     if (command === "toggle-keyboard") await toggleKeyboardOnActiveTab();
+    if (command === "toggle-typing-mode") await toggleTypingModeOnActiveTab();
+  });
+
+  browser.runtime.onInstalled.addListener((details) => {
+    if (details.reason !== "install") return;
+    browser.tabs.create({ url: browser.runtime.getURL("onboarding.html") }).catch(() => {});
   });
 
   browser.runtime.onMessage.addListener(async (message, sender) => {

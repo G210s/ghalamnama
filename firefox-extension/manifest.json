@@ -22,12 +22,22 @@
     "open_in_tab": true
   },
   "commands": {
+    "toggle-activation": {
+      "suggested_key": {
+        "default": "Alt+Shift+G",
+        "mac": "MacCtrl+Shift+G"
+      },
+      "description": "Activate or deactivate Ghalamnama on the current tab"
+    },
     "toggle-keyboard": {
+      "description": "Open or close the Ghalamnama keyboard on the active tab"
+    },
+    "toggle-typing-mode": {
       "suggested_key": {
         "default": "Ctrl+Shift+Space",
         "mac": "MacCtrl+Shift+Space"
       },
-      "description": "Open or close the Ghalamnama keyboard on the active tab"
+      "description": "Switch between Ghalamnama and system keyboard typing"
     }
   },
   "background": {

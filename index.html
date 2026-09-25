@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#0a0b10" />
-  <title>صفحه کلید مجازی فارسی و عربی | قلم‌نما</title>
-  <meta name="description" content="با صفحه کلید مجازی فارسی و عربی، متن‌های فارسی و عربی را بدون نصب کیبورد تایپ کنید و فونت‌ها را در لحظه پیش‌نمایش ببینید." />
+  <title>قلم‌نما | کشف و پیش‌نمایش فونت، صفحه‌کلید فارسی و عربی</title>
+  <meta name="description" content="فونت‌های فارسی و عربی را کشف کنید، روی متن خود امتحان کنید و با صفحه‌کلید مجازی قلم‌نما بنویسید. با محصولات قلم‌نما، از جمله افزونهٔ فایرفاکس، آشنا شوید." />
   <meta name="keywords" content="صفحه کلید مجازی فارسی, صفحه کلید مجازی عربی, صفحه کلید فارسی, صفحه کلید عربی, virtual Persian keyboard, virtual Farsi keyboard, virtual Arabic keyboard, Persian keyboard, Farsi keyboard, Arabic keyboard, keyboard typing Persian, Arabic keyboard online, Persian typing keyboard, فونت فارسی, دانلود فونت فارسی, پیش نمایش فونت, تایپوگرافی فارسی" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="application-name" content="قلم‌نما" />
@@ -25,56 +25,41 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net" />
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="homepage.css" />
   <script src="webfonts.js"></script>
   <script src="consent.js"></script>
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": ["WebApplication", "FAQPage"],
-      "name": "قلم‌نما",
-      "alternateName": "ghalamnama",
-      "url": "https://ghalamnama.online/",
-      "description": "ابزار آنلاین پیش‌نمایش، مقایسه و دانلود فونت‌های فارسی و صفحه کلید مجازی فارسی و عربی",
-      "applicationCategory": "DesignApplication",
-      "operatingSystem": "Any",
-      "inLanguage": ["fa", "ar", "en"],
-      "isAccessibleForFree": true,
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "What is a virtual Persian keyboard?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A virtual Persian keyboard is an on-screen keyboard for typing in Persian and Farsi script without installing a system keyboard layout. It is useful for English keyboard users and quick font testing."
-        }
-      }, {
-        "@type": "Question",
-        "name": "What is a virtual Arabic keyboard?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A virtual Arabic keyboard allows users to type Arabic text on-screen, making it easier to write Arabic or Arabic-inspired text for design and typography previews."
-        }
-      }, {
-        "@type": "Question",
-        "name": "آیا صفحه کلید مجازی فارسی وجود دارد؟",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "بله، صفحه کلید مجازی فارسی و عربی به کاربران امکان می‌دهد بدون نصب یا تغییر تنظیمات سیستم، به سادگی فارسی یا عربی تایپ کنند و فونت‌ها را پیش‌نمایش کنند."
-        }
-      }]
-    }
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "قلم‌نما",
+  "alternateName": "ghalamnama",
+  "url": "https://ghalamnama.online/",
+  "description": "ابزار آنلاین پیش‌نمایش، مقایسه و دانلود فونت‌های فارسی و صفحه کلید مجازی فارسی و عربی",
+  "applicationCategory": "DesignApplication",
+  "operatingSystem": "Any",
+  "inLanguage": [
+    "fa",
+    "ar",
+    "en"
+  ],
+  "isAccessibleForFree": true
+}
   </script>
 </head>
-<body>
+<body class="homepage">
+  <a class="skip-link" href="#stage">رفتن به پیش‌نمایش فونت</a>
   <div class="ambient ambient-a"></div>
   <div class="ambient ambient-b"></div>
   <div class="grain"></div>
 
   <header class="topbar">
-    <a class="brand" href="#" aria-label="galamnama">
-      <span class="brand-orb">✦</span>
-      <span><b>galamnama</b><small>Persian type playground</small></span>
+    <a class="brand" href="#" aria-label="ghalamnama">
+      <span class="brand-orb">ق</span>
+      <span><b>ghalamnama</b><small>خانهٔ فونت و نوشتن</small></span>
     </a>
 
+    <nav class="site-nav" aria-label="بخش‌های قلم‌نما"><a href="#fonts">فونت‌ها</a><a href="#stage">پیش‌نمایش</a><a href="#keyboard" data-open-keyboard>صفحه‌کلید</a><a href="#products">محصولات</a></nav>
     <div class="top-actions">
       <div class="context-switch" role="group" aria-label="انتخاب مجموعه فونت">
         <button type="button" data-context="fa" aria-pressed="true">فارسی</button>
@@ -88,20 +73,23 @@
 
   <main>
     <section class="intro">
-      <div>
-        <p class="kicker">TYPE / EXPLORE / PLAY</p>
-        <h1 id="contextHeadline">فونت فارسی رو <em>حس کن.</em></h1>
+      <div class="intro-copy">
+        <p class="kicker">GHALAMNAMA / A HOME FOR LETTERS</p>
+        <h1 id="contextHeadline">هر نوشته،<br><em>قلم خودش را دارد.</em></h1>
+        <p class="intro-note" id="contextNote">خانه‌ای برای کشف فونت‌های فارسی و عربی. متنت را بنویس، قلم‌ها را امتحان کن و به کلماتت شکل بده.</p>
+        <div class="hero-actions"><a class="primary-link" href="#fonts">کشف فونت‌ها <span aria-hidden="true">↙</span></a><a class="secondary-link" href="#stage">متن خودت را امتحان کن</a></div>
       </div>
-      <p class="intro-note" id="contextNote">متنت رو بنویس، با ← → بچرخ<br>و فونتی که بهش میاد رو پیدا کن؛ صفحه‌کلید مجازی فارسی/عربی هم دارد.</p>
+      <div class="type-art" aria-hidden="true"><span class="art-label">حروف، جان می‌گیرند.</span><span class="art-letter">آ</span><span class="art-word">قلم‌نما</span><span class="art-caption">فارسی / العربية<br>TYPE & EXPRESSION</span></div>
     </section>
 
+    <div class="section-heading"><div><p class="kicker">01 / TYPE STUDIO</p><h2>متن تو، با قلمی تازه</h2></div><p>بنویس، اندازه را تغییر بده و فونت‌ها را ورق بزن.</p></div>
     <section class="stage" id="stage">
       <div class="stage-grid"></div>
       <div class="orbit orbit-one"></div>
       <div class="orbit orbit-two"></div>
       <div class="glow"></div>
 
-      <div class="stage-meta stage-meta-right"><span>01</span><b>galamnama</b></div>
+      <div class="stage-meta stage-meta-right"><span>01</span><b>ghalamnama</b></div>
       <div class="stage-meta stage-meta-left"><span id="fontSource">LOCAL</span><b id="fontIndex">01 / 00</b></div>
 
       <button class="nav-arrow arrow-next" id="nextFont" aria-label="فونت بعدی"><span>→</span></button>
@@ -114,16 +102,16 @@
         </div>
         <textarea id="input" dir="rtl" lang="fa" spellcheck="false" aria-label="متن پیش‌نمایش">سلام دنیا</textarea>
         <div class="caret-line"></div>
-        <div class="stage-hint"><kbd>←</kbd><kbd>→</kbd> تغییر فونت <span>•</span> <kbd>/</kbd> جستجو <span>•</span> صفحه‌کلید مجازی فارسی/عربی</div>
+        <div class="stage-hint"><kbd>←</kbd><kbd>→</kbd> تغییر فونت <span>•</span> <kbd>/</kbd> جستجو <span>•</span> پیش‌نمایش زنده</div>
       </div>
 
       <div class="dock-wrap">
         <div class="floating-dock">
           <div class="dock-group size-group">
             <span class="dock-label">SIZE</span>
-            <button id="sizeDown">−</button>
+            <button id="sizeDown" aria-label="کوچک‌تر کردن متن">−</button>
             <strong id="sizeValue">52</strong>
-            <button id="sizeUp">+</button>
+            <button id="sizeUp" aria-label="بزرگ‌تر کردن متن">+</button>
           </div>
           <div class="dock-sep"></div>
           <div class="dock-group weights">
@@ -145,38 +133,20 @@
       <div class="gesture"><span class="gesture-key">SPACE</span> فونت تصادفی <span class="gesture-key">ENTER</span> انتخاب</div>
     </section>
 
-    <section class="seo-content" aria-labelledby="seoKeyboardTitle" style="padding: 0 1.25rem 1.5rem; max-width: 1100px; margin: 0 auto;">
-      <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.12); border-radius: 18px; padding: 1.2rem 1.4rem; margin-bottom: 1rem;">
-        <p class="kicker" style="margin-bottom: 0.4rem;">VIRTUAL KEYBOARD</p>
-        <h2 id="seoKeyboardTitle" style="margin: 0 0 0.6rem; font-size: clamp(1.5rem, 3vw, 2.1rem);">صفحه کلید مجازی فارسی و عربی</h2>
-        <p id="seoKeyboardText" style="margin: 0; line-height: 1.8; color: rgba(255,255,255,0.86);">
-          با صفحه کلید مجازی فارسی و عربی می‌توانید بدون نصب یا فعال‌سازی کیبورد سیستم، فارسی، عربی و فarsi را تایپ کنید، فونت‌های مورد علاقه را تست کنید و نوشته‌های خود را در لحظه پیش‌نمایش ببینید.
-          این ابزار برای کاربران انگلیسی‌زبان، طراحان و کسانی که به دنبال virtual Persian keyboard، Farsi keyboard online، Arabic keyboard typing و Persian keyboard هستند، مناسب است.
-          English: use the virtual Persian keyboard, Arabic keyboard online, and Farsi typing keyboard to write naturally while previewing fonts in real time.
-        </p>
-      </div>
-
-      <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.12); border-radius: 18px; padding: 1.2rem 1.4rem;">
-        <h3 style="margin: 0 0 0.8rem; font-size: 1.2rem;">سوالات متداول</h3>
-        <details open style="margin-bottom: 0.8rem;">
-          <summary style="cursor: pointer; font-weight: 600;">صفحه کلید مجازی فارسی چیست؟</summary>
-          <p style="margin: 0.5rem 0 0; line-height: 1.8; color: rgba(255,255,255,0.82);">صفحه کلید مجازی فارسی ابزاری آنلاین است که به شما اجازه می‌دهد بدون نصب کیبورد فارسی، متون فارسی را تایپ و بررسی کنید.</p>
-        </details>
-        <details open style="margin-bottom: 0.8rem;">
-          <summary style="cursor: pointer; font-weight: 600;">آیا صفحه کلید عربی آنلاین هم دارد؟</summary>
-          <p style="margin: 0.5rem 0 0; line-height: 1.8; color: rgba(255,255,255,0.82);">بله، صفحه کلید مجازی عربی برای تایپ عربی و آزمایش فونت‌ها و متن‌ها در یک تجربه ساده و سریع استفاده می‌شود.</p>
-        </details>
-        <details>
-          <summary style="cursor: pointer; font-weight: 600;">Does Ghalamnama include a virtual Persian keyboard?</summary>
-          <p style="margin: 0.5rem 0 0; line-height: 1.8; color: rgba(255,255,255,0.82);">Yes. It includes a virtual Persian keyboard and Arabic keyboard interface for quick typing, font preview, and multilingual text testing.</p>
-        </details>
-      </div>
+    <section class="keyboard-feature" id="keyboard" aria-labelledby="keyboardTitle">
+      <div><p class="kicker">02 / WRITE IN YOUR LANGUAGE</p><h2 id="keyboardTitle">حروف فارسی و عربی، زیر دست تو</h2><p>کیبورد فارسی نداری؟ صفحه‌کلید مجازی را باز کن و مستقیم در پیش‌نمایش بنویس. با تغییر زبان بالای صفحه، حروف و مجموعهٔ فونت‌ها هم عوض می‌شوند.</p><button class="secondary-link" type="button" data-open-keyboard>باز کردن صفحه‌کلید <span aria-hidden="true">↖</span></button></div>
+      <div class="key-art" aria-hidden="true"><span>ق</span><span>ل</span><span>م</span><span class="accent-key">نما</span></div>
     </section>
 
-    <section class="font-directory" aria-labelledby="fontDirectoryTitle">
+    <section class="product-feature" id="products" aria-labelledby="productTitle">
+      <div class="product-visual" aria-hidden="true"><div class="browser-bar"><i></i><i></i><i></i><span>ghalamnama / Firefox</span></div><div class="browser-body"><span class="product-monogram">ق</span><p>به زبان خودت بنویس.</p><div class="language-tags"><span>فا</span><span>ع</span><span>א</span><span>Я</span><span>Ω</span></div></div></div>
+      <div class="product-copy"><p class="kicker">A PRODUCT BY GHALAMNAMA</p><h2 id="productTitle">قلم‌نما، همراه مرورگرت</h2><p>افزونهٔ فایرفاکس، صفحه‌کلید چندزبانهٔ قلم‌نما را به کادرهای نوشتن در وب می‌آورد. هر وقت نیاز داشتی، آن را برای همان تب فعال کن.</p><ul><li>پنج زبان: فارسی، عربی، عبری، روسی و یونانی</li><li>صفحه‌کلید روی صفحه و تبدیل کلیدهای فیزیکی</li><li>انتخاب زبان‌ها و تنظیمات شخصی</li></ul><a class="primary-link" href="https://github.com/G210s/ghalamnama/tree/main/firefox-extension">معرفی و راهنمای نصب افزونه <span aria-hidden="true">↗</span></a><small>راهنمای نصب آزمایشی و کد منبع در گیت‌هاب</small></div>
+    </section>
+
+    <section id="fonts" class="font-directory" aria-labelledby="fontDirectoryTitle">
       <div class="font-directory-head">
         <div>
-          <p class="kicker">TYPEFACE DIRECTORY</p>
+          <p class="kicker">03 / TYPEFACE COLLECTION</p>
           <h2 id="fontDirectoryTitle">همهٔ فونت‌های فارسی</h2>
         </div>
         <span id="directoryCount">۰ فونت</span>
@@ -203,6 +173,8 @@
     </section>
   </main>
 
+  <footer class="site-footer"><a class="brand" href="#">ghalamnama / قلم‌نما</a><p>برای کشف قلم‌ها و نوشتن به زبان خودت.</p><a href="donate.html">حمایت از قلم‌نما ↗</a></footer>
+
   <div class="search-overlay" id="searchOverlay">
     <div class="search-box">
       <div class="search-head"><span id="searchHeadTitle">Find a typeface</span><button id="closeSearch">ESC</button></div>
@@ -214,5 +186,6 @@
   <div class="toast" id="toast"></div>
   <script src="script.js"></script>
   <script src="virtual-keyboard.js"></script>
+  <script src="homepage.js"></script>
 </body>
 </html>

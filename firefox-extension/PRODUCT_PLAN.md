@@ -79,7 +79,7 @@ Typing mode, only when Extension = ON
 ### State transition rules
 
 ```text
-OFF --Activate from popup--> ON / Keyboard CLOSED
+OFF --Activate from popup or shortcut--> ON / Keyboard CLOSED
 ON / CLOSED --Open floating control--> ON / OPEN
 ON / OPEN --Close floating control--> ON / CLOSED
 ON --Switch typing mode--> ON / same visibility
@@ -94,7 +94,7 @@ Activation must not imply that the keyboard is open. Typing mode must not imply 
 
 ### Activation and tab lifecycle
 
-- **ACT-01:** Activate Ghalamnama for the current tab from the popup.
+- **ACT-01:** Activate Ghalamnama for the current tab from the popup or activation shortcut.
 - **ACT-02:** Deactivate only the current tab from the popup or floating control.
 - **ACT-03:** Show an explicit active/inactive status in the popup.
 - **ACT-04:** Restore active injection after a page reload when the tab remains active.
@@ -178,7 +178,7 @@ Activation must not imply that the keyboard is open. Typing mode must not imply 
 
 ### Shortcuts
 
-- **SHORT-01:** Add a Firefox-supported command for opening/closing the keyboard, using `Alt + Space` only if it does not conflict with Firefox behavior.
+- **SHORT-01:** Use `Alt + Shift + G` (`Control + Shift + G` on macOS) to activate or deactivate the current tab, and `Ctrl + Shift + Space` to switch physical typing between the Ghalamnama layout and the system keyboard; leave keyboard open/close available as an unassigned Firefox command.
 - **SHORT-02:** Evaluate next/previous enabled-language commands separately.
 - **SHORT-03:** Make shortcuts configurable only through the WebExtension command mechanism and document browser limitations.
 - **SHORT-04:** Preserve the current reveal-hidden-control shortcut only if it remains discoverable and conflict-free.
@@ -204,9 +204,10 @@ Activation must not imply that the keyboard is open. Typing mode must not imply 
 
 ### Onboarding
 
-1. Welcome and enabled-language selection.
-2. Typing-method explanation and selection.
-3. Ready state and completion action.
+1. Open a dedicated welcome guide once after a fresh installation.
+2. Select enabled languages.
+3. Explain toolbar pinning, per-tab activation, and the typing-mode shortcut.
+4. Select the initial typing method, state the no-telemetry privacy promise, and complete setup.
 
 ### Injected page UI
 

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ghalamnama Selenium fixture</title>
+  <style>
+    body { font: 16px sans-serif; margin: 2rem; }
+    label { display: block; margin: 1rem 0; }
+    input, textarea, [contenteditable] { display: block; margin-top: .25rem; min-width: 20rem; padding: .5rem; }
+  </style>
+</head>
+<body>
+  <h1>Editable field fixture</h1>
+  <label>Text <input id="text" type="text"></label>
+  <label>Email <input id="email" type="email"></label>
+  <label>Read-only <input id="readonly" type="text" readonly></label>
+  <label>Textarea <textarea id="textarea"></textarea></label>
+  <label>Counter <input id="counted" type="text"><output id="count">0</output></label>
+  <div id="editor" contenteditable="true" aria-label="Rich text editor"></div>
+  <script>
+    document.querySelector('#counted').addEventListener('input', event => {
+      document.querySelector('#count').value = String(event.target.value.length);
+    });
+  </script>
+</body>
+</html>
