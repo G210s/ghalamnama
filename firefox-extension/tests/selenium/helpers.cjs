@@ -25,6 +25,7 @@ function buildTestExtension(matches = ['http://127.0.0.1/*'], autoInject = true)
     if (!fs.statSync(file).isFile() || name === 'manifest.json' || name === 'package.json' || name === 'package-lock.json') continue;
     zip.addLocalFile(file, '', name);
   }
+  zip.addLocalFolder(path.join(extensionRoot, 'icons'), 'icons');
   zip.addFile('manifest.json', Buffer.from(JSON.stringify(manifest)));
   const output = path.join(os.tmpdir(), `ghalamnama-selenium-${process.pid}.xpi`);
   zip.writeZip(output);

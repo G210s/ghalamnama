@@ -5,7 +5,9 @@
     "test": "npm run test:unit && npm run test:selenium",
     "test:unit": "node --test tests/*.test.cjs",
     "test:selenium": "node --test tests/selenium/*.test.cjs",
-    "test:live:facebook": "FACEBOOK_E2E=1 node --test tests/selenium-live/facebook-registration.test.cjs"
+    "test:live:facebook": "FACEBOOK_E2E=1 node --test tests/selenium-live/facebook-registration.test.cjs",
+    "package": "node package.cjs",
+    "lint": "npx -y web-ext lint --self-hosted=false -s . --ignore-files node_modules tests \"*.md\" \"package*.json\" package.cjs \"*.zip\""
   },
   "devDependencies": {
     "adm-zip": "^0.6.1",

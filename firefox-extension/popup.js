@@ -45,8 +45,7 @@
       openSettings.hidden = false;
       showIcon.hidden = true;
       status.hidden = false;
-      currentLanguage.innerHTML = enabled.map((key) =>
-        `<option value="${key}"${key === values.language ? " selected" : ""}>${languageNames[key]}</option>`).join("");
+      currentLanguage.replaceChildren(...enabled.map((key) => new Option(languageNames[key], key)));
       currentLanguage.value = languages.includes(values.language) && enabled.includes(values.language)
         ? values.language : enabled[0];
       currentLanguageLabel.hidden = false;

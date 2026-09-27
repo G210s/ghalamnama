@@ -3,8 +3,10 @@
 
   const enabledTabs = new Set();
 
+  // Session storage survives extension reloads but is cleared when the browser
+  // restarts, so reused tab IDs from a previous session are never reactivated.
   async function persistEnabledTabs() {
-    await browser.storage.local.set({ enabledTabIds: [...enabledTabs] });
+    await browser.storage.session.set({ enabledTabIds: [...enabledTabs] });
   }
 
   function isProtectedUrl(url) {
@@ -145,8 +147,13 @@
     }
   });
 
-  browser.storage.local.get(["enabledTabIds", "enabledLanguages"]).then(async (values) => {
-    const savedTabIds = Array.isArray(values.enabledTabIds) ? values.enabledTabIds : [];
+  // Older versions kept tab IDs in local storage; drop them unread.
+  browser.storage.local.remove("enabledTabIds").catch(() => {});
+  Promise.all([
+    browser.storage.session.get("enabledTabIds"),
+    browser.storage.local.get("enabledLanguages")
+  ]).then(async ([session, values]) => {
+    const savedTabIds = Array.isArray(session.enabledTabIds) ? session.enabledTabIds : [];
     const tabs = await browser.tabs.query({});
     for (const tab of tabs) {
       if (savedTabIds.includes(tab.id) && tab.status === "complete") {

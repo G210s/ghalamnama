@@ -11,6 +11,7 @@ function eventHub() {
 class Element {
   constructor() { this.style = {}; this.children = []; this.dataset = {}; this.hidden = false; this.isContentEditable = false; this.classList = { add() {}, remove() {} }; }
   append(...children) { this.children.push(...children); }
+  replaceChildren(...children) { this.children = children; }
   appendChild(child) { this.append(child); }
   setAttribute() {}
   addEventListener() {}

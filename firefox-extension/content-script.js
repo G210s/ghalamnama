@@ -182,13 +182,44 @@
     return keyboardMode;
   }
 
+  // Build DOM nodes without innerHTML; `false` attributes are omitted.
+  function element(tag, attributes, ...children) {
+    const node = document.createElement(tag);
+    for (const [name, value] of Object.entries(attributes)) {
+      if (value === true) node.setAttribute(name, "");
+      else if (value !== false) node.setAttribute(name, value);
+    }
+    node.append(...children);
+    return node;
+  }
+
   function render() {
     const layout = layouts[selectedLanguage];
     const copy = labels[selectedLanguage];
     panel.dir = layout.dir;
     const rows = [layout.numbers, ...layout.rows];
     const shiftedRows = [layout.numberShift, ...layout.shifts];
-    panel.innerHTML = `<div class="ghalamnama-keyboard-toolbar"><label>Language <select data-action="language" aria-label="${copy.language}">${enabledLanguages.map((key) => `<option value="${key}"${key === selectedLanguage ? " selected" : ""}>${layouts[key].name}</option>`).join("")}</select></label><label>Physical typing <select data-action="keyboard-mode" aria-label="Physical typing mode"><option value="ghalamnama"${keyboardMode === "ghalamnama" ? " selected" : ""}>Ghalamnama layout</option><option value="os"${keyboardMode === "os" ? " selected" : ""}>System keyboard</option></select></label><button class="ghalamnama-keyboard-mode" data-action="manage" aria-label="Manage languages" title="Manage languages">⚙</button><button class="ghalamnama-keyboard-mode" data-action="deactivate">Turn off for this tab</button><button class="ghalamnama-keyboard-mode" data-action="hide">${copy.hideIcon}</button></div>${keyboardMode === "os" ? `<p class="ghalamnama-keyboard-os-message">Physical keys use your system keyboard. Click keys below to insert this layout.</p>` : ""}<div class="ghalamnama-keyboard-keys"></div><div class="ghalamnama-keyboard-actions"><button data-action="shift" aria-pressed="${shiftEnabled}" aria-label="Shift">${copy.shift}</button><button data-action="space" class="space">${copy.space}</button><button data-action="enter">↵ Enter</button></div>`;
+    const option = (value, text, selected) => element("option", { value, selected }, text);
+    panel.replaceChildren(
+      element("div", { class: "ghalamnama-keyboard-toolbar" },
+        element("label", {}, "Language ",
+          element("select", { "data-action": "language", "aria-label": copy.language },
+            ...enabledLanguages.map((key) => option(key, layouts[key].name, key === selectedLanguage)))),
+        element("label", {}, "Physical typing ",
+          element("select", { "data-action": "keyboard-mode", "aria-label": "Physical typing mode" },
+            option("ghalamnama", "Ghalamnama layout", keyboardMode === "ghalamnama"),
+            option("os", "System keyboard", keyboardMode === "os"))),
+        element("button", { class: "ghalamnama-keyboard-mode", "data-action": "manage", "aria-label": "Manage languages", title: "Manage languages" }, "⚙"),
+        element("button", { class: "ghalamnama-keyboard-mode", "data-action": "deactivate" }, "Turn off for this tab"),
+        element("button", { class: "ghalamnama-keyboard-mode", "data-action": "hide" }, copy.hideIcon)),
+      ...(keyboardMode === "os"
+        ? [element("p", { class: "ghalamnama-keyboard-os-message" }, "Physical keys use your system keyboard. Click keys below to insert this layout.")]
+        : []),
+      element("div", { class: "ghalamnama-keyboard-keys" }),
+      element("div", { class: "ghalamnama-keyboard-actions" },
+        element("button", { "data-action": "shift", "aria-pressed": String(shiftEnabled), "aria-label": "Shift" }, copy.shift),
+        element("button", { "data-action": "space", class: "space" }, copy.space),
+        element("button", { "data-action": "enter" }, "↵ Enter")));
     panel.querySelector("[data-action='keyboard-mode']").onchange = (event) => {
       setKeyboardMode(event.target.value);
     };

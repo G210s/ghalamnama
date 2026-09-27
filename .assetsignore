@@ -6,3 +6,6 @@
 .htaccess
 wrangler.jsonc
 .DS_Store
+chrome-extension/**
+firefox-extension/**
+assets/brand/**

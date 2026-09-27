@@ -12,13 +12,24 @@ function eventHub() {
   return { listeners, addListener: listener => listeners.add(listener) };
 }
 
-function setup(tab) {
+function store(values) {
+  return {
+    async get(keys) {
+      if (typeof keys === 'string') return { [keys]: values[keys] };
+      return { ...values };
+    },
+    async set(update) { Object.assign(values, update); },
+    async remove(keys) { for (const key of [keys].flat()) delete values[key]; }
+  };
+}
+
+function setup(tab, { local = {}, session = {} } = {}) {
   const commands = eventHub();
   const onInstalled = eventHub();
   const onMessage = eventHub();
   const onRemoved = eventHub();
   const onUpdated = eventHub();
-  const values = { enabledLanguages: ['fa'] };
+  const values = { enabledLanguages: ['fa'], ...local };
   const sent = [];
   const inserted = [];
   const titles = [];
@@ -30,18 +41,11 @@ function setup(tab) {
       getURL: path => `moz-extension://test/${path}`,
       openOptionsPage: async () => {}
     },
-    storage: { local: {
-      async get(keys) {
-        if (typeof keys === 'string') return { [keys]: values[keys] };
-        return { ...values };
-      },
-      async set(update) { Object.assign(values, update); },
-      async remove(keys) { for (const key of keys) delete values[key]; }
-    } },
+    storage: { local: store(values), session: store(session) },
     tabs: {
       onRemoved,
       onUpdated,
-      async query(query) { return query.active ? [tab] : []; },
+      async query(query) { return query.active || !Object.keys(query).length ? [tab] : []; },
       async get() { return tab; },
       async sendMessage(tabId, message) {
         sent.push({ tabId, message });
@@ -54,7 +58,7 @@ function setup(tab) {
     browserAction: { async setTitle(details) { titles.push(details); } }
   };
   vm.runInNewContext(source, { browser, console });
-  return { commands, values, sent, inserted, titles };
+  return { commands, values, session, sent, inserted, titles };
 }
 
 async function issue(app, command) {
@@ -69,12 +73,12 @@ test('activation shortcut activates and then deactivates only the current tab', 
 
   await issue(app, 'toggle-activation');
   assert.deepEqual(app.inserted.map(item => item.kind), ['css', 'script']);
-  assert.deepEqual(plain(app.values.enabledTabIds), [42]);
+  assert.deepEqual(plain(app.session.enabledTabIds), [42]);
   assert.deepEqual(plain(app.titles.at(-1)), { tabId: 42, title: 'Deactivate Ghalamnama on this tab' });
 
   await issue(app, 'toggle-activation');
   assert.deepEqual(plain(app.sent.at(-1)), { tabId: 42, message: { type: 'deactivate' } });
-  assert.deepEqual(plain(app.values.enabledTabIds), []);
+  assert.deepEqual(plain(app.session.enabledTabIds), []);
   assert.deepEqual(plain(app.titles.at(-1)), { tabId: 42, title: 'Activate Ghalamnama on this tab' });
 });
 
@@ -84,5 +88,19 @@ test('activation shortcut is a safe no-op on protected Firefox pages', async () 
   await issue(app, 'toggle-activation');
   assert.deepEqual(app.inserted, []);
   assert.deepEqual(app.sent, []);
-  assert.equal(app.values.enabledTabIds, undefined);
+  assert.equal(app.session.enabledTabIds, undefined);
+});
+
+test('activated tabs are restored after an extension reload but not after a browser restart', async () => {
+  const tab = { id: 3, url: 'https://example.test/', status: 'complete' };
+
+  const reloaded = setup(tab, { session: { enabledTabIds: [3] } });
+  await settle();
+  assert.deepEqual(reloaded.inserted.map(item => item.kind), ['css', 'script']);
+
+  // Tab IDs from an earlier browser session live only in legacy local storage.
+  const restarted = setup(tab, { local: { enabledTabIds: [3] } });
+  await settle();
+  assert.deepEqual(restarted.inserted, []);
+  assert.equal(restarted.values.enabledTabIds, undefined);
 });

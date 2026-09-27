@@ -31,8 +31,13 @@ The popup also includes links to report extension feedback, request a language o
 5. Open the extension popup, choose the supported languages, and select **Activate on this tab**.
 6. Focus a text field. The keyboard toggle appears in the lower-right corner.
 
-Firefox does not inject extensions into privileged pages such as `about:*`, the Add-ons Manager, or the Firefox start page. Temporary extensions are removed when Firefox restarts. Firefox grants Ghalamnama website access at installation so it can restore the keyboard after a reload, but the extension injects the keyboard only into tabs you explicitly activate. Activation stays active when that tab reloads; opening the same website in a new tab still requires activation. Use **Deactivate on this tab** to remove the remembered activation.
+Firefox does not inject extensions into privileged pages such as `about:*`, the Add-ons Manager, or the Firefox start page. Temporary extensions are removed when Firefox restarts. Firefox grants Ghalamnama website access at installation so it can restore the keyboard after a reload, but the extension injects the keyboard only into tabs you explicitly activate. Activation stays active when that tab reloads and is cleared when Firefox restarts; opening the same website in a new tab still requires activation. Use **Deactivate on this tab** to remove the remembered activation.
 
 ## Package for distribution
 
-From the repository root, create a ZIP containing the contents of `firefox-extension/` with `manifest.json` at the archive root, then submit it to Mozilla Add-ons for signing.
+```sh
+npm --prefix firefox-extension run lint      # Mozilla's add-on linter
+npm --prefix firefox-extension run package   # creates ghalamnama-firefox-<version>.zip
+```
+
+The package contains only runtime files (no tests, docs or `node_modules`). Upload it to Mozilla Add-ons for signing. Store listing text, permission justifications and images are in [STORE_SUBMISSION.md](STORE_SUBMISSION.md); regenerate the images with `node firefox-extension/store/render.cjs`.

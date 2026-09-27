@@ -1,0 +1,14 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 1280px; height: 800px; overflow: hidden; }
+body { background: #171a19; color: #f8f4ec; font: 16px/1.5 system-ui, sans-serif; }
+.caption { height: 132px; padding: 30px 56px 0; }
+.caption h1 { margin: 0; font-size: 34px; letter-spacing: -0.01em; }
+.caption p { margin: 6px 0 0; color: #c6ccc8; font-size: 18px; }
+.window { position: absolute; left: 40px; right: 40px; top: 132px; bottom: 0; border-radius: 12px 12px 0 0; background: #fbfaf7; color: #1d201e; overflow: hidden; }
+.bar { display: flex; gap: 8px; align-items: center; height: 44px; padding: 0 16px; background: #e9e7e1; }
+.bar i { width: 12px; height: 12px; border-radius: 50%; background: #c9c6be; }
+.bar span { margin-left: 16px; padding: 4px 14px; border-radius: 6px; background: #fff; color: #555; font-size: 13px; min-width: 360px; }
+.page { padding: 28px 40px; }
+.page h2 { margin: 0 0 16px; font-size: 22px; }
+.field { display: block; width: 100%; margin: 0 0 12px; border: 1px solid #cfccc4; border-radius: 8px; padding: 10px 14px; background: #fff; color: inherit; font: 18px/1.6 system-ui, sans-serif; }
+textarea.field { height: 150px; resize: none; }
